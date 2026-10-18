@@ -17,6 +17,11 @@
         <applyProfanityFilter value="false"/>
     </Profile>
 
+    <!-- X in the icon box: clears the search -->
+    <Profile name="searchablesClearIcon" extends="fs25_textInputIcon">
+        <imageSliceId value="gui.cross"/>
+    </Profile>
+
     <!-- "Search..." hint shown while the box is empty and not being typed in -->
     <Profile name="searchablesPlaceholder" extends="fs25_textDefault" with="anchorMiddleLeft">
         <size value="200px 20px"/>

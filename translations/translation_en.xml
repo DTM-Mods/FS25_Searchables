@@ -109,7 +109,7 @@
         <text name="searchables_help_controls_title" text="Controls and tips"/>
         <text name="searchables_help_controls_intro" text="The Search key jumps into the search box on the shop, construction and map screens: Ctrl+F on the keyboard, the right stick on a controller. Change it in the controls under Search. On Steam Deck and in Big Picture mode the on-screen keyboard opens."/>
         <text name="searchables_help_controls_keys_title" text="Keys"/>
-        <text name="searchables_help_controls_keys" text="Enter or clicking elsewhere keeps the search. Esc clears it. In the shop and the construction menu, going back or switching tabs clears it too."/>
+        <text name="searchables_help_controls_keys" text="Enter or clicking elsewhere keeps the search. Esc clears it. In the shop and the construction menu, going back or switching tabs clears it too. The X at the right of the box clears it too."/>
         <text name="searchables_help_controls_console_title" text="Console commands"/>
         <text name="searchables_help_controls_console" text="With the developer console: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Your vehicles"/>

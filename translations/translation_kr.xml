@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="조작과 팁"/>
         <text name="searchables_help_controls_intro" text="검색 키를 누르면 상점, 건설, 지도 화면의 검색창으로 바로 이동합니다. 키보드는 Ctrl+F, 컨트롤러는 오른쪽 스틱입니다. 조작 설정의 '검색'에서 바꿀 수 있습니다. Steam Deck과 Big Picture 모드에서는 화상 키보드가 열립니다."/>
         <text name="searchables_help_controls_keys_title" text="키"/>
-        <text name="searchables_help_controls_keys" text="Enter를 누르거나 다른 곳을 클릭하면 검색이 유지됩니다. Esc를 누르면 지워집니다. 상점과 건설 메뉴에서는 뒤로 가거나 탭을 바꿔도 지워집니다."/>
+        <text name="searchables_help_controls_keys" text="Enter를 누르거나 다른 곳을 클릭하면 검색이 유지됩니다. Esc를 누르면 지워집니다. 상점과 건설 메뉴에서는 뒤로 가거나 탭을 바꿔도 지워집니다. 상자 오른쪽의 X로도 지울 수 있습니다."/>
         <text name="searchables_help_controls_console_title" text="콘솔 명령어"/>
         <text name="searchables_help_controls_console" text="개발자 콘솔에서 사용: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="내 차량"/>

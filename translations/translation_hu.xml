@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Irányítás és tippek"/>
         <text name="searchables_help_controls_intro" text="A Keresés gomb a bolt, az építési menü és a térkép keresőmezőjébe ugrik: billentyűzeten Ctrl+F, kontrolleren a jobb analóg kar. Az irányítás beállításainál, a Keresés pontnál módosíthatod. Steam Decken és Big Picture módban megnyílik a képernyő-billentyűzet."/>
         <text name="searchables_help_controls_keys_title" text="Billentyűk"/>
-        <text name="searchables_help_controls_keys" text="Az Enter vagy egy máshová kattintás megtartja a keresést. Az Esc törli. A boltban és az építési menüben a visszalépés vagy a fülváltás is törli."/>
+        <text name="searchables_help_controls_keys" text="Az Enter vagy egy máshová kattintás megtartja a keresést. Az Esc törli. A boltban és az építési menüben a visszalépés vagy a fülváltás is törli. A mező jobb oldalán lévő X is törli."/>
         <text name="searchables_help_controls_console_title" text="Konzolparancsok"/>
         <text name="searchables_help_controls_console" text="A fejlesztői konzollal: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="A járműveid"/>

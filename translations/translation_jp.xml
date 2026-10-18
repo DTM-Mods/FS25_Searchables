@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="操作とヒント"/>
         <text name="searchables_help_controls_intro" text="検索キーを押すと、ショップ、建設、マップの各画面で検索ボックスにすぐ移動します。キーボードは Ctrl+F、コントローラーは右スティックです。操作設定の「検索」で変更できます。Steam Deck や Big Picture モードでは画面キーボードが開きます。"/>
         <text name="searchables_help_controls_keys_title" text="キー"/>
-        <text name="searchables_help_controls_keys" text="Enter を押すか、ほかの場所をクリックすると検索が残ります。Esc で消去します。ショップと建設メニューでは、戻ったりタブを切り替えたりしても消去されます。"/>
+        <text name="searchables_help_controls_keys" text="Enter を押すか、ほかの場所をクリックすると検索が残ります。Esc で消去します。ショップと建設メニューでは、戻ったりタブを切り替えたりしても消去されます。 ボックス右側の X でも消去できます。"/>
         <text name="searchables_help_controls_console_title" text="コンソールコマンド"/>
         <text name="searchables_help_controls_console" text="開発者コンソールで使えます: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi。"/>
         <text name="searchables_help_map_vehicles_title" text="自分の車両"/>

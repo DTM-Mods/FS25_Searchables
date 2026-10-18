@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Kontroller og tips"/>
         <text name="searchables_help_controls_intro" text="Søketasten hopper inn i søkefeltet i butikken, byggemenyen og på kartet: Ctrl+F på tastaturet, høyre spak på en kontroller. Endre den i kontrollene under Søk. På Steam Deck og i Big Picture-modus åpnes skjermtastaturet."/>
         <text name="searchables_help_controls_keys_title" text="Taster"/>
-        <text name="searchables_help_controls_keys" text="Enter eller et klikk et annet sted beholder søket. Esc tømmer det. I butikken og byggemenyen tømmes det også når du går tilbake eller bytter fane."/>
+        <text name="searchables_help_controls_keys" text="Enter eller et klikk et annet sted beholder søket. Esc tømmer det. I butikken og byggemenyen tømmes det også når du går tilbake eller bytter fane. X-en til høyre i feltet tømmer det også."/>
         <text name="searchables_help_controls_console_title" text="Konsollkommandoer"/>
         <text name="searchables_help_controls_console" text="Med utviklerkonsollen: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Kjøretøyene dine"/>

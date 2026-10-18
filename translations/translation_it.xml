@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Comandi e consigli"/>
         <text name="searchables_help_controls_intro" text="Il tasto Cerca ti porta nella casella di ricerca nelle schermate di negozio, costruzione e mappa: Ctrl+F sulla tastiera, la levetta destra sul controller. Puoi cambiarlo nei comandi, alla voce Cerca. Su Steam Deck e in modalità Big Picture si apre la tastiera su schermo."/>
         <text name="searchables_help_controls_keys_title" text="Tasti"/>
-        <text name="searchables_help_controls_keys" text="Enter o un clic altrove mantengono la ricerca. Esc la cancella. Nel negozio e nel menu costruzione la cancellano anche tornare indietro o cambiare scheda."/>
+        <text name="searchables_help_controls_keys" text="Enter o un clic altrove mantengono la ricerca. Esc la cancella. Nel negozio e nel menu costruzione la cancellano anche tornare indietro o cambiare scheda. Anche la X a destra della casella la cancella."/>
         <text name="searchables_help_controls_console_title" text="Comandi della console"/>
         <text name="searchables_help_controls_console" text="Con la console sviluppatore: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="I tuoi veicoli"/>

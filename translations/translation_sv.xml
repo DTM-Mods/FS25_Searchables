@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Kontroller och tips"/>
         <text name="searchables_help_controls_intro" text="Söktangenten hoppar till sökrutan i butiken, byggmenyn och på kartan: Ctrl+F på tangentbordet, höger spak på en handkontroll. Ändra den i kontrollerna under Sök. På Steam Deck och i Big Picture-läge öppnas skärmtangentbordet."/>
         <text name="searchables_help_controls_keys_title" text="Tangenter"/>
-        <text name="searchables_help_controls_keys" text="Enter eller ett klick någon annanstans behåller sökningen. Esc rensar den. I butiken och byggmenyn rensas den också när du går tillbaka eller byter flik."/>
+        <text name="searchables_help_controls_keys" text="Enter eller ett klick någon annanstans behåller sökningen. Esc rensar den. I butiken och byggmenyn rensas den också när du går tillbaka eller byter flik. X:et till höger i rutan rensar den också."/>
         <text name="searchables_help_controls_console_title" text="Konsolkommandon"/>
         <text name="searchables_help_controls_console" text="Med utvecklarkonsolen: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Dina fordon"/>

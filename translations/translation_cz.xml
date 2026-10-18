@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Ovládání a tipy"/>
         <text name="searchables_help_controls_intro" text="Klávesa Hledat vás přenese do vyhledávacího pole v obchodě, ve stavebním menu a na mapě: Ctrl+F na klávesnici, pravá páčka na ovladači. Změnit ji můžete v nastavení ovládání pod položkou Hledat. Na Steam Decku a v režimu Big Picture se otevře klávesnice na obrazovce."/>
         <text name="searchables_help_controls_keys_title" text="Klávesy"/>
-        <text name="searchables_help_controls_keys" text="Enter nebo kliknutí jinam hledání ponechá. Esc ho smaže. V obchodě a ve stavebním menu ho smaže i návrat zpět nebo přepnutí karty."/>
+        <text name="searchables_help_controls_keys" text="Enter nebo kliknutí jinam hledání ponechá. Esc ho smaže. V obchodě a ve stavebním menu ho smaže i návrat zpět nebo přepnutí karty. Křížek vpravo v poli ho také vymaže."/>
         <text name="searchables_help_controls_console_title" text="Příkazy konzole"/>
         <text name="searchables_help_controls_console" text="S vývojářskou konzolí: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Vaše vozidla"/>

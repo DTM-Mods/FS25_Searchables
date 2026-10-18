@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Керування та поради"/>
         <text name="searchables_help_controls_intro" text="Клавіша Пошук переводить у поле пошуку в магазині, у меню будівництва та на карті: Ctrl+F на клавіатурі, правий стік на геймпаді. Змінити її можна в налаштуваннях керування, пункт Пошук. На Steam Deck і в режимі Big Picture відкривається екранна клавіатура."/>
         <text name="searchables_help_controls_keys_title" text="Клавіші"/>
-        <text name="searchables_help_controls_keys" text="Enter або клацання в іншому місці зберігає пошук. Esc очищає його. У магазині та в меню будівництва пошук також очищається, коли ви повертаєтеся назад або перемикаєте вкладки."/>
+        <text name="searchables_help_controls_keys" text="Enter або клацання в іншому місці зберігає пошук. Esc очищає його. У магазині та в меню будівництва пошук також очищається, коли ви повертаєтеся назад або перемикаєте вкладки. Хрестик праворуч у полі теж очищує пошук."/>
         <text name="searchables_help_controls_console_title" text="Консольні команди"/>
         <text name="searchables_help_controls_console" text="З консоллю розробника: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Ваша техніка"/>

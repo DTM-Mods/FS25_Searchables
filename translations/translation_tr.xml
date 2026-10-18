@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Kontroller ve ipuçları"/>
         <text name="searchables_help_controls_intro" text="Ara tuşu sizi mağaza, inşaat ve harita ekranlarındaki arama kutusuna götürür: klavyede Ctrl+F, kontrolcüde sağ çubuk. Kontrollerde Ara altında değiştirebilirsiniz. Steam Deck'te ve Big Picture modunda ekran klavyesi açılır."/>
         <text name="searchables_help_controls_keys_title" text="Tuşlar"/>
-        <text name="searchables_help_controls_keys" text="Enter tuşu ya da başka bir yere tıklamak aramayı korur. Esc aramayı temizler. Mağazada ve inşaat menüsünde geri gitmek ya da sekme değiştirmek de aramayı temizler."/>
+        <text name="searchables_help_controls_keys" text="Enter tuşu ya da başka bir yere tıklamak aramayı korur. Esc aramayı temizler. Mağazada ve inşaat menüsünde geri gitmek ya da sekme değiştirmek de aramayı temizler. Kutunun sağındaki X de aramayı temizler."/>
         <text name="searchables_help_controls_console_title" text="Konsol komutları"/>
         <text name="searchables_help_controls_console" text="Geliştirici konsoluyla: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Araçlarınız"/>

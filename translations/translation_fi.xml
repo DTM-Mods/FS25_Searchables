@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Ohjaimet ja vinkit"/>
         <text name="searchables_help_controls_intro" text="Hakunäppäin vie hakukenttään kaupassa, rakennusvalikossa ja kartalla: näppäimistöllä Ctrl+F, ohjaimella oikea sauva. Vaihda se ohjainasetuksissa kohdassa Hae. Steam Deckillä ja Big Picture -tilassa avautuu näyttönäppäimistö."/>
         <text name="searchables_help_controls_keys_title" text="Näppäimet"/>
-        <text name="searchables_help_controls_keys" text="Enter tai napsautus muualle säilyttää haun. Esc tyhjentää sen. Kaupassa ja rakennusvalikossa haku tyhjenee myös, kun palaat takaisin tai vaihdat välilehteä."/>
+        <text name="searchables_help_controls_keys" text="Enter tai napsautus muualle säilyttää haun. Esc tyhjentää sen. Kaupassa ja rakennusvalikossa haku tyhjenee myös, kun palaat takaisin tai vaihdat välilehteä. Myös kentän oikean reunan X tyhjentää sen."/>
         <text name="searchables_help_controls_console_title" text="Konsolikomennot"/>
         <text name="searchables_help_controls_console" text="Kehittäjäkonsolilla: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Ajoneuvosi"/>

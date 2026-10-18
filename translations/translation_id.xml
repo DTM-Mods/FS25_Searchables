@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Kontrol dan tips"/>
         <text name="searchables_help_controls_intro" text="Tombol Cari langsung membawa Anda ke kotak pencarian di layar toko, konstruksi, dan peta: Ctrl+F di keyboard, stik kanan di kontroler. Ubah di pengaturan kontrol pada Cari. Di Steam Deck dan mode Big Picture, keyboard layar akan terbuka."/>
         <text name="searchables_help_controls_keys_title" text="Tombol"/>
-        <text name="searchables_help_controls_keys" text="Enter atau klik di tempat lain mempertahankan pencarian. Esc menghapusnya. Di toko dan menu konstruksi, kembali atau berpindah tab juga menghapusnya."/>
+        <text name="searchables_help_controls_keys" text="Enter atau klik di tempat lain mempertahankan pencarian. Esc menghapusnya. Di toko dan menu konstruksi, kembali atau berpindah tab juga menghapusnya. Tanda X di kanan kotak juga menghapusnya."/>
         <text name="searchables_help_controls_console_title" text="Perintah konsol"/>
         <text name="searchables_help_controls_console" text="Dengan konsol pengembang: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Kendaraan Anda"/>

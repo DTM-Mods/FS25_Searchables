@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Commandes et astuces"/>
         <text name="searchables_help_controls_intro" text="La touche Rechercher place le curseur dans le champ de recherche du magasin, de la construction et de la carte : Ctrl+F au clavier, le stick droit à la manette. Modifiable dans les commandes sous Rechercher. Sur Steam Deck et en mode Big Picture, le clavier virtuel s'ouvre."/>
         <text name="searchables_help_controls_keys_title" text="Touches"/>
-        <text name="searchables_help_controls_keys" text="Entrée ou un clic ailleurs conserve la recherche. Échap l'efface. Au magasin et en construction, revenir en arrière ou changer d'onglet l'efface aussi."/>
+        <text name="searchables_help_controls_keys" text="Entrée ou un clic ailleurs conserve la recherche. Échap l'efface. Au magasin et en construction, revenir en arrière ou changer d'onglet l'efface aussi. Le X à droite du champ l'efface aussi."/>
         <text name="searchables_help_controls_console_title" text="Commandes de la console"/>
         <text name="searchables_help_controls_console" text="Avec la console de développement : wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Vos véhicules"/>

@@ -1,6 +1,6 @@
 -- SearchablesSearchBox
 -- A text box added to an open screen or menu page. Click it and type: onChanged(text) runs every time the text changes.
--- Enter or a click elsewhere stops typing and keeps the search, Esc clears it.
+-- Enter or a click elsewhere stops typing and keeps the search, Esc or the X at the right clears it.
 -- Optional fields the owner can set after new(): menu (the tabbed menu the box lives in, see below), onCaptureEnded,
 -- onEnterPressed, onClose, recentKey (remembers searches under that name and offers them while the box is empty).
 
@@ -57,6 +57,9 @@ function SearchablesSearchBox.new(screen, placeholder, onChanged)
     self.input = input
     self.placeholder = root:getDescendantById("searchablesPlaceholder")
     self.countText = root:getDescendantById("searchablesCount")
+    self.iconBox = root:getDescendantById("searchablesIconBox")
+    self.penIcon = root:getDescendantById("searchablesPenIcon")
+    self.clearIcon = root:getDescendantById("searchablesClearIcon")
     self.onChanged = onChanged
     self.lastText = ""
     self.wasCapturing = false
@@ -274,7 +277,12 @@ function SearchablesSearchBox:update()
     self:checkTextChanged()
 
     local isCapturing = self:getIsCapturing()
-    self.placeholder:setVisible(not isCapturing and self.input:getText() == "")
+    local hasText = self.input:getText() ~= ""
+    self.placeholder:setVisible(not isCapturing and not hasText)
+    if self.clearIcon ~= nil and self.penIcon ~= nil and self.clearIcon.visible ~= hasText then
+        self.clearIcon:setVisible(hasText)
+        self.penIcon:setVisible(not hasText)
+    end
 
     if self.wasCapturing and not isCapturing then
         if self.recentKey ~= nil then
@@ -303,9 +311,26 @@ function SearchablesSearchBox.onGuiDraw(gui)
     end
 end
 
+-- The X at the right of a box with text clears it
+function SearchablesSearchBox:onClearMouseEvent(posX, posY, isDown, isUp, button)
+    local iconBox = self.iconBox
+    if iconBox == nil or button ~= Input.MOUSE_BUTTON_LEFT or not (isDown or isUp) or self.input:getText() == ""
+        or not self.root:getIsVisible() then
+        return false
+    end
+    local x, y = iconBox.absPosition[1], iconBox.absPosition[2]
+    if posX < x or posX > x + iconBox.absSize[1] or posY < y or posY > y + iconBox.absSize[2] then
+        return false
+    end
+    if isUp then
+        self:clear()
+    end
+    return true
+end
+
 function SearchablesSearchBox.onGuiMouseEvent(gui, superFunc, posX, posY, isDown, isUp, button)
     for box in pairs(SearchablesSearchBox.instances) do
-        if box:onRecentMouseEvent(posX, posY, isDown, isUp, button) then
+        if box:onRecentMouseEvent(posX, posY, isDown, isUp, button) or box:onClearMouseEvent(posX, posY, isDown, isUp, button) then
             return
         end
     end

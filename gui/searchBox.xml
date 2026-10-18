@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<!-- One search box. Loaded into the shop and construction screens by SearchablesSearchBox.new -->
+<!-- One search box. Loaded into the shop, construction, controls and map screens by SearchablesSearchBox.new -->
 <GUI>
     <GuiElement profile="searchablesBox" id="searchablesBox">
         <TextInput profile="searchablesInput" id="searchablesInput" enterWhenClickOutside="true" applyProfanityFilter="false" maxCharacters="40">
             <ThreePartBitmap profile="fs25_textInputBg"/>
-            <Bitmap profile="fs25_textInputIconBox">
-                <Bitmap profile="fs25_textInputIcon"/>
+            <!-- pen while the box is empty, X to clear it once there is text -->
+            <Bitmap profile="fs25_textInputIconBox" id="searchablesIconBox">
+                <Bitmap profile="fs25_textInputIcon" id="searchablesPenIcon"/>
+                <Bitmap profile="searchablesClearIcon" id="searchablesClearIcon"/>
             </Bitmap>
         </TextInput>
         <Text profile="searchablesPlaceholder" id="searchablesPlaceholder" text="Search..."/>

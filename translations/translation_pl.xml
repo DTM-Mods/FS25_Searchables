@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Sterowanie i wskazówki"/>
         <text name="searchables_help_controls_intro" text="Klawisz Szukaj przenosi do pola wyszukiwania w sklepie, w menu budowy i na mapie: Ctrl+F na klawiaturze, prawa gałka na kontrolerze. Możesz go zmienić w ustawieniach sterowania, w pozycji Szukaj. Na Steam Deck i w trybie Big Picture otwiera się klawiatura ekranowa."/>
         <text name="searchables_help_controls_keys_title" text="Klawisze"/>
-        <text name="searchables_help_controls_keys" text="Enter lub kliknięcie w innym miejscu zachowuje wyszukiwanie. Esc je czyści. W sklepie i w menu budowy czyści je też powrót lub zmiana karty."/>
+        <text name="searchables_help_controls_keys" text="Enter lub kliknięcie w innym miejscu zachowuje wyszukiwanie. Esc je czyści. W sklepie i w menu budowy czyści je też powrót lub zmiana karty. Krzyżyk po prawej stronie pola też ją czyści."/>
         <text name="searchables_help_controls_console_title" text="Polecenia konsoli"/>
         <text name="searchables_help_controls_console" text="Z konsolą deweloperską: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Twoje pojazdy"/>

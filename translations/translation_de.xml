@@ -109,7 +109,7 @@
         <text name="searchables_help_controls_title" text="Steuerung und Tipps"/>
         <text name="searchables_help_controls_intro" text="Die Such-Taste springt im Shop, im Baumenü und auf der Karte ins Suchfeld: Strg+F auf der Tastatur, der rechte Stick am Controller. Änderbar in der Steuerung unter Suchen. Auf dem Steam Deck und im Big-Picture-Modus öffnet sich die Bildschirmtastatur."/>
         <text name="searchables_help_controls_keys_title" text="Tasten"/>
-        <text name="searchables_help_controls_keys" text="Enter oder ein Klick daneben behält die Suche. Esc löscht sie. Im Shop und im Baumenü löschen auch Zurück und ein Reiterwechsel die Suche."/>
+        <text name="searchables_help_controls_keys" text="Enter oder ein Klick daneben behält die Suche. Esc löscht sie. Im Shop und im Baumenü löschen auch Zurück und ein Reiterwechsel die Suche. Auch das X rechts im Feld löscht die Suche."/>
         <text name="searchables_help_controls_console_title" text="Konsolenbefehle"/>
         <text name="searchables_help_controls_console" text="Mit der Entwicklerkonsole: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Eigene Fahrzeuge"/>

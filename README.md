@@ -95,7 +95,7 @@ Type these in the shop search box, alone or together with words. Every filter wo
 | **Ctrl+F** while walking or driving | Open the map with the cursor in the search box |
 | Click in an empty box | Your last five searches are listed: click one to run it again |
 | **Enter** or click elsewhere | Stop typing and keep the search |
-| **Esc** | Clear the search |
+| **Esc**, or click the **X** at the right of the box | Clear the search |
 | **Ctrl+F**, or **right stick click** on a controller | Jump into the search box on the shop, construction or map screen (opens the on-screen keyboard on Steam Deck / Big Picture) |
 | Go back, switch tabs or close the screen (shop/construction) | The search clears |
 

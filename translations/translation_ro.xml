@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Comenzi și sfaturi"/>
         <text name="searchables_help_controls_intro" text="Tasta Caută te duce direct în caseta de căutare din ecranele magazinului, construcțiilor și hărții: Ctrl+F pe tastatură, stickul drept pe controller. O poți schimba în comenzi, la Caută. Pe Steam Deck și în modul Big Picture se deschide tastatura de pe ecran."/>
         <text name="searchables_help_controls_keys_title" text="Taste"/>
-        <text name="searchables_help_controls_keys" text="Enter sau un clic în altă parte păstrează căutarea. Esc o șterge. În magazin și în meniul de construcții, întoarcerea înapoi sau schimbarea filei o șterge și ea."/>
+        <text name="searchables_help_controls_keys" text="Enter sau un clic în altă parte păstrează căutarea. Esc o șterge. În magazin și în meniul de construcții, întoarcerea înapoi sau schimbarea filei o șterge și ea. X-ul din dreapta casetei o șterge și el."/>
         <text name="searchables_help_controls_console_title" text="Comenzi de consolă"/>
         <text name="searchables_help_controls_console" text="Cu consola de dezvoltator: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Vehiculele tale"/>

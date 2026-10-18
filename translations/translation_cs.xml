@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="操作与提示"/>
         <text name="searchables_help_controls_intro" text="在商店、建造和地图界面，按搜索键可直接跳到搜索框：键盘为 Ctrl+F，手柄为右摇杆。可在操作设置的“搜索”中更改。在 Steam Deck 和 Big Picture 模式下会打开屏幕键盘。"/>
         <text name="searchables_help_controls_keys_title" text="按键"/>
-        <text name="searchables_help_controls_keys" text="按 Enter 或点击其他位置会保留搜索。按 Esc 清除搜索。在商店和建造菜单中，返回或切换标签页也会清除搜索。"/>
+        <text name="searchables_help_controls_keys" text="按 Enter 或点击其他位置会保留搜索。按 Esc 清除搜索。在商店和建造菜单中，返回或切换标签页也会清除搜索。 点击框右侧的 X 也可以清除。"/>
         <text name="searchables_help_controls_console_title" text="控制台命令"/>
         <text name="searchables_help_controls_console" text="使用开发者控制台：wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi。"/>
         <text name="searchables_help_map_vehicles_title" text="你的车辆"/>

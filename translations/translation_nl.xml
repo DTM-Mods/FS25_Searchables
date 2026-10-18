@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Besturing en tips"/>
         <text name="searchables_help_controls_intro" text="De zoektoets springt naar het zoekveld in de winkel, het bouwmenu en de kaart: Ctrl+F op het toetsenbord, de rechterstick op een controller. Wijzig hem bij de besturing onder Zoeken. Op Steam Deck en in Big Picture-modus opent het schermtoetsenbord."/>
         <text name="searchables_help_controls_keys_title" text="Toetsen"/>
-        <text name="searchables_help_controls_keys" text="Enter of ergens anders klikken bewaart de zoekopdracht. Esc wist hem. In de winkel en het bouwmenu wordt hij ook gewist als je teruggaat of van tabblad wisselt."/>
+        <text name="searchables_help_controls_keys" text="Enter of ergens anders klikken bewaart de zoekopdracht. Esc wist hem. In de winkel en het bouwmenu wordt hij ook gewist als je teruggaat of van tabblad wisselt. Het kruisje rechts in het vak wist hem ook."/>
         <text name="searchables_help_controls_console_title" text="Consolecommando's"/>
         <text name="searchables_help_controls_console" text="Met de ontwikkelaarsconsole: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Je voertuigen"/>

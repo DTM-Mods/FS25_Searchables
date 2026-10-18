@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Controlos e dicas"/>
         <text name="searchables_help_controls_intro" text="A tecla Pesquisar leva-te para a caixa de pesquisa nos ecrãs da loja, da construção e do mapa: Ctrl+F no teclado, o analógico direito no comando. Podes alterá-la nos controlos, em Pesquisar. Na Steam Deck e no modo Big Picture abre-se o teclado no ecrã."/>
         <text name="searchables_help_controls_keys_title" text="Teclas"/>
-        <text name="searchables_help_controls_keys" text="Enter ou clicar noutro sítio mantém a pesquisa. Esc apaga-a. Na loja e no menu de construção, voltar atrás ou mudar de separador também a apaga."/>
+        <text name="searchables_help_controls_keys" text="Enter ou clicar noutro sítio mantém a pesquisa. Esc apaga-a. Na loja e no menu de construção, voltar atrás ou mudar de separador também a apaga. O X à direita da caixa também a limpa."/>
         <text name="searchables_help_controls_console_title" text="Comandos da consola"/>
         <text name="searchables_help_controls_console" text="Com a consola de programador: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Os teus veículos"/>

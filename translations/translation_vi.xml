@@ -104,7 +104,7 @@
         <text name="searchables_help_controls_title" text="Điều khiển và mẹo"/>
         <text name="searchables_help_controls_intro" text="Phím Tìm kiếm đưa bạn thẳng vào ô tìm kiếm trên màn hình cửa hàng, xây dựng và bản đồ: Ctrl+F trên bàn phím, cần analog phải trên tay cầm. Đổi phím trong phần điều khiển, mục Tìm kiếm. Trên Steam Deck và ở chế độ Big Picture, bàn phím ảo sẽ mở ra."/>
         <text name="searchables_help_controls_keys_title" text="Phím"/>
-        <text name="searchables_help_controls_keys" text="Enter hoặc nhấp ra chỗ khác sẽ giữ lại tìm kiếm. Esc xóa tìm kiếm. Trong cửa hàng và menu xây dựng, quay lại hoặc chuyển thẻ cũng xóa tìm kiếm."/>
+        <text name="searchables_help_controls_keys" text="Enter hoặc nhấp ra chỗ khác sẽ giữ lại tìm kiếm. Esc xóa tìm kiếm. Trong cửa hàng và menu xây dựng, quay lại hoặc chuyển thẻ cũng xóa tìm kiếm. Nút X ở bên phải ô cũng xóa tìm kiếm."/>
         <text name="searchables_help_controls_console_title" text="Lệnh console"/>
         <text name="searchables_help_controls_console" text="Với console dành cho nhà phát triển: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
         <text name="searchables_help_map_vehicles_title" text="Phương tiện của bạn"/>
