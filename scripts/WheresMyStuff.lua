@@ -1235,8 +1235,12 @@ function WheresMyStuff.search(text, farmId)
         return matches
     end
 
-    -- "sell wheat": where to sell it instead of where things are
-    local sellIndex = WheresMyStuff.findSellWord(words)
+    -- "sell wheat": where to sell it instead of where things are. In some languages "for sale" contains the sell word
+    -- ("zu verkaufen" / "verkaufen", "à vendre" / "vendre"), so a search for land for sale is never a selling search.
+    local lowerText = Searchables.toLower(text)
+    local forSale = Searchables.toLower(Searchables.getText("searchables_forSale"))
+    local isForSale = lowerText:find(forSale, 1, true) ~= nil or lowerText:find("for sale", 1, true) ~= nil
+    local sellIndex = not isForSale and WheresMyStuff.findSellWord(words) or nil
     if sellIndex ~= nil then
         table.remove(words, sellIndex)
         return WheresMyStuff.searchSellPoints(words)

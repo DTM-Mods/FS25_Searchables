@@ -62,60 +62,60 @@
 
         <!-- in-game help -->
         <text name="searchables_help_title" text="Searchables"/>
-        <text name="searchables_help_shop_title" text="Shop search"/>
-        <text name="searchables_help_shop_intro" text="A search box sits under BALANCE in the shop. Click it (or press the Search key: Ctrl+F, or the right stick on a controller) and type. The list updates as you type."/>
-        <text name="searchables_help_shop_list_title" text="Inside a category or brand"/>
-        <text name="searchables_help_shop_list" text="Typing filters the list you are looking at. Example: open Amazone and type 4000."/>
-        <text name="searchables_help_shop_all_title" text="On the tile pages"/>
-        <text name="searchables_help_shop_all" text="On the categories, brands, packs and DLC pages, type two or more letters to search the whole shop. Items with your words in their name come first."/>
-        <text name="searchables_help_shop_words_title" text="What is searched"/>
-        <text name="searchables_help_shop_words" text="Name, brand, category, DLC, mod name and mod author. Every word must match: fendt 700, john deere tedder."/>
-        <text name="searchables_help_filters_title" text="Shop filters"/>
-        <text name="searchables_help_filters_intro" text="Type filters among your words. Each one works with &gt;, &lt;, &gt;=, &lt;=, a range like 6-9 or an exact number. k means thousand; m after a price means million."/>
-        <text name="searchables_help_filters_price_title" text="Price"/>
-        <text name="searchables_help_filters_price" text="$&lt;50k, price&gt;100000, $100k-200k, $144,500. Type affordable to see only what your farm can pay for right now."/>
-        <text name="searchables_help_filters_power_title" text="Horsepower and power needed"/>
-        <text name="searchables_help_filters_power" text="hp&gt;200, 200-300hp, 250hp, ps&gt;200. needhp&lt;150 finds tools your tractor can run."/>
-        <text name="searchables_help_filters_size_title" text="Width, capacity and weight"/>
-        <text name="searchables_help_filters_size" text="Working width: width&gt;9, 6-9m. Capacity: l&gt;30000, cap 20000-40000. Weight: t&lt;10."/>
-        <text name="searchables_help_filters_speed_title" text="Speed"/>
-        <text name="searchables_help_filters_speed" text="kph&gt;50, mph&gt;30, 50 km/h. Tools use their working speed."/>
-        <text name="searchables_help_filters_mix_title" text="Mix them"/>
-        <text name="searchables_help_filters_mix" text="fendt hp&gt;300 $&lt;400k. Results from the whole shop are sorted by the first filter you type."/>
-        <text name="searchables_help_construction_title" text="Construction search"/>
-        <text name="searchables_help_construction" text="The search box sits next to the list of buildings. Typing filters every category and tab at once: silo, house, greenhouse. Price filters and affordable work here too. Buildings also match their description and products: peas finds every factory that uses or makes peas."/>
-        <text name="searchables_help_map_title" text="Map search"/>
-        <text name="searchables_help_map_intro" text="Open the map and type in the box at the top. Every match gets an arrow that shrinks down onto it. Enter centers the map on the nearest one."/>
-        <text name="searchables_help_map_find_title" text="What you can find"/>
-        <text name="searchables_help_map_find" text="Your vehicles (also by license plate), bales, pallets, big bags, buildings, fields and properties. Examples: tractor, wool, round bale, silo, owned."/>
-        <text name="searchables_help_map_numbers_title" text="Numbers and farmers"/>
-        <text name="searchables_help_map_numbers" text="Type a number like 178 to find field or property 178. Type an NPC farmer's name to find the land they still own."/>
-        <text name="searchables_help_map_list_title" text="Results list"/>
-        <text name="searchables_help_map_list" text="The nearest matches are listed under the search box with their distance. Click one to move the map there; click it again to make it your navigation target."/>
-        <text name="searchables_help_map_land_title" text="Land and contracts"/>
-        <text name="searchables_help_map_land" text="for sale marks every property you can buy, with price and size: for sale $&lt;100k ha&gt;5. contract marks fields with a contract you can take or are working on: contract harvest, contract huber."/>
-        <text name="searchables_help_map_filters_title" text="Filters on the map"/>
-        <text name="searchables_help_map_filters" text="The shop's filters work here too: wool l&gt;1000 finds big wool pallets, fendt hp&gt;200 finds your own big Fendts."/>
-        <text name="searchables_help_fields_title" text="Fields and selling"/>
-        <text name="searchables_help_fields_crops_title" text="Crops and field work"/>
-        <text name="searchables_help_fields_crops" text="Fields show their crop and what they need. Search for a crop or for ready, growing, withered, harvested, lime, fertilize, plow, roll, weeds or stones. Example: wheat ready."/>
-        <text name="searchables_help_fields_sell_title" text="Where to sell"/>
-        <text name="searchables_help_fields_sell" text="Type sell and a product: sell wheat. Every selling point that buys it gets an arrow with its price per 1000 l, and the best price is marked."/>
-        <text name="searchables_help_controls_title" text="Controls and tips"/>
-        <text name="searchables_help_controls_intro" text="The Search key jumps into the search box on the shop, construction and map screens: Ctrl+F on the keyboard, the right stick on a controller. Change it in the controls under Search. On Steam Deck and in Big Picture mode the on-screen keyboard opens."/>
-        <text name="searchables_help_controls_keys_title" text="Keys"/>
-        <text name="searchables_help_controls_keys" text="Enter or clicking elsewhere keeps the search. Esc clears it. In the shop and the construction menu, going back or switching tabs clears it too."/>
-        <text name="searchables_help_controls_console_title" text="Console commands"/>
-        <text name="searchables_help_controls_console" text="With the developer console: wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi."/>
-        <text name="searchables_help_map_vehicles_title" text="Your vehicles"/>
-        <text name="searchables_help_map_vehicles" text="Vehicles show fuel, damage and dirt when they need attention. Search fuel, damaged, dirty, helper, parked or leased, or use fuel&lt;20, damage&gt;50, dirt&gt;50."/>
-        <text name="searchables_help_map_farm_title" text="Animals, production and storage"/>
-        <text name="searchables_help_map_farm" text="Animal pens show how many animals they have and what is low: cows low. Production points show what they make, missing inputs and full outputs: flour, missing, full. stored wheat marks every storage holding wheat, with how much."/>
-        <text name="searchables_help_shop_more_title" text="Leaving things out"/>
-        <text name="searchables_help_shop_more" text="Start a word with - to leave matches out: -mod hides mod items, -trailer hides trailers. mod shows only mod items. used finds second-hand items, and price filters use their sale price."/>
-        <text name="searchables_help_controls_quick_title" text="Quick find and recent searches"/>
-        <text name="searchables_help_controls_quick" text="Press Ctrl+F while walking or driving to open the map with the cursor in the search box. While the box is empty, your last five searches are listed under it: click one to search it again."/>
-        <text name="searchables_help_controls_search_title" text="Searching the controls"/>
-        <text name="searchables_help_controls_search" text="Settings &gt; Controls has a search box above the list. Type an action, a section or a key: cruise control, lights, vehicle, ctrl, f5."/>
+        <text name="searchables_help_shop_title" text="商店搜尋"/>
+        <text name="searchables_help_shop_intro" text="商店的「餘額」下方有一個搜尋框。點擊它（或按搜尋鍵：鍵盤 Ctrl+F，控制器右搖桿）即可輸入。清單會隨輸入即時更新。"/>
+        <text name="searchables_help_shop_list_title" text="在類別或品牌內"/>
+        <text name="searchables_help_shop_list" text="輸入的內容會篩選目前檢視的清單。例如：開啟 Amazone，輸入 4000。"/>
+        <text name="searchables_help_shop_all_title" text="在圖塊頁面"/>
+        <text name="searchables_help_shop_all" text="在類別、品牌、組合包和 DLC 頁面，輸入兩個以上的字元即可搜尋整個商店。名稱中含有所輸入字詞的物品會排在前面。"/>
+        <text name="searchables_help_shop_words_title" text="搜尋範圍"/>
+        <text name="searchables_help_shop_words" text="名稱、品牌、類別、DLC、模組名稱和模組作者。每個字詞都必須符合。例如：fendt 700、john deere 翻草機。"/>
+        <text name="searchables_help_filters_title" text="商店篩選"/>
+        <text name="searchables_help_filters_intro" text="在搜尋字詞中加入篩選條件。每個條件都可以使用 &gt;、&lt;、&gt;=、&lt;=、6-9 這樣的範圍或精確數值。k 表示千；價格後的 m 表示百萬。"/>
+        <text name="searchables_help_filters_price_title" text="價格"/>
+        <text name="searchables_help_filters_price" text="$&lt;50k、price&gt;100000、$100k-200k、$144,500。輸入「買得起」，只顯示農場現在買得起的物品。"/>
+        <text name="searchables_help_filters_power_title" text="馬力與所需馬力"/>
+        <text name="searchables_help_filters_power" text="hp&gt;200、200-300hp、250hp、ps&gt;200。needhp&lt;150 可找到你的拖拉機能帶動的農機具。"/>
+        <text name="searchables_help_filters_size_title" text="工作寬度、容量和重量"/>
+        <text name="searchables_help_filters_size" text="工作寬度：width&gt;9、6-9m。容量：l&gt;30000、cap 20000-40000。重量：t&lt;10。"/>
+        <text name="searchables_help_filters_speed_title" text="速度"/>
+        <text name="searchables_help_filters_speed" text="kph&gt;50、mph&gt;30、50 km/h。農機具依其作業速度計算。"/>
+        <text name="searchables_help_filters_mix_title" text="組合使用"/>
+        <text name="searchables_help_filters_mix" text="fendt hp&gt;300 $&lt;400k。整個商店的搜尋結果會依你輸入的第一個篩選條件排序。"/>
+        <text name="searchables_help_construction_title" text="建造搜尋"/>
+        <text name="searchables_help_construction" text="搜尋框位於建築清單旁邊。輸入後會同時篩選所有類別和分頁，例如：筒倉、房屋、溫室。價格篩選和「買得起」在這裡同樣可用。建築的說明和產品也會被搜尋：輸入「豌豆」可找到所有使用或生產豌豆的工廠。"/>
+        <text name="searchables_help_map_title" text="地圖搜尋"/>
+        <text name="searchables_help_map_intro" text="開啟地圖，在上方的搜尋框中輸入。每個符合的項目都會出現一個箭頭，逐漸縮小並指向它。按 Enter 會將地圖中心移到最近的項目。"/>
+        <text name="searchables_help_map_find_title" text="可以找到什麼"/>
+        <text name="searchables_help_map_find" text="你的車輛（也可依車牌搜尋）、草捆、棧板、太空袋、建築、田地和土地。例如：拖拉機、羊毛、草捆、筒倉、自有。"/>
+        <text name="searchables_help_map_numbers_title" text="編號與農民"/>
+        <text name="searchables_help_map_numbers" text="輸入數字（例如 178）可找到 178 號田地或土地。輸入 NPC 農民的名字可找到他們仍擁有的土地。"/>
+        <text name="searchables_help_map_list_title" text="結果清單"/>
+        <text name="searchables_help_map_list" text="最近的符合項目會連同距離列在搜尋框下方。點擊一項會將地圖移到那裡；再點擊一次則設為導航目標。"/>
+        <text name="searchables_help_map_land_title" text="土地與合約"/>
+        <text name="searchables_help_map_land" text="「出售中」會標出所有可購買的土地，並顯示價格和面積，例如：出售中 $&lt;100k ha&gt;5。「合約」會標出有可接受或進行中合約的田地，例如：合約 收穫、合約 huber。"/>
+        <text name="searchables_help_map_filters_title" text="地圖上的篩選"/>
+        <text name="searchables_help_map_filters" text="商店的篩選在這裡同樣可用：羊毛 l&gt;1000 可找到大的羊毛棧板，fendt hp&gt;200 可找到你自己的大馬力 Fendt。"/>
+        <text name="searchables_help_fields_title" text="田地與出售"/>
+        <text name="searchables_help_fields_crops_title" text="作物與田間作業"/>
+        <text name="searchables_help_fields_crops" text="田地會顯示作物和所需的作業。可搜尋作物名稱，或以下字詞：可收穫、生長中、枯萎、已收穫、需要石灰、需要施肥、需要犁地、需要鎮壓、雜草、石頭。例如：小麥 可收穫。"/>
+        <text name="searchables_help_fields_sell_title" text="在哪裡出售"/>
+        <text name="searchables_help_fields_sell" text="輸入「出售」和產品名稱，例如：出售 小麥。所有收購該產品的銷售點都會出現一個箭頭，顯示每 1000 l 的價格，最高價也會被標出。"/>
+        <text name="searchables_help_controls_title" text="操作與提示"/>
+        <text name="searchables_help_controls_intro" text="在商店、建造和地圖畫面，按搜尋鍵可直接跳到搜尋框：鍵盤為 Ctrl+F，控制器為右搖桿。可在操作設定的「搜尋」中變更。在 Steam Deck 和 Big Picture 模式下會開啟螢幕鍵盤。"/>
+        <text name="searchables_help_controls_keys_title" text="按鍵"/>
+        <text name="searchables_help_controls_keys" text="按 Enter 或點擊其他位置會保留搜尋。按 Esc 清除搜尋。在商店和建造選單中，返回或切換分頁也會清除搜尋。"/>
+        <text name="searchables_help_controls_console_title" text="主控台指令"/>
+        <text name="searchables_help_controls_console" text="使用開發者主控台：wmsFind, wmsTarget, wmsSummary, wmsList, wmsLeftovers, wmsShow, wmsGoto, wmsHide, wmsField, searchablesMove, searchablesDumpUi。"/>
+        <text name="searchables_help_map_vehicles_title" text="你的車輛"/>
+        <text name="searchables_help_map_vehicles" text="車輛需要處理時，會顯示燃料、損壞和髒污情況。可搜尋以下字詞：燃料、損壞、髒、幫手、停放、租賃，也可使用 fuel&lt;20、damage&gt;50、dirt&gt;50。"/>
+        <text name="searchables_help_map_farm_title" text="動物、生產與存放"/>
+        <text name="searchables_help_map_farm" text="動物欄會顯示動物數量和不足的物資，例如：牛 不足。生產點會顯示產品、缺少的原料和已滿的產出，例如：麵粉、缺少、已滿。「存放 小麥」會標出所有存有小麥的倉庫，並顯示數量。"/>
+        <text name="searchables_help_shop_more_title" text="排除結果"/>
+        <text name="searchables_help_shop_more" text="在字詞前加 - 可排除符合項目：-mod 隱藏模組物品，-trailer 隱藏拖車。mod 只顯示模組物品。「二手」可找到二手物品，價格篩選會使用其售價。"/>
+        <text name="searchables_help_controls_quick_title" text="快速尋找與最近搜尋"/>
+        <text name="searchables_help_controls_quick" text="步行或駕駛時按 Ctrl+F，會開啟地圖並將游標放在搜尋框中。搜尋框為空時，下方會列出你最近的五次搜尋：點擊其中一項即可再次搜尋。"/>
+        <text name="searchables_help_controls_search_title" text="搜尋操作設定"/>
+        <text name="searchables_help_controls_search" text="「設定 &gt; 操作」的清單上方有一個搜尋框。可輸入動作、分類或按鍵，例如：定速巡航、燈光、車輛、ctrl、f5。"/>
     </texts>
 </l10n>
