@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://github.com/DTM-Mods"><img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/dtm-header.jpg" alt="DTM Mods by PropaineX & Fennell" width="100%"></a>
+</p>
+
+<p align="center">
   <img src="docs/images/icon.png" alt="Searchables icon" width="128">
 </p>
 
@@ -14,6 +18,10 @@
 FS25 has hundreds of vehicles, tools and buildings, and finding the one you want means scrolling through category after category. Searchables puts a search box right on the shop, construction and map screens. Click it, start typing, and the list narrows down as you type. There's no hotkey to remember and no pop-up.
 
 ![Inside the Amazone brand, 4000 narrows 7 items to 1](docs/images/shop-filter.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/features.jpg" alt="Features" width="100%">
+</p>
 
 ## Features
 
@@ -241,6 +249,19 @@ scripts/WheresMyStuff*.lua           map search, scanning, markers
 gui/                                 box layout and profiles
 ```
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/patch-notes.jpg" alt="Patch notes" width="100%">
+</p>
+
+Builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
+
 ## Credits
 
 Made by **Fennell**. Where's My Stuff by Fennell, now part of Searchables.
+
+---
+
+<p align="center">
+  <a href="https://github.com/DTM-Mods"><img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/dtm-intro.gif" alt="DTM Mods by PropaineX & Fennell" width="420"></a><br>
+  <sub>Part of <a href="https://github.com/DTM-Mods">DTM Mods</a> (Dead To Me) by PropaineX & Fennell</sub>
+</p>
