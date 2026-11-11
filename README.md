@@ -276,6 +276,12 @@ Older builds and their notes are on the [releases page](https://github.com/DTM-M
 
 Made by **Fennell**. Where's My Stuff by Fennell, now part of Searchables.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/license.jpg" alt="License" width="100%">
+</p>
+
+MIT, see [LICENSE](LICENSE).
+
 ---
 
 <p align="center">
