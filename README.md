@@ -264,7 +264,11 @@ gui/                                 box layout and profiles
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/patch-notes.jpg" alt="Patch notes" width="100%">
 </p>
 
-Builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
+Older builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
+
+### 1.8.2.1
+
+- New mod icon in the DTM Mods style. Nothing else changed.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/credits.jpg" alt="Credits" width="100%">

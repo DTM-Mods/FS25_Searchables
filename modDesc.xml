@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="114" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>Fennell</author>
-    <version>1.8.2.0</version>
+    <version>1.8.2.1</version>
     <title>
         <en>Searchables</en>
         <de>Searchables</de>
@@ -82,7 +82,7 @@ Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulate
 Tout est expliqué dans le menu Aide du jeu, sous Searchables.]]></fr>
     </description>
 
-    <iconFilename>icon_searchables.dds</iconFilename>
+    <iconFilename>icon_searchables.png</iconFilename>
     <multiplayer supported="true"/>
     <l10n filenamePrefix="translations/translation"/>
 
