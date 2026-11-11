@@ -23,7 +23,6 @@ FS25 has hundreds of vehicles, tools and buildings, and finding the one you want
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/features.jpg" alt="Features" width="100%">
 </p>
 
-## Features
 
 ### 🛒 Shop
 - **Filter any list as you type.** Open a category or a brand and type to narrow it down.
@@ -94,7 +93,9 @@ Type these in the shop search box, alone or together with words. Every filter wo
 
 ![Map search for tractor: 3 found, each with an arrow](docs/images/map.png)
 
-## How to use it
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/how-to-use.jpg" alt="How to use" width="100%">
+</p>
 
 | What you do | What happens |
 |---|---|
@@ -174,7 +175,9 @@ Special words also work in your game's language, e.g. `verkaufen weizen` or `ven
 
 Everything above is also in the game: pause menu → **Help** → **Searchables**.
 
-## Installation
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/installation.jpg" alt="Installation" width="100%">
+</p>
 
 1. Download `FS25_Searchables.zip`. Don't unzip it.
 2. Put it in your mods folder:
@@ -183,11 +186,15 @@ Everything above is also in the game: pause menu → **Help** → **Searchables*
 
 > **Upgrading from Where's My Stuff?** It's built into Searchables now. Remove `FS25_WheresMyStuff.zip` from your mods folder so the two don't run side by side. If the game warns that Where's My Stuff is missing when you load your savegame, that's safe to accept: it never saved anything to your savegame.
 
-## Multiplayer
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/multiplayer.jpg" alt="Multiplayer" width="100%">
+</p>
 
 Supported. Everything runs on each player's own screen, so nobody else sees your searches or markers. Buying and placing still go through the game's normal purchase. Like any mod, everyone on the server needs it, and the game offers it for download when players join. On a dedicated server it loads without problems and simply does nothing there.
 
-## Console commands
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/console-commands.jpg" alt="Console commands" width="100%">
+</p>
 
 You don't need these to use the mod; they're extras for checking things and troubleshooting. They only work with the game's developer console switched on:
 
@@ -213,7 +220,9 @@ You don't need these to use the mod; they're extras for checking things and trou
 | `searchablesDumpUi` | Print the open screen's layout (for troubleshooting) |
 | `searchablesDumpItem` | Print the first entry of the open shop list (for troubleshooting) |
 
-## FAQ
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/faq.jpg" alt="FAQ" width="100%">
+</p>
 
 **Typing a letter opened another menu!**
 Click into the box first. Menu hotkeys only pause while the box has a blinking cursor.
@@ -230,7 +239,9 @@ Yes, in the shop: `hp>200`, `$100k-200k`, `width>9`, `l>30000` and more. Price f
 **My horsepower (or width, capacity...) search missed something.**
 These values come from each vehicle's own file. Searchables reads those in the background during your first minute or so in the game. A search made before then still works, but may pause briefly the first time. Mod vehicles that don't list a value can't be found by it.
 
-## For modders
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/for-developers.jpg" alt="For developers" width="100%">
+</p>
 
 - **Shop:** `ShopItemsFrame.setDisplayItems` is wrapped, so every list the game shows passes through the filter, including refreshes. Store-wide results are shown in the shop's own item list. Buying works exactly as it does from a category.
 - **Construction:** after `ConstructionScreen:rebuildData` the full `items[category][tab]` lists are set aside, and the screen gets filtered copies.
@@ -255,7 +266,9 @@ gui/                                 box layout and profiles
 
 Builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
 
-## Credits
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/credits.jpg" alt="Credits" width="100%">
+</p>
 
 Made by **Fennell**. Where's My Stuff by Fennell, now part of Searchables.
 
