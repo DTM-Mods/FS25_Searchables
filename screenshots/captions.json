@@ -1,0 +1,37 @@
+{
+  "2.jpg": {
+    "title": "Find where to sell",
+    "text": "\"sell wheat\" marks every selling point that buys wheat, with its price.",
+    "at": "bottom"
+  },
+  "3.jpg": {
+    "title": "Fields ready to harvest",
+    "text": "\"wheat ready\" finds every wheat field you can harvest now.",
+    "at": "bottom"
+  },
+  "4.jpg": {
+    "title": "Land for sale",
+    "text": "\"for sale\" lists the fields and properties you can buy, nearest first.",
+    "at": "bottom"
+  },
+  "5.jpg": {
+    "title": "Find your machines",
+    "text": "Every match gets an arrow; the nearest are listed under the box.",
+    "at": "bottom"
+  },
+  "6.jpg": {
+    "title": "Search the whole shop",
+    "text": "Words and filters together: \"fendt hp>300 $<400k\".",
+    "at": "bottom"
+  },
+  "7.jpg": {
+    "title": "Filter by working width",
+    "text": "\"seeder width>9\" shows every seeder wider than 9 m.",
+    "at": "bottom"
+  },
+  "8.jpg": {
+    "title": "Buildings by product",
+    "text": "\"peas\" finds every building that uses or makes peas.",
+    "at": "bottom"
+  }
+}
