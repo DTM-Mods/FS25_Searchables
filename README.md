@@ -275,6 +275,10 @@ gui/                                 box layout and profiles
 
 Older builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
 
+### 1.8.2.2
+
+- A search with a field state ("wheat ready", "growing", "withered", "harvested") only looks at fields. On a map without wheat fields, "wheat ready" listed production points whose product lists happened to hold both words.
+
 ### 1.8.2.1
 
 - New mod icon in the DTM Mods style. Nothing else changed.

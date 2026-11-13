@@ -902,6 +902,29 @@ WheresMyStuff.FIELD_STATUS_WORDS = {
     roll = "roll roller",
 }
 
+-- States only a field has. Words that are also goods or machines (lime, fertilizer, plow, roller, harvest) are left
+-- out, so "lime" still finds lime and "harvest" still finds harvesters.
+WheresMyStuff.FIELD_ONLY_STATES = {"harvest", "growing", "withered", "harvested"}
+WheresMyStuff.FIELD_ONLY_WORDS = {ready = true, growing = true, withered = true, harvested = true, stubble = true}
+
+-- Whether a search word asks for a field state ("ready", "growing", or the player's language's word for it)
+function WheresMyStuff.hasFieldStateWord(words)
+    local translated = {}
+    for _, key in ipairs(WheresMyStuff.FIELD_ONLY_STATES) do
+        local text = Searchables.toLower(Searchables.getText("searchables_state_" .. key) or "")
+        -- only one-word texts: "ready to harvest" would make "to" a field word
+        if text ~= "" and not text:find("%s") then
+            translated[text] = true
+        end
+    end
+    for _, word in ipairs(words) do
+        if WheresMyStuff.FIELD_ONLY_WORDS[word] or translated[word] then
+            return true
+        end
+    end
+    return false
+end
+
 -- What the ground at a field's center says: crop, growth stage, lime, fertilizer, plowing, weeds, stones, rolling
 function WheresMyStuff.readFieldState(field)
     local state = FieldState.new()
@@ -1266,6 +1289,10 @@ function WheresMyStuff.search(text, farmId)
     if contractIndex ~= nil then
         table.remove(words, contractIndex)
         scans = {WheresMyStuff.scanContracts}
+    elseif WheresMyStuff.hasFieldStateWord(words) then
+        -- "wheat ready" asks about fields only: without wheat fields it found production points whose long product
+        -- lists happened to hold both words
+        scans = {WheresMyStuff.scanFields}
     end
 
     for _, scan in ipairs(scans) do
