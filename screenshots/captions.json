@@ -4,11 +4,6 @@
     "text": "\"sell wheat\" marks every selling point that buys wheat, with its price.",
     "at": "bottom"
   },
-  "3.jpg": {
-    "title": "Fields ready to harvest",
-    "text": "\"wheat ready\" finds every wheat field you can harvest now.",
-    "at": "bottom"
-  },
   "4.jpg": {
     "title": "Land for sale",
     "text": "\"for sale\" lists the fields and properties you can buy, nearest first.",
@@ -32,6 +27,11 @@
   "8.jpg": {
     "title": "Buildings by product",
     "text": "\"peas\" finds every building that uses or makes peas.",
+    "at": "bottom"
+  },
+  "3.jpg": {
+    "title": "Fields ready to harvest",
+    "text": "\"wheat ready\" finds every wheat field you can harvest now.",
     "at": "bottom"
   }
 }
