@@ -58,12 +58,16 @@ Type these in the shop search box, alone or together with words. Every filter wo
 - In store-wide results, the first filter you typed decides the order: `hp>200` lists by horsepower, `$<50k` by price, lowest first.
 - On the construction screen, price filters and `affordable` work too.
 
-![fendt hp>300 $<400k finds 4 Fendts, including the 700 Vario with 203-303 hp](docs/images/shop-hp-price.png)
+![fendt hp>300 $<400k finds 4 Fendts, including the 700 Vario](docs/images/shop-hp-price.jpg)
+
+![seeder width>9 finds the 6 seeders wider than 9 m](docs/images/shop-width.jpg)
 
 ### 🏗️ Construction
 - Type to filter the buildings in **every category and tab** at once: `house`, `silo`, `greenhouse`, `fence`, `cow`.
 - **Search by product:** buildings also match their description and the products they use, make, buy, sell or store. `peas` finds every factory that uses or makes peas, and the selling points that buy them.
 - Add a price: `silo $<100k`, or `affordable`.
+
+![peas finds 37 of 1026 buildings, like the Preserved Food Factory that uses peas](docs/images/construction-peas.jpg)
 
 <img src="docs/images/construction.png" alt="Construction screen searching house: 61 of 930 buildings" width="360">
 
@@ -91,7 +95,12 @@ Type these in the shop search box, alone or together with words. Every filter wo
 - **Results list:** the nearest 8 matches are listed under the search box with their distance. Click one to move the map there; double-click to make it your navigation target.
 - Search by fill type too: `wool`, `round bale`, `wheat`, `field 12`, `property 40`, `owned`.
 
-![Map search for tractor: 3 found, each with an arrow](docs/images/map.png)
+![Map search for tractor: 38 found, each with an arrow, the nearest 8 listed under the box](docs/images/map-tractor.jpg)
+
+| `sell wheat` | `wheat ready` | `for sale` |
+|:---:|:---:|:---:|
+| [![sell wheat lists every selling point that buys wheat, with its price](docs/images/map-sell.jpg)](docs/images/map-sell.jpg) | [![wheat ready marks the wheat fields ready to harvest](docs/images/map-wheat-ready.jpg)](docs/images/map-wheat-ready.jpg) | [![for sale lists the properties you can buy, with price and size](docs/images/map-for-sale.jpg)](docs/images/map-for-sale.jpg) |
+| Every selling point that buys wheat, with its price | Wheat fields you can harvest now | Land you can buy, with price and size |
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/how-to-use.jpg" alt="How to use" width="100%">
