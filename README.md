@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/icon.png" alt="Searchables icon" width="128">
+  <img src="docs/images/icon.png" alt="DTM Searchables icon" width="128">
 </p>
 
-<h1 align="center">Searchables</h1>
+<h1 align="center">DTM Searchables</h1>
 
 <p align="center">
   <b>Search as you type, right on the screen, in Farming Simulator 25.</b><br>
@@ -188,10 +188,12 @@ Everything above is also in the game: pause menu → **Help** → **Searchables*
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/installation.jpg" alt="Installation" width="100%">
 </p>
 
-1. Download `FS25_Searchables.zip`. Don't unzip it.
+1. Download `FS25_DTMSearchables.zip` from the [latest release](https://github.com/DTM-Mods/FS25_Searchables/releases/latest). Don't unzip it.
 2. Put it in your mods folder:
    `Documents\My Games\FarmingSimulator2025\mods`
-3. Start the game and tick **Searchables** in your savegame's mod list.
+3. Start the game and tick **DTM Searchables** in your savegame's mod list.
+
+> **Upgrading from `FS25_Searchables.zip`?** Searchables is now DTM Searchables, in `FS25_DTMSearchables.zip` (ModHub already had a mod by that file name). Remove the old `FS25_Searchables.zip` so the two don't run side by side. Your settings carry over, and it never saved anything to your savegame, so if the game says the old mod is missing, that's safe to accept.
 
 > **Upgrading from Where's My Stuff?** It's built into Searchables now. Remove `FS25_WheresMyStuff.zip` from your mods folder so the two don't run side by side. If the game warns that Where's My Stuff is missing when you load your savegame, that's safe to accept: it never saved anything to your savegame.
 

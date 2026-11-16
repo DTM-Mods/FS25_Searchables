@@ -27,6 +27,6 @@ jobs:
     with:
       test-tag: ${{ inputs.test-tag || '' }}
       # Settings for this mod (all optional, see DTM-Mods/.github ci/README.md):
-      # zip-name: FS25_Name          # the mod's real zip name, when it differs from the repository name
+      zip-name: FS25_DTMSearchables  # the mod's real zip name (ModHub already has an FS25_Searchables.zip)
       # max-files: 0                 # no GIANTS ModHub 128-file limit (big mods that never go to ModHub)
       # test-command: python tests/run_all.py

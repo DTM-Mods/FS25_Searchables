@@ -1,4 +1,4 @@
-# ModHub upload: Searchables
+# ModHub upload: DTM Searchables
 
 What to enter in the GIANTS ModHub upload form for this mod. Each text box below has a copy button on GitHub.
 
@@ -8,9 +8,9 @@ What to enter in the GIANTS ModHub upload form for this mod. Each text box below
 
 | Field | Value |
 |-------|-------|
-| Title English | Searchables |
-| Title German | Searchables |
-| Title French | Searchables |
+| Title English | DTM Searchables |
+| Title German | DTM Searchables |
+| Title French | DTM Searchables |
 | Version | `1` `8` `2` `3` |
 | Author | DTM Mods, Fennell |
 | Manufacturer | Lizard |
@@ -20,17 +20,17 @@ What to enter in the GIANTS ModHub upload form for this mod. Each text box below
 
 ## Title English
 ```text
-Searchables
+DTM Searchables
 ```
 
 ## Title German
 ```text
-Searchables
+DTM Searchables
 ```
 
 ## Title French
 ```text
-Searchables
+DTM Searchables
 ```
 
 ## Description English
