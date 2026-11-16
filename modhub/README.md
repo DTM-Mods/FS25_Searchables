@@ -11,7 +11,7 @@ What to enter in the GIANTS ModHub upload form for this mod. Each text box below
 | Title English | DTM Searchables |
 | Title German | DTM Searchables |
 | Title French | DTM Searchables |
-| Version | `1` `8` `2` `3` |
+| Version | `1` `8` `2` `4` |
 | Author | DTM Mods, Fennell |
 | Manufacturer | Lizard |
 | Category 1 | Gameplay |

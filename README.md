@@ -277,6 +277,10 @@ gui/                                 box layout and profiles
 
 Older builds and their notes are on the [releases page](https://github.com/DTM-Mods/FS25_Searchables/releases).
 
+### 1.8.2.4
+
+- Searchables is now **DTM Searchables**, in `FS25_DTMSearchables.zip` (ModHub already had a mod by the old file name). Remove the old `FS25_Searchables.zip` from your mods folder so the two don't run side by side. Your settings carry over, and it never saved anything to your savegame. Nothing else changed.
+
 ### 1.8.2.3
 
 - The author now shows as **DTM Mods, Fennell** in the mod list.
