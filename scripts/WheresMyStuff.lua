@@ -76,7 +76,8 @@ function WheresMyStuff.scanItems(farmId)
         for object, _ in pairs(itemSystem.itemsToSave) do
             if WheresMyStuff.isVisibleBale(object) and (farmId == nil or object:getOwnerFarmId() == farmId) then
                 local x, y, z = getWorldTranslation(object.nodeId)
-                table.insert(items, {kind = WheresMyStuff.KIND_BALE, object = object, node = object.nodeId, fillTypeIndex = object:getFillType(), fillLevel = object:getFillLevel() or 0, x = x, y = y, z = z})
+                table.insert(items, {kind = WheresMyStuff.KIND_BALE, object = object, node = object.nodeId,
+                    fillTypeIndex = object:getFillType(), fillLevel = object:getFillLevel() or 0, x = x, y = y, z = z})
             end
         end
     end
@@ -186,13 +187,15 @@ end
 
 -- Camera position, used to sort items by distance. Returns nil if unavailable (e.g. dedicated server).
 function WheresMyStuff.getViewerPosition()
-    local ok, x, _, z = pcall(function()
-        return getWorldTranslation(g_cameraManager:getActiveCamera())
-    end)
-    if ok and x ~= nil then
-        return x, z
+    if g_cameraManager == nil or g_cameraManager.getActiveCamera == nil then
+        return nil
     end
-    return nil
+    local camera = g_cameraManager:getActiveCamera()
+    if camera == nil or camera == 0 or not entityExists(camera) then
+        return nil
+    end
+    local x, _, z = getWorldTranslation(camera)
+    return x, z
 end
 
 -- ---------------------------------------------------------------------------------------------
@@ -563,9 +566,10 @@ function WheresMyStuff.getVehicleFuelPercent(vehicle)
     for _, fillTypeIndex in ipairs({FillType.DIESEL, FillType.ELECTRICCHARGE, FillType.METHANE}) do
         local fillUnitIndex = fillTypeIndex ~= nil and vehicle:getConsumerFillUnitIndex(fillTypeIndex) or nil
         if fillUnitIndex ~= nil then
-            local capacity = vehicle:getFillUnitCapacity(fillUnitIndex)
-            if capacity ~= nil and capacity > 0 then
-                return vehicle:getFillUnitFillLevel(fillUnitIndex) / capacity * 100
+            local capacity = vehicle.getFillUnitCapacity ~= nil and vehicle:getFillUnitCapacity(fillUnitIndex) or nil
+            local fillLevel = vehicle:getFillUnitFillLevel(fillUnitIndex)
+            if type(capacity) == "number" and capacity > 0 and type(fillLevel) == "number" then
+                return fillLevel / capacity * 100
             end
         end
     end
@@ -574,7 +578,7 @@ end
 
 function WheresMyStuff.getVehicleCondition(vehicle)
     local condition = {words = "", label = ""}
-    local ok = pcall(function()
+    do
         local words, labels = {}, {}
         local function add(word, label)
             table.insert(words, word)
@@ -589,7 +593,7 @@ function WheresMyStuff.getVehicleCondition(vehicle)
             add("fuel low " .. text, string.format("%s %d%%", text, math.floor(condition.fuel + 0.5)))
         end
 
-        if vehicle.getDamageAmount ~= nil then
+        if vehicle.getDamageAmount ~= nil and type(vehicle:getDamageAmount()) == "number" then
             condition.damage = vehicle:getDamageAmount() * 100
             if condition.damage >= WheresMyStuff.DAMAGED_PERCENT then
                 local text = Searchables.getText("searchables_vehicle_damage")
@@ -597,7 +601,7 @@ function WheresMyStuff.getVehicleCondition(vehicle)
             end
         end
 
-        if vehicle.getDirtAmount ~= nil then
+        if vehicle.getDirtAmount ~= nil and type(vehicle:getDirtAmount()) == "number" then
             condition.dirt = vehicle:getDirtAmount() * 100
             if condition.dirt >= WheresMyStuff.DIRTY_PERCENT then
                 local text = Searchables.getText("searchables_vehicle_dirty")
@@ -620,9 +624,6 @@ function WheresMyStuff.getVehicleCondition(vehicle)
 
         condition.words = table.concat(words, " ")
         condition.label = table.concat(labels, ", ")
-    end)
-    if not ok then
-        return {words = "", label = ""}
     end
     return condition
 end
@@ -742,7 +743,7 @@ function WheresMyStuff.getProductionStatus(placeable, words, labels)
             if not seen["in" .. input.type] then
                 seen["in" .. input.type] = true
                 table.insert(needs, title(input.type))
-                if storage:getFillLevel(input.type) < (input.amount or 0) then
+                if (storage:getFillLevel(input.type) or 0) < (input.amount or 0) then
                     table.insert(missing, title(input.type))
                 end
             end
@@ -752,7 +753,7 @@ function WheresMyStuff.getProductionStatus(placeable, words, labels)
                 seen["out" .. output.type] = true
                 table.insert(makes, title(output.type))
                 local capacity = storage:getCapacity(output.type) or 0
-                if capacity > 0 and storage:getFillLevel(output.type) >= capacity * WheresMyStuff.FULL_RATIO then
+                if capacity > 0 and (storage:getFillLevel(output.type) or 0) >= capacity * WheresMyStuff.FULL_RATIO then
                     table.insert(full, title(output.type))
                 end
             end
@@ -778,13 +779,8 @@ end
 -- Words and a label for a building: animals needing care, production status. Empty for other buildings.
 function WheresMyStuff.getBuildingStatus(placeable)
     local words, labels = {}, {}
-    local ok = pcall(function()
-        WheresMyStuff.getHusbandryStatus(placeable, words, labels)
-        WheresMyStuff.getProductionStatus(placeable, words, labels)
-    end)
-    if not ok then
-        return {words = "", label = ""}
-    end
+    WheresMyStuff.getHusbandryStatus(placeable, words, labels)
+    WheresMyStuff.getProductionStatus(placeable, words, labels)
     return {words = table.concat(words, " "), label = table.concat(labels, "; ")}
 end
 
@@ -927,6 +923,9 @@ end
 
 -- What the ground at a field's center says: crop, growth stage, lime, fertilizer, plowing, weeds, stones, rolling
 function WheresMyStuff.readFieldState(field)
+    if field == nil or type(field.posX) ~= "number" or type(field.posZ) ~= "number" or FieldState == nil then
+        return nil
+    end
     local state = FieldState.new()
     state:update(field.posX, field.posZ)
     return state
@@ -941,8 +940,8 @@ function WheresMyStuff.getFieldStatus(field)
     status = {time = g_time, words = "", label = ""}
     WheresMyStuff.fieldStatuses[field] = status
 
-    local ok, state = pcall(WheresMyStuff.readFieldState, field)
-    if not ok or state == nil or not state.isValid then
+    local state = WheresMyStuff.readFieldState(field)
+    if state == nil or not state.isValid then
         return status
     end
 
@@ -1341,9 +1340,9 @@ function WheresMyStuff:consoleField(numberArg)
     for i, field in ipairs(g_fieldManager.fields or {}) do
         local id = field.getId ~= nil and field:getId() or i
         if tostring(id) == number or tostring(field.name) == number then
-            local ok, state = pcall(WheresMyStuff.readFieldState, field)
-            if not ok or state == nil then
-                return string.format("Could not read field %s: %s", number, tostring(state))
+            local state = WheresMyStuff.readFieldState(field)
+            if state == nil then
+                return string.format("Could not read field %s (no position)", number)
             end
             local fruitType = state.fruitTypeIndex ~= FruitType.UNKNOWN and g_fruitTypeManager:getFruitTypeByIndex(state.fruitTypeIndex) or nil
             print(string.format("Field %s at %.0f, %.0f: valid=%s fruit=%s growth=%s (harvest %s-%s, withered %s) ground=%s",

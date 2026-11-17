@@ -519,24 +519,23 @@ function Searchables.getStoreItemValueRange(storeItem, kind)
         Searchables.specRanges[storeItem] = ranges
     end
 
-    local range = ranges[kind]
-    if range == nil then
-        range = false
+    if ranges[kind] == nil then
+        -- marked as read first: a vehicle whose specs can't be read (a broken mod) then errors once, not on every search
+        ranges[kind] = false
         local reader = Searchables.SPEC_READERS[kind]
         if reader ~= nil and storeItem.species == StoreSpecies.VEHICLE then
-            local ok, low, high = pcall(function()
+            if storeItem.specs == nil then
                 StoreItemUtil.loadSpecsFromXML(storeItem)
-                if storeItem.specs == nil then
-                    return nil
+            end
+            if storeItem.specs ~= nil then
+                local low, high = reader(storeItem)
+                if type(low) == "number" then
+                    ranges[kind] = {low, type(high) == "number" and high or low}
                 end
-                return reader(storeItem)
-            end)
-            if ok and type(low) == "number" then
-                range = {low, type(high) == "number" and high or low}
             end
         end
-        ranges[kind] = range
     end
+    local range = ranges[kind]
 
     if range then
         return range[1], range[2]
@@ -612,7 +611,8 @@ function Searchables.preloadSpecs()
         Searchables.preloadIndex = Searchables.preloadIndex + 1
         local hasSpecs = storeItem.species == StoreSpecies.VEHICLE or storeItem.species == StoreSpecies.PLACEABLE
         if hasSpecs and storeItem.specs == nil then
-            pcall(StoreItemUtil.loadSpecsFromXML, storeItem)
+            -- preloadIndex already points past this item, so one that can't be read is skipped next frame
+            StoreItemUtil.loadSpecsFromXML(storeItem)
             return
         end
     end
@@ -762,14 +762,12 @@ function Searchables:consoleDumpList(delayArg)
     for i, list in ipairs(lists) do
         print(string.format("List %d: id=%s profile=%s class of data source=%s", i, tostring(list.id), tostring(list.profile),
             tostring(list.dataSource.name or list.dataSource.id or "?")))
-        local ok, sections = pcall(function()
-            return list.dataSource.getNumberOfSections ~= nil and list.dataSource:getNumberOfSections(list) or 1
-        end)
-        print(string.format("  sections: %s", tostring(ok and sections or "?")))
-        if ok then
+        local dataSource = list.dataSource
+        local sections = dataSource.getNumberOfSections ~= nil and dataSource:getNumberOfSections(list) or 1
+        print(string.format("  sections: %s", tostring(sections)))
+        if dataSource.getNumberOfItemsInSection ~= nil then
             for section = 1, math.min(sections or 1, 4) do
-                local okItems, items = pcall(function() return list.dataSource:getNumberOfItemsInSection(list, section) end)
-                print(string.format("  section %d: %s rows", section, tostring(okItems and items or "?")))
+                print(string.format("  section %d: %s rows", section, tostring(dataSource:getNumberOfItemsInSection(list, section))))
             end
         end
         dumpFields("data source", list.dataSource)
@@ -842,54 +840,50 @@ function Searchables.addRecentSearch(key, text)
 end
 
 function Searchables.saveRecentSearches()
-    pcall(function()
-        createFolder(getUserProfileAppPath() .. "modSettings/")
-        local xmlFile = createXMLFile("SearchablesSettings", Searchables.getRecentFilename(), "searchables")
-        if xmlFile == nil or xmlFile == 0 then
-            return
+    createFolder(getUserProfileAppPath() .. "modSettings/")
+    local xmlFile = createXMLFile("SearchablesSettings", Searchables.getRecentFilename(), "searchables")
+    if xmlFile == nil or xmlFile == 0 then
+        return
+    end
+    local i = 0
+    for key, list in pairs(Searchables.recentSearches) do
+        for _, text in ipairs(list) do
+            local entryKey = string.format("searchables.recent(%d)", i)
+            setXMLString(xmlFile, entryKey .. "#box", tostring(key))
+            setXMLString(xmlFile, entryKey .. "#text", tostring(text))
+            i = i + 1
         end
-        local i = 0
-        for key, list in pairs(Searchables.recentSearches) do
-            for _, text in ipairs(list) do
-                local entryKey = string.format("searchables.recent(%d)", i)
-                setXMLString(xmlFile, entryKey .. "#box", key)
-                setXMLString(xmlFile, entryKey .. "#text", text)
-                i = i + 1
-            end
-        end
-        saveXMLFile(xmlFile)
-        delete(xmlFile)
-    end)
+    end
+    saveXMLFile(xmlFile)
+    delete(xmlFile)
 end
 
 function Searchables.loadRecentSearches()
     Searchables.recentSearches = {}
-    pcall(function()
-        local filename = Searchables.getRecentFilename()
-        if not fileExists(filename) then
-            return
+    local filename = Searchables.getRecentFilename()
+    if not fileExists(filename) then
+        return
+    end
+    local xmlFile = loadXMLFile("SearchablesSettings", filename)
+    if xmlFile == nil or xmlFile == 0 then
+        return
+    end
+    local i = 0
+    while true do
+        local entryKey = string.format("searchables.recent(%d)", i)
+        if not hasXMLProperty(xmlFile, entryKey) then
+            break
         end
-        local xmlFile = loadXMLFile("SearchablesSettings", filename)
-        if xmlFile == nil or xmlFile == 0 then
-            return
-        end
-        local i = 0
-        while true do
-            local entryKey = string.format("searchables.recent(%d)", i)
-            if not hasXMLProperty(xmlFile, entryKey) then
-                break
+        local key, text = getXMLString(xmlFile, entryKey .. "#box"), getXMLString(xmlFile, entryKey .. "#text")
+        if key ~= nil and text ~= nil then
+            local list = Searchables.getRecentSearches(key)
+            if #list < Searchables.RECENT_MAX then
+                table.insert(list, text)
             end
-            local key, text = getXMLString(xmlFile, entryKey .. "#box"), getXMLString(xmlFile, entryKey .. "#text")
-            if key ~= nil and text ~= nil then
-                local list = Searchables.getRecentSearches(key)
-                if #list < Searchables.RECENT_MAX then
-                    table.insert(list, text)
-                end
-            end
-            i = i + 1
         end
-        delete(xmlFile)
-    end)
+        i = i + 1
+    end
+    delete(xmlFile)
 end
 
 -- ---------------------------------------------------------------------------------------------

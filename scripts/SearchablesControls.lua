@@ -40,13 +40,24 @@ local function collectTexts(element, texts)
     return texts
 end
 
--- A cell of the list that takes a row (section headers do not), to have the game fill it for reading
+-- A cell of the list that takes a row, to have the game fill it for reading. Section headers are left out: the list marks
+-- them isHeader and names them after its listSectionHeader (SmoothListElement), and the game never fills them with a row.
+local function isRowCell(list, cell)
+    return not cell.isHeader and (list.sectionHeaderCellName == nil or cell.name ~= list.sectionHeaderCellName)
+end
+
 function SearchablesControls.findProbeCell(frame, list)
     local class = getFrameClass()
+    local dataSource = list.dataSource or frame
+    if dataSource.getNumberOfItemsInSection == nil or (dataSource:getNumberOfItemsInSection(list, 1) or 0) < 1 then
+        return nil
+    end
     for _, cell in ipairs(list.elements or {}) do
-        local ok = pcall(class.populateCellForItemInSection, frame, list, 1, 1, cell)
-        if ok and #collectTexts(cell, {}) > 0 then
-            return cell
+        if isRowCell(list, cell) then
+            class.populateCellForItemInSection(frame, list, 1, 1, cell)
+            if #collectTexts(cell, {}) > 0 then
+                return cell
+            end
         end
     end
     return nil
@@ -57,11 +68,10 @@ function SearchablesControls.getRowText(frame, list, probe, section, index)
     local key = section .. ":" .. index
     local text = SearchablesControls.rowTexts[key]
     if text == nil then
-        text = ""
-        local ok = pcall(getFrameClass().populateCellForItemInSection, frame, list, section, index, probe)
-        if ok then
-            text = Searchables.toLower(table.concat(collectTexts(probe, {}), " "))
-        end
+        -- marked first, so a row that can't be read is tried once
+        SearchablesControls.rowTexts[key] = ""
+        getFrameClass().populateCellForItemInSection(frame, list, section, index, probe)
+        text = Searchables.toLower(table.concat(collectTexts(probe, {}), " "))
         SearchablesControls.rowTexts[key] = text
     end
     return text
@@ -154,11 +164,9 @@ function SearchablesControls.applyFilter()
     if frame == nil or frame.controlsList == nil then
         return
     end
-    local ok, mapping = pcall(SearchablesControls.buildMapping, frame, box ~= nil and box:getText() or "")
-    SearchablesControls.mapping = ok and mapping or nil
-    if not ok then
-        Logging.warning("[Searchables] Could not filter the controls list: %s", tostring(mapping))
-    end
+    -- cleared first: if reading the rows fails, the list stays unfiltered
+    SearchablesControls.mapping = nil
+    SearchablesControls.mapping = SearchablesControls.buildMapping(frame, box ~= nil and box:getText() or "")
     if SearchablesControls.mapping ~= nil then
         SearchablesControls.installFilter(frame)
     end
