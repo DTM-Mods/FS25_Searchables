@@ -3,10 +3,12 @@
     <author>DTM Mods, Fennell</author>
     <version>1.8.2.6</version>
     <title>
-        <en>DTM Searchables</en>
+        <en>Searchables</en>
     </title>
     <description>
-        <en><![CDATA[Search boxes right on the shop, construction and map screens. Click the box and type: the list updates as you type.
+        <en><![CDATA[Description: Adds search boxes to the shop, the construction menu, the map and Settings > Controls. Click the box and type: the list updates as you type. Filter the shop by name and specs, find buildings by product, and find your vehicles, fields, selling points and land on the map.
+Hotkeys: Ctrl+F on the keyboard, a click on the right stick on a controller. It jumps into the search box on the shop, construction and map screens; while walking or driving it opens the map search. Change it under Settings > Controls ("Search"). Enter keeps the search, Esc or the X at the right of the box clears it.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
 
 Shop:
 - In a category or brand, typing filters that list.
@@ -18,7 +20,7 @@ Construction:
 - Typing filters the buildings in every category and tab, by name, description or product: "peas" finds every factory that uses or makes peas. Price filters and "affordable" work here too.
 
 Map:
-- Type in the box at the top of the map (or press Ctrl+F) to find your vehicles, bales, pallets, big bags, buildings, fields and properties. Type a number like 178 to find field or property 178, or an NPC farmer's name to find their land. Vehicles can also be found by license plate.
+- Type in the box at the top of the map to find your vehicles, bales, pallets, big bags, buildings, fields and properties. Type a number like 178 to find field or property 178, or an NPC farmer's name to find their land. Vehicles can also be found by license plate.
 - Fields show their crop and what they need: search "wheat ready", "lime" or "fertilize".
 - "sell wheat" marks every selling point that buys wheat, with its price; the best price is marked.
 - "for sale $<100k ha>5" finds land to buy; "contract" finds fields with contracts; "wool l>1000" finds big pallets.
@@ -26,14 +28,16 @@ Map:
 
 - Your vehicles (fuel<20, damaged, helper, leased), animal pens running low, production points (missing, full) and "stored wheat".
 
-Ctrl+F (or the right stick on a controller) jumps into the search box; while walking or driving it opens the map search. Recent searches are listed under an empty box. Start a word with - to leave matches out (-mod). Enter keeps the search, Esc or the X at the right of the box clears it.
+Recent searches are listed under an empty box. Start a word with - to leave matches out (-mod).
 
 Controls: Settings > Controls has a search box too: "cruise", "lights", "ctrl".
 Everything is explained in the game's Help menu under Searchables.
 
 Changelog 1.8.2.6:
 - Updated for the current game version (modDesc version 116).]]></en>
-        <de><![CDATA[Suchfelder direkt im Shop, im Baumenü und auf der Karte. Feld anklicken und tippen: Die Liste aktualisiert sich beim Tippen.
+        <de><![CDATA[Beschreibung: Fügt Suchfelder im Shop, im Baumenü, auf der Karte und unter Einstellungen > Steuerung hinzu. Feld anklicken und tippen: Die Liste aktualisiert sich beim Tippen. Den Shop nach Name und technischen Daten filtern, Gebäude nach Produkt finden und auf der Karte eigene Fahrzeuge, Felder, Verkaufsstellen und Land finden.
+Tastenkombinationen: Strg+F auf der Tastatur, ein Klick auf den rechten Stick am Controller. Springt im Shop, im Baumenü und auf der Karte ins Suchfeld; beim Gehen oder Fahren öffnet es die Kartensuche. Änderbar unter Einstellungen > Steuerung ("Suchen"). Enter behält die Suche, Esc oder das X rechts im Feld löscht sie.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
 
 Shop:
 - In einer Kategorie oder Marke filtert die Eingabe die Liste.
@@ -45,7 +49,7 @@ Baumenü:
 - Die Eingabe filtert die Gebäude in allen Kategorien und Reitern, nach Name, Beschreibung oder Produkt: "erbsen" findet jede Produktion, die Erbsen nutzt oder herstellt. Preisfilter und "bezahlbar" funktionieren auch hier.
 
 Karte:
-- Im Suchfeld oben auf der Karte tippen (oder Strg+F drücken), um eigene Fahrzeuge, Ballen, Paletten, Big Bags, Gebäude, Felder und Grundstücke zu finden. Eine Zahl wie 178 findet Feld oder Grundstück 178, der Name eines NPC-Landwirts findet sein Land. Fahrzeuge lassen sich auch über das Kennzeichen finden.
+- Im Suchfeld oben auf der Karte tippen, um eigene Fahrzeuge, Ballen, Paletten, Big Bags, Gebäude, Felder und Grundstücke zu finden. Eine Zahl wie 178 findet Feld oder Grundstück 178, der Name eines NPC-Landwirts findet sein Land. Fahrzeuge lassen sich auch über das Kennzeichen finden.
 - Felder zeigen ihre Frucht und was sie brauchen: "weizen erntereif", "kalk" oder "dünger" suchen.
 - "verkaufen weizen" markiert jede Verkaufsstelle, die Weizen kauft, mit Preis; der beste Preis ist markiert.
 - "zu verkaufen $<100k ha>5" findet Land zum Kaufen; "auftrag" findet Felder mit Aufträgen; "wolle l>1000" findet große Paletten.
@@ -53,14 +57,16 @@ Karte:
 
 - Eigene Fahrzeuge (fuel<20, Schaden, Helfer, geleast), Ställe mit Mangel, Produktionen (fehlt, voll) und "gelagert weizen".
 
-Strg+F (oder der rechte Stick am Controller) springt ins Suchfeld; beim Gehen oder Fahren öffnet es die Kartensuche. Letzte Suchen stehen unter dem leeren Feld. Ein Wort mit - davor schließt Treffer aus (-mod). Enter behält die Suche, Esc oder das X rechts im Feld löscht sie.
+Letzte Suchen stehen unter dem leeren Feld. Ein Wort mit - davor schließt Treffer aus (-mod).
 
 Steuerung: Einstellungen > Steuerung hat ebenfalls ein Suchfeld: "tempomat", "licht", "strg".
 Alles wird im Hilfe-Menü des Spiels unter Searchables erklärt.
 
 Changelog 1.8.2.6:
 - An die aktuelle Spielversion angepasst (modDesc-Version 116).]]></de>
-        <fr><![CDATA[Des champs de recherche directement dans le magasin, le menu de construction et sur la carte. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure.
+        <fr><![CDATA[Description : ajoute des champs de recherche au magasin, au menu de construction, à la carte et à Paramètres > Commandes. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure. Filtrez le magasin par nom et caractéristiques, trouvez les bâtiments par produit, et trouvez sur la carte vos véhicules, champs, points de vente et terres.
+Raccourcis : Ctrl+F au clavier, un clic sur le stick droit à la manette. Place le curseur dans le champ de recherche du magasin, de la construction et de la carte ; à pied ou en conduisant, ouvre la recherche sur la carte. Modifiable dans Paramètres > Commandes (« Rechercher »). Entrée conserve la recherche, Échap ou le X à droite du champ l'efface.
+GitHub : https://github.com/DTM-Mods/FS25_Searchables
 
 Magasin :
 - Dans une catégorie ou une marque, la saisie filtre la liste.
@@ -69,10 +75,10 @@ Magasin :
 - Filtres : prix ($<50k, $100k-200k, € fonctionne aussi), puissance (hp>200), largeur de travail (width>9, 6-9m), capacité (l>30000), poids (t<10), vitesse (kph>50), puissance requise (needhp<150) et « abordable ». À combiner avec des mots : « fendt hp>300 $<400k ».
 
 Construction :
-- La saisie filtre les bâtiments de toutes les catégories et de tous les onglets. Les filtres de prix et « abordable » fonctionnent aussi ici.
+- La saisie filtre les bâtiments de toutes les catégories et de tous les onglets, par nom, description ou produit : « pois » trouve chaque usine qui utilise ou fabrique des pois. Les filtres de prix et « abordable » fonctionnent aussi ici.
 
 Carte :
-- Tapez dans le champ en haut de la carte (ou appuyez sur Ctrl+F) pour trouver vos véhicules, balles, palettes, big bags, bâtiments, champs et parcelles. Un nombre comme 178 trouve le champ ou la parcelle 178, le nom d'un agriculteur PNJ trouve ses terres. Les véhicules se trouvent aussi par leur plaque d'immatriculation.
+- Tapez dans le champ en haut de la carte pour trouver vos véhicules, balles, palettes, big bags, bâtiments, champs et parcelles. Un nombre comme 178 trouve le champ ou la parcelle 178, le nom d'un agriculteur PNJ trouve ses terres. Les véhicules se trouvent aussi par leur plaque d'immatriculation.
 - Les champs affichent leur culture et ce dont ils ont besoin : cherchez « blé prêt », « chaux » ou « engrais ».
 - « vendre blé » marque chaque point de vente qui achète du blé, avec son prix ; le meilleur prix est signalé.
 - « à vendre $<100k ha>5 » trouve des terres à acheter ; « contrat » trouve les champs avec un contrat ; « laine l>1000 » trouve les grosses palettes.
@@ -80,13 +86,709 @@ Carte :
 
 - Vos véhicules (fuel<20, dégâts, ouvrier, en location), les enclos qui manquent de quelque chose, les productions (manque, plein) et « stocké blé ».
 
-Ctrl+F (ou le stick droit à la manette) place le curseur dans le champ de recherche ; à pied ou en conduisant, il ouvre la recherche sur la carte. Les recherches récentes sont listées sous le champ vide. Un mot précédé de - exclut des résultats (-mod). Entrée conserve la recherche, Échap ou le X à droite du champ l'efface.
+Les recherches récentes sont listées sous le champ vide. Un mot précédé de - exclut des résultats (-mod).
 
 Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulateur », « phares », « ctrl ».
 Tout est expliqué dans le menu Aide du jeu, sous Searchables.
 
 Changelog 1.8.2.6:
 - Mis à jour pour la version actuelle du jeu (modDesc version 116).]]></fr>
+        <fc><![CDATA[Description : ajoute des champs de recherche au magasin, au menu de construction, à la carte et à Paramètres > Commandes. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure. Filtrez le magasin par nom et caractéristiques, trouvez les bâtiments par produit, et trouvez sur la carte vos véhicules, champs, points de vente et terres.
+Raccourcis : Ctrl+F au clavier, un clic sur le bâton droit à la manette. Place le curseur dans le champ de recherche du magasin, de la construction et de la carte; à pied ou en conduisant, ouvre la recherche sur la carte. Modifiable dans Paramètres > Commandes (« Rechercher »). Entrée conserve la recherche, Échap ou le X à droite du champ l'efface.
+GitHub : https://github.com/DTM-Mods/FS25_Searchables
+
+Magasin :
+- Dans une catégorie ou une marque, la saisie filtre la liste.
+- Sur les pages des catégories, marques, ensembles et DLC, la saisie cherche dans tout le magasin.
+- Cherche dans le nom, la marque, la catégorie, le DLC, le nom et l'auteur du mod. Chaque mot doit correspondre, par ex. « fendt 700 ».
+- Filtres : prix ($<50k, $100k-200k), puissance (hp>200), largeur de travail (width>9, 6-9m), capacité (l>30000), poids (t<10), vitesse (kph>50, mph>30), puissance requise (needhp<150) et « abordable ». À combiner avec des mots : « fendt hp>300 $<400k ».
+
+Construction :
+- La saisie filtre les bâtiments de toutes les catégories et de tous les onglets, par nom, description ou produit : « pois » trouve chaque usine qui utilise ou fabrique des pois. Les filtres de prix et « abordable » fonctionnent aussi ici.
+
+Carte :
+- Tapez dans le champ en haut de la carte pour trouver vos véhicules, balles, palettes, gros sacs, bâtiments, champs et parcelles. Un nombre comme 178 trouve le champ ou la parcelle 178, le nom d'un agriculteur PNJ trouve ses terres. Les véhicules se trouvent aussi par leur plaque d'immatriculation.
+- Les champs affichent leur culture et ce dont ils ont besoin : cherchez « blé prêt », « chaux » ou « engrais ».
+- « vendre blé » marque chaque point de vente qui achète du blé, avec son prix; le meilleur prix est signalé.
+- « à vendre $<100k ha>5 » trouve des terres à acheter; « contrat » trouve les champs avec un contrat; « laine l>1000 » trouve les grosses palettes.
+- Chaque résultat reçoit une flèche qui se resserre sur lui, et les plus proches sont listés sous le champ : cliquez sur l'un d'eux pour y aller.
+
+- Vos véhicules (fuel<20, dommages, ouvrier, en location), les enclos qui manquent de quelque chose, les productions (manque, plein) et « stocké blé ».
+
+Les recherches récentes sont listées sous le champ vide. Un mot précédé de - exclut des résultats (-mod).
+
+Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulateur », « phares », « ctrl ».
+Tout est expliqué dans le menu Aide du jeu, sous Searchables.
+
+Changelog 1.8.2.6:
+- Mis à jour pour la version actuelle du jeu (modDesc version 116).]]></fc>
+        <es><![CDATA[Descripción: Añade campos de búsqueda a la tienda, al menú de construcción, al mapa y a Configuración > Controles. Haz clic en el campo y escribe: la lista se actualiza mientras escribes. Filtra la tienda por nombre y especificaciones, encuentra edificios por producto y encuentra en el mapa tus vehículos, campos, puntos de venta y terrenos.
+Teclas: Ctrl+F en el teclado, pulsar el joystick derecho en el mando. Salta al campo de búsqueda en la tienda, la construcción y el mapa; a pie o conduciendo abre la búsqueda del mapa. Se cambia en Configuración > Controles ("Buscar"). Intro mantiene la búsqueda, Esc o la X a la derecha del campo la borra.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Tienda:
+- En una categoría o marca, lo que escribes filtra esa lista.
+- En las páginas de categorías, marcas, packs y DLC, lo que escribes busca en toda la tienda.
+- Busca en nombre, marca, categoría, DLC, nombre del mod y autor del mod. Cada palabra debe coincidir, p. ej. "fendt 700".
+- Filtros: precio ($<50k, $100k-200k), potencia (hp>200), anchura de trabajo (width>9, 6-9m), capacidad (l>30000), peso (t<10), velocidad (kph>50, mph>30), potencia necesaria (needhp<150) y "asequible". Combínalos con palabras: "fendt hp>300 $<400k".
+
+Construcción:
+- Lo que escribes filtra los edificios de todas las categorías y pestañas, por nombre, descripción o producto: "guisantes" encuentra todas las fábricas que usan o producen guisantes. Los filtros de precio y "asequible" también funcionan aquí.
+
+Mapa:
+- Escribe en el campo de la parte superior del mapa para encontrar tus vehículos, pacas, palés, big bags, edificios, campos y parcelas. Un número como 178 encuentra el campo o la parcela 178, y el nombre de un agricultor PNJ encuentra sus tierras. Los vehículos también se encuentran por su matrícula.
+- Los campos muestran su cultivo y lo que necesitan: busca "trigo listo", "cal" o "fertilizante".
+- "vender trigo" marca cada punto de venta que compra trigo, con su precio; el mejor precio queda marcado.
+- "en venta $<100k ha>5" encuentra terrenos para comprar; "contrato" encuentra campos con contratos; "lana l>1000" encuentra palés grandes.
+- Cada resultado recibe una flecha que se va cerrando sobre él, y los más cercanos aparecen bajo el campo: haz clic en uno para ir allí.
+
+- Tus vehículos (fuel<20, daños, ayudante, arrendado), corrales con escasez, puntos de producción (falta, lleno) y "almacenado trigo".
+
+Las búsquedas recientes aparecen bajo el campo vacío. Empieza una palabra con - para excluir resultados (-mod).
+
+Controles: Configuración > Controles también tiene un campo de búsqueda: "crucero", "luces", "ctrl".
+Todo se explica en el menú Ayuda del juego, en Searchables.
+
+Changelog 1.8.2.6:
+- Actualizado para la versión actual del juego (versión de modDesc 116).]]></es>
+        <ea><![CDATA[Descripción: Agrega campos de búsqueda a la tienda, al menú de construcción, al mapa y a Configuración > Controles. Haz clic en el campo y escribe: la lista se actualiza mientras escribes. Filtra la tienda por nombre y especificaciones, encuentra edificios por producto y encuentra en el mapa tus vehículos, campos, puntos de venta y terrenos.
+Teclas: Ctrl+F en el teclado, presionar el joystick derecho en el control. Salta al campo de búsqueda en la tienda, la construcción y el mapa; a pie o manejando abre la búsqueda del mapa. Se cambia en Configuración > Controles ("Buscar"). Enter mantiene la búsqueda, Esc o la X a la derecha del campo la borra.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Tienda:
+- En una categoría o marca, lo que escribes filtra esa lista.
+- En las páginas de categorías, marcas, paquetes y DLC, lo que escribes busca en toda la tienda.
+- Busca en nombre, marca, categoría, DLC, nombre del mod y autor del mod. Cada palabra debe coincidir, p. ej. "fendt 700".
+- Filtros: precio ($<50k, $100k-200k), potencia (hp>200), ancho de trabajo (width>9, 6-9m), capacidad (l>30000), peso (t<10), velocidad (kph>50, mph>30), potencia necesaria (needhp<150) y "asequible". Combínalos con palabras: "fendt hp>300 $<400k".
+
+Construcción:
+- Lo que escribes filtra los edificios de todas las categorías y pestañas, por nombre, descripción o producto: "chícharos" o "guisantes" encuentra todas las fábricas que usan o producen chícharos. Los filtros de precio y "asequible" también funcionan aquí.
+
+Mapa:
+- Escribe en el campo de la parte superior del mapa para encontrar tus vehículos, pacas, tarimas, big bags, edificios, campos y terrenos. Un número como 178 encuentra el campo o el terreno 178, y el nombre de un granjero NPC encuentra sus tierras. Los vehículos también se encuentran por su placa.
+- Los campos muestran su cultivo y lo que necesitan: busca "trigo listo", "cal" o "fertilizante".
+- "vender trigo" marca cada punto de venta que compra trigo, con su precio; el mejor precio queda marcado.
+- "en venta $<100k ha>5" encuentra terrenos para comprar; "contrato" encuentra campos con contratos; "lana l>1000" encuentra tarimas grandes.
+- Cada resultado recibe una flecha que se va cerrando sobre él, y los más cercanos aparecen bajo el campo: haz clic en uno para ir ahí.
+
+- Tus vehículos (fuel<20, daños, ayudante, arrendado), corrales con escasez, puntos de producción (falta, lleno) y "almacenado trigo".
+
+Las búsquedas recientes aparecen bajo el campo vacío. Empieza una palabra con - para excluir resultados (-mod).
+
+Controles: Configuración > Controles también tiene un campo de búsqueda: "crucero", "luces", "ctrl".
+Todo se explica en el menú Ayuda del juego, en Searchables.
+
+Changelog 1.8.2.6:
+- Actualizado para la versión actual del juego (versión de modDesc 116).]]></ea>
+        <it><![CDATA[Descrizione: Aggiunge campi di ricerca al negozio, al menu costruzione, alla mappa e a Impostazioni > Comandi. Clicca sul campo e scrivi: l'elenco si aggiorna mentre scrivi. Filtra il negozio per nome e caratteristiche, trova gli edifici per prodotto e trova sulla mappa i tuoi veicoli, campi, punti vendita e terreni.
+Tasti: Ctrl+F sulla tastiera, pressione della levetta destra sul controller. Porta nel campo di ricerca del negozio, del menu costruzione e della mappa; a piedi o alla guida apre la ricerca sulla mappa. Si cambia in Impostazioni > Comandi ("Cerca"). Invio mantiene la ricerca, Esc o la X a destra del campo la cancella.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Negozio:
+- In una categoria o marca, scrivere filtra quell'elenco.
+- Nelle pagine di categorie, marche, pacchetti e DLC, scrivere cerca in tutto il negozio.
+- Cerca in nome, marca, categoria, DLC, nome della mod e autore della mod. Ogni parola deve corrispondere, ad es. "fendt 700".
+- Filtri: prezzo ($<50k, $100k-200k), potenza (hp>200), larghezza di lavoro (width>9, 6-9m), capacità (l>30000), peso (t<10), velocità (kph>50, mph>30), potenza richiesta (needhp<150) e "accessibile". Combinali con le parole: "fendt hp>300 $<400k".
+
+Costruzione:
+- Scrivere filtra gli edifici di tutte le categorie e schede, per nome, descrizione o prodotto: "piselli" trova ogni fabbrica che usa o produce piselli. Anche qui funzionano i filtri di prezzo e "accessibile".
+
+Mappa:
+- Scrivi nel campo in alto sulla mappa per trovare i tuoi veicoli, balle, pallet, big bag, edifici, campi e terreni. Un numero come 178 trova il campo o il terreno 178, il nome di un agricoltore NPC trova i suoi terreni. I veicoli si trovano anche dalla targa.
+- I campi mostrano la coltura e di cosa hanno bisogno: cerca "frumento pronto", "calce" o "fertilizzante".
+- "vendere frumento" segna ogni punto vendita che compra frumento, con il prezzo; il prezzo migliore è evidenziato.
+- "in vendita $<100k ha>5" trova terreni da comprare; "contratto" trova i campi con contratti; "lana l>1000" trova i pallet grandi.
+- Ogni risultato riceve una freccia che si stringe su di esso, e i più vicini sono elencati sotto il campo: cliccane uno per andarci.
+
+- I tuoi veicoli (fuel<20, danni, aiutante, in leasing), recinti con scorte basse, punti di produzione (manca, pieno) e "immagazzinato frumento".
+
+Le ricerche recenti sono elencate sotto il campo vuoto. Una parola che inizia con - esclude dei risultati (-mod).
+
+Comandi: anche Impostazioni > Comandi ha un campo di ricerca: "crociera", "luci", "ctrl".
+Tutto è spiegato nel menu Aiuto del gioco, sotto Searchables.
+
+Changelog 1.8.2.6:
+- Aggiornato per la versione attuale del gioco (versione modDesc 116).]]></it>
+        <pt><![CDATA[Descrição: Adiciona caixas de pesquisa à loja, ao menu de construção, ao mapa e a Definições > Controlos. Clica na caixa e escreve: a lista atualiza-se enquanto escreves. Filtra a loja por nome e características, encontra edifícios por produto e encontra no mapa os teus veículos, campos, pontos de venda e terrenos.
+Teclas: Ctrl+F no teclado, um clique no manípulo direito no comando. Salta para a caixa de pesquisa na loja, na construção e no mapa; a pé ou a conduzir abre a pesquisa no mapa. Altera-se em Definições > Controlos ("Pesquisar"). Enter mantém a pesquisa, Esc ou o X à direita da caixa apaga-a.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Loja:
+- Numa categoria ou marca, escrever filtra essa lista.
+- Nas páginas de categorias, marcas, pacotes e DLC, escrever pesquisa toda a loja.
+- Pesquisa nome, marca, categoria, DLC, nome do mod e autor do mod. Cada palavra tem de corresponder, p. ex. "fendt 700".
+- Filtros: preço ($<50k, $100k-200k), potência (hp>200), largura de trabalho (width>9, 6-9m), capacidade (l>30000), peso (t<10), velocidade (kph>50, mph>30), potência necessária (needhp<150) e "acessível". Combina-os com palavras: "fendt hp>300 $<400k".
+
+Construção:
+- Escrever filtra os edifícios de todas as categorias e separadores, por nome, descrição ou produto: "ervilhas" encontra todas as fábricas que usam ou produzem ervilhas. Os filtros de preço e "acessível" também funcionam aqui.
+
+Mapa:
+- Escreve na caixa no topo do mapa para encontrar os teus veículos, fardos, paletes, big bags, edifícios, campos e terrenos. Um número como 178 encontra o campo ou terreno 178, o nome de um agricultor NPC encontra as terras dele. Os veículos também se encontram pela matrícula.
+- Os campos mostram a cultura e o que precisam: pesquisa "trigo pronto", "calcário" ou "fertilizante".
+- "vender trigo" marca cada ponto de venda que compra trigo, com o preço; o melhor preço fica assinalado.
+- "à venda $<100k ha>5" encontra terrenos para comprar; "contrato" encontra campos com contratos; "lã l>1000" encontra paletes grandes.
+- Cada resultado recebe uma seta que se fecha sobre ele, e os mais próximos aparecem sob a caixa: clica num para ir até lá.
+
+- Os teus veículos (fuel<20, danos, ajudante, em leasing), currais com falta de algo, pontos de produção (falta, cheio) e "armazenado trigo".
+
+As pesquisas recentes aparecem sob a caixa vazia. Começa uma palavra com - para excluir resultados (-mod).
+
+Controlos: Definições > Controlos também tem uma caixa de pesquisa: "cruzeiro", "luzes", "ctrl".
+Tudo é explicado no menu Ajuda do jogo, em Searchables.
+
+Changelog 1.8.2.6:
+- Atualizado para a versão atual do jogo (versão modDesc 116).]]></pt>
+        <br><![CDATA[Descrição: Adiciona caixas de pesquisa à loja, ao menu de construção, ao mapa e a Configurações > Controles. Clique na caixa e digite: a lista é atualizada enquanto você digita. Filtre a loja por nome e especificações, encontre construções por produto e encontre no mapa seus veículos, campos, pontos de venda e terrenos.
+Teclas: Ctrl+F no teclado, um clique no analógico direito no controle. Pula para a caixa de pesquisa na loja, na construção e no mapa; a pé ou dirigindo abre a pesquisa no mapa. Altere em Configurações > Controles ("Pesquisar"). Enter mantém a pesquisa, Esc ou o X à direita da caixa a apaga.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Loja:
+- Em uma categoria ou marca, digitar filtra essa lista.
+- Nas páginas de categorias, marcas, pacotes e DLC, digitar pesquisa a loja inteira.
+- Pesquisa nome, marca, categoria, DLC, nome do mod e autor do mod. Cada palavra precisa corresponder, por ex. "fendt 700".
+- Filtros: preço ($<50k, $100k-200k), potência (hp>200), largura de trabalho (width>9, 6-9m), capacidade (l>30000), peso (t<10), velocidade (kph>50, mph>30), potência necessária (needhp<150) e "acessível". Combine com palavras: "fendt hp>300 $<400k".
+
+Construção:
+- Digitar filtra as construções de todas as categorias e abas, por nome, descrição ou produto: "ervilhas" encontra todas as fábricas que usam ou produzem ervilhas. Os filtros de preço e "acessível" também funcionam aqui.
+
+Mapa:
+- Digite na caixa no topo do mapa para encontrar seus veículos, fardos, paletes, big bags, construções, campos e terrenos. Um número como 178 encontra o campo ou terreno 178, o nome de um fazendeiro NPC encontra as terras dele. Os veículos também podem ser encontrados pela placa.
+- Os campos mostram a cultura e o que precisam: pesquise "trigo pronto", "calcário" ou "fertilizante".
+- "vender trigo" marca cada ponto de venda que compra trigo, com o preço; o melhor preço fica destacado.
+- "à venda $<100k ha>5" encontra terrenos para comprar; "contrato" encontra campos com contratos; "lã l>1000" encontra paletes grandes.
+- Cada resultado ganha uma seta que se fecha sobre ele, e os mais próximos aparecem sob a caixa: clique em um para ir até lá.
+
+- Seus veículos (fuel<20, danos, ajudante, alugado), currais com falta de algo, pontos de produção (falta, cheio) e "armazenado trigo".
+
+As pesquisas recentes aparecem sob a caixa vazia. Comece uma palavra com - para excluir resultados (-mod).
+
+Controles: Configurações > Controles também tem uma caixa de pesquisa: "cruzeiro", "faróis", "ctrl".
+Tudo é explicado no menu Ajuda do jogo, em Searchables.
+
+Changelog 1.8.2.6:
+- Atualizado para a versão atual do jogo (versão modDesc 116).]]></br>
+        <nl><![CDATA[Beschrijving: Voegt zoekvelden toe aan de winkel, het bouwmenu, de kaart en Instellingen > Besturing. Klik op het veld en typ: de lijst wordt bijgewerkt terwijl je typt. Filter de winkel op naam en specificaties, vind gebouwen op product en vind op de kaart je voertuigen, velden, verkooppunten en grond.
+Sneltoetsen: Ctrl+F op het toetsenbord, indrukken van de rechter stick op een controller. Springt naar het zoekveld in de winkel, het bouwmenu en op de kaart; lopend of rijdend opent het de zoekfunctie op de kaart. Te wijzigen onder Instellingen > Besturing ("Zoeken"). Enter houdt de zoekopdracht vast, Esc of de X rechts in het veld wist hem.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Winkel:
+- In een categorie of merk filtert typen die lijst.
+- Op de pagina's met categorieën, merken, packs en DLC doorzoekt typen de hele winkel.
+- Zoekt in naam, merk, categorie, DLC, modnaam en modauteur. Elk woord moet overeenkomen, bijv. "fendt 700".
+- Filters: prijs ($<50k, $100k-200k), vermogen (hp>200), werkbreedte (width>9, 6-9m), capaciteit (l>30000), gewicht (t<10), snelheid (kph>50, mph>30), benodigd vermogen (needhp<150) en "betaalbaar". Combineer ze met woorden: "fendt hp>300 $<400k".
+
+Bouwen:
+- Typen filtert de gebouwen in alle categorieën en tabbladen, op naam, beschrijving of product: "erwten" vindt elke fabriek die erwten gebruikt of maakt. Prijsfilters en "betaalbaar" werken hier ook.
+
+Kaart:
+- Typ in het veld bovenaan de kaart om je voertuigen, balen, pallets, big bags, gebouwen, velden en percelen te vinden. Een getal als 178 vindt veld of perceel 178, de naam van een NPC-boer vindt zijn grond. Voertuigen zijn ook te vinden op kenteken.
+- Velden tonen hun gewas en wat ze nodig hebben: zoek "tarwe oogstklaar", "kalk" of "bemesting".
+- "verkopen tarwe" markeert elk verkooppunt dat tarwe koopt, met de prijs; de beste prijs wordt gemarkeerd.
+- "te koop $<100k ha>5" vindt grond om te kopen; "opdracht" vindt velden met opdrachten; "wol l>1000" vindt grote pallets.
+- Elke treffer krijgt een pijl die erop inzoomt, en de dichtstbijzijnde staan onder het veld: klik erop om erheen te gaan.
+
+- Je voertuigen (fuel<20, schade, helper, geleaset), stallen met tekorten, productiepunten (ontbreekt, vol) en "opgeslagen tarwe".
+
+Recente zoekopdrachten staan onder het lege veld. Begin een woord met - om treffers uit te sluiten (-mod).
+
+Besturing: Instellingen > Besturing heeft ook een zoekveld: "cruise", "verlichting", "ctrl".
+Alles wordt uitgelegd in het Help-menu van het spel onder Searchables.
+
+Changelog 1.8.2.6:
+- Bijgewerkt voor de huidige spelversie (modDesc-versie 116).]]></nl>
+        <pl><![CDATA[Opis: Dodaje pola wyszukiwania do sklepu, menu budowy, mapy oraz Ustawienia > Sterowanie. Kliknij pole i pisz: lista aktualizuje się w trakcie pisania. Filtruj sklep po nazwie i parametrach, znajduj budynki po produkcie, a na mapie swoje pojazdy, pola, punkty sprzedaży i ziemię.
+Skróty klawiszowe: Ctrl+F na klawiaturze, wciśnięcie prawej gałki na kontrolerze. Przenosi do pola wyszukiwania w sklepie, menu budowy i na mapie; podczas chodzenia lub jazdy otwiera wyszukiwanie na mapie. Można to zmienić w Ustawienia > Sterowanie ("Szukaj"). Enter zachowuje wyszukiwanie, Esc lub X po prawej stronie pola je czyści.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Sklep:
+- W kategorii lub marce wpisywanie filtruje tę listę.
+- Na stronach kategorii, marek, pakietów i DLC wpisywanie przeszukuje cały sklep.
+- Przeszukuje nazwę, markę, kategorię, DLC, nazwę moda i autora moda. Każde słowo musi pasować, np. "fendt 700".
+- Filtry: cena ($<50k, $100k-200k), moc (hp>200), szerokość robocza (width>9, 6-9m), pojemność (l>30000), masa (t<10), prędkość (kph>50, mph>30), wymagana moc (needhp<150) i "przystępne". Łącz je ze słowami: "fendt hp>300 $<400k".
+
+Budowa:
+- Wpisywanie filtruje budynki we wszystkich kategoriach i zakładkach, po nazwie, opisie lub produkcie: "groch" znajduje każdą fabrykę, która zużywa lub produkuje groch. Filtry ceny i "przystępne" też tu działają.
+
+Mapa:
+- Pisz w polu u góry mapy, aby znaleźć swoje pojazdy, bele, palety, big bagi, budynki, pola i działki. Liczba taka jak 178 znajduje pole lub działkę 178, imię rolnika NPC znajduje jego ziemię. Pojazdy można też znaleźć po tablicy rejestracyjnej.
+- Pola pokazują uprawę i to, czego potrzebują: szukaj "pszenica gotowe", "wapna" lub "nawożenia".
+- "sprzedaj pszenica" oznacza każdy punkt sprzedaży, który kupuje pszenicę, z ceną; najlepsza cena jest wyróżniona.
+- "na sprzedaż $<100k ha>5" znajduje ziemię do kupienia; "zlecenie" znajduje pola ze zleceniami; "wełna l>1000" znajduje duże palety.
+- Każdy wynik dostaje strzałkę, która zawęża się na nim, a najbliższe są wymienione pod polem: kliknij jeden, aby tam przejść.
+
+- Twoje pojazdy (fuel<20, uszkodzenia, pomocnik, leasing), zagrody z niedoborami, punkty produkcji (brak, pełny) i "przechowywane pszenica".
+
+Ostatnie wyszukiwania są wymienione pod pustym polem. Zacznij słowo od -, aby wykluczyć wyniki (-mod).
+
+Sterowanie: Ustawienia > Sterowanie też ma pole wyszukiwania: "tempomat", "światła", "ctrl".
+Wszystko jest wyjaśnione w menu Pomoc w grze, w sekcji Searchables.
+
+Changelog 1.8.2.6:
+- Zaktualizowano do bieżącej wersji gry (wersja modDesc 116).]]></pl>
+        <cz><![CDATA[Popis: Přidává vyhledávací pole do obchodu, menu stavby, na mapu a do Nastavení > Ovládání. Klikněte do pole a pište: seznam se aktualizuje během psaní. Filtrujte obchod podle názvu a parametrů, hledejte budovy podle produktu a na mapě najděte svá vozidla, pole, prodejní místa a pozemky.
+Klávesové zkratky: Ctrl+F na klávesnici, stisk pravé páčky na ovladači. Skočí do vyhledávacího pole v obchodě, menu stavby a na mapě; při chůzi nebo jízdě otevře hledání na mapě. Změníte v Nastavení > Ovládání ("Hledat"). Enter hledání ponechá, Esc nebo X vpravo v poli ho vymaže.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Obchod:
+- V kategorii nebo značce psaní filtruje daný seznam.
+- Na stránkách kategorií, značek, balíčků a DLC psaní prohledává celý obchod.
+- Prohledává název, značku, kategorii, DLC, název a autora modu. Každé slovo musí odpovídat, např. "fendt 700".
+- Filtry: cena ($<50k, $100k-200k), výkon (hp>200), pracovní záběr (width>9, 6-9m), objem (l>30000), hmotnost (t<10), rychlost (kph>50, mph>30), potřebný výkon (needhp<150) a "dostupné". Kombinujte je se slovy: "fendt hp>300 $<400k".
+
+Stavba:
+- Psaní filtruje budovy ve všech kategoriích a záložkách podle názvu, popisu nebo produktu: "hrách" najde každou továrnu, která hrách používá nebo vyrábí. Cenové filtry a "dostupné" fungují i zde.
+
+Mapa:
+- Pište do pole nahoře na mapě a najděte svá vozidla, balíky, palety, big bagy, budovy, pole a pozemky. Číslo jako 178 najde pole nebo pozemek 178, jméno NPC farmáře najde jeho půdu. Vozidla lze najít i podle SPZ.
+- Pole ukazují svou plodinu a co potřebují: hledejte "pšenice připraveno", "vápno" nebo "hnojivo".
+- "prodat pšenice" označí každé prodejní místo, které kupuje pšenici, s cenou; nejlepší cena je zvýrazněna.
+- "na prodej $<100k ha>5" najde půdu ke koupi; "zakázka" najde pole se zakázkami; "vlna l>1000" najde velké palety.
+- Každý výsledek dostane šipku, která se na něj zužuje, a nejbližší jsou vypsány pod polem: kliknutím na jeden se tam přesunete.
+
+- Vaše vozidla (fuel<20, poškození, pomocník, na leasing), výběhy, kterým něco chybí, výrobny (chybí, plné) a "uskladněno pšenice".
+
+Poslední hledání jsou vypsána pod prázdným polem. Slovo začínající znakem - vyloučí výsledky (-mod).
+
+Ovládání: Nastavení > Ovládání má také vyhledávací pole: "tempomat", "světla", "ctrl".
+Vše je vysvětleno v menu Nápověda ve hře, v části Searchables.
+
+Changelog 1.8.2.6:
+- Aktualizováno pro aktuální verzi hry (verze modDesc 116).]]></cz>
+        <hu><![CDATA[Leírás: Keresőmezőket ad a bolthoz, az építés menühöz, a térképhez és a Beállítások > Irányítás menühöz. Kattints a mezőbe és gépelj: a lista gépelés közben frissül. Szűrd a boltot név és műszaki adatok szerint, keresd meg az épületeket termék szerint, és találd meg a térképen a járműveidet, földjeidet, értékesítési pontokat és telkeket.
+Gyorsbillentyűk: Ctrl+F a billentyűzeten, a jobb kar lenyomása a kontrolleren. A bolt, az építés és a térkép keresőmezőjébe ugrik; gyalog vagy vezetés közben megnyitja a térképes keresést. Módosítható: Beállítások > Irányítás ("Keresés"). Az Enter megtartja a keresést, az Esc vagy a mező jobb oldalán lévő X törli.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Bolt:
+- Egy kategóriában vagy márkán belül a gépelés azt a listát szűri.
+- A kategóriák, márkák, csomagok és DLC-k oldalán a gépelés az egész boltban keres.
+- Keres a névben, márkában, kategóriában, DLC-ben, a mod nevében és szerzőjében. Minden szónak egyeznie kell, pl. "fendt 700".
+- Szűrők: ár ($<50k, $100k-200k), lóerő (hp>200), munkaszélesség (width>9, 6-9m), kapacitás (l>30000), tömeg (t<10), sebesség (kph>50, mph>30), szükséges teljesítmény (needhp<150) és "megfizethető". Szavakkal kombinálhatók: "fendt hp>300 $<400k".
+
+Építés:
+- A gépelés minden kategória és fül épületeit szűri, név, leírás vagy termék szerint: a "borsó" minden gyárat megtalál, amely borsót használ vagy gyárt. Az ár szűrők és a "megfizethető" itt is működnek.
+
+Térkép:
+- Gépelj a térkép tetején lévő mezőbe, hogy megtaláld a járműveidet, bálákat, raklapokat, big bageket, épületeket, földeket és telkeket. Egy szám, például 178, megtalálja a 178-as földet vagy telket, egy NPC gazda neve az ő földjeit. A járművek rendszám alapján is megtalálhatók.
+- A földek mutatják a növényüket és azt, amire szükségük van: keresd: "búza betakarítható", "meszezni" vagy "trágyázni".
+- Az "eladás búza" minden értékesítési pontot megjelöl, amely búzát vásárol, az árával; a legjobb ár ki van emelve.
+- Az "eladó $<100k ha>5" megvásárolható földet talál; a "megbízás" a megbízásos földeket; a "gyapjú l>1000" a nagy raklapokat.
+- Minden találat kap egy nyilat, amely rászűkül, a legközelebbiek pedig a mező alatt láthatók: kattints egyre, hogy odamenj.
+
+- A járműveid (fuel<20, sérülés, segítő, lízingelt), hiányt szenvedő karámok, termelőüzemek (hiányzik, tele) és "tárolt búza".
+
+A legutóbbi keresések az üres mező alatt láthatók. A - jellel kezdődő szó kizárja a találatokat (-mod).
+
+Irányítás: a Beállítások > Irányítás menüben is van keresőmező: "tempomat", "lámpák", "ctrl".
+Minden el van magyarázva a játék Súgó menüjében, a Searchables alatt.
+
+Changelog 1.8.2.6:
+- Frissítve a játék jelenlegi verziójához (modDesc 116-os verzió).]]></hu>
+        <ro><![CDATA[Descriere: Adaugă câmpuri de căutare în magazin, în meniul de construcție, pe hartă și în Setări > Comenzi. Dă clic pe câmp și scrie: lista se actualizează pe măsură ce scrii. Filtrează magazinul după nume și specificații, găsește clădiri după produs și găsește pe hartă vehiculele, câmpurile, punctele de vânzare și terenurile tale.
+Taste rapide: Ctrl+F pe tastatură, apăsarea stick-ului drept pe controller. Sare în câmpul de căutare din magazin, construcție și hartă; când mergi pe jos sau conduci, deschide căutarea pe hartă. Se schimbă în Setări > Comenzi ("Caută"). Enter păstrează căutarea, Esc sau X-ul din dreapta câmpului o șterge.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Magazin:
+- Într-o categorie sau marcă, ce scrii filtrează lista.
+- Pe paginile de categorii, mărci, pachete și DLC, ce scrii caută în tot magazinul.
+- Caută în nume, marcă, categorie, DLC, numele modului și autorul modului. Fiecare cuvânt trebuie să se potrivească, de ex. "fendt 700".
+- Filtre: preț ($<50k, $100k-200k), cai putere (hp>200), lățime de lucru (width>9, 6-9m), capacitate (l>30000), greutate (t<10), viteză (kph>50, mph>30), putere necesară (needhp<150) și "accesibil". Combină-le cu cuvinte: "fendt hp>300 $<400k".
+
+Construcție:
+- Ce scrii filtrează clădirile din toate categoriile și filele, după nume, descriere sau produs: "mazăre" găsește fiecare fabrică ce folosește sau produce mazăre. Filtrele de preț și "accesibil" funcționează și aici.
+
+Hartă:
+- Scrie în câmpul din partea de sus a hărții pentru a găsi vehiculele, balotii, paleții, big bag-urile, clădirile, câmpurile și proprietățile tale. Un număr ca 178 găsește câmpul sau proprietatea 178, numele unui fermier NPC găsește terenul lui. Vehiculele pot fi găsite și după numărul de înmatriculare.
+- Câmpurile arată cultura și de ce au nevoie: caută "grâu gata", "var" sau "îngrășământ".
+- "vinde grâu" marchează fiecare punct de vânzare care cumpără grâu, cu prețul; cel mai bun preț este evidențiat.
+- "de vânzare $<100k ha>5" găsește teren de cumpărat; "contract" găsește câmpuri cu contracte; "lână l>1000" găsește paleți mari.
+- Fiecare rezultat primește o săgeată care se strânge pe el, iar cele mai apropiate sunt listate sub câmp: dă clic pe unul ca să mergi acolo.
+
+- Vehiculele tale (fuel<20, daune, ajutor, în leasing), țarcurile cu lipsuri, punctele de producție (lipsește, plin) și "depozitat grâu".
+
+Căutările recente sunt listate sub câmpul gol. Începe un cuvânt cu - ca să excluzi rezultate (-mod).
+
+Comenzi: Setări > Comenzi are și el un câmp de căutare: "croazieră", "lumini", "ctrl".
+Totul este explicat în meniul Ajutor al jocului, la Searchables.
+
+Changelog 1.8.2.6:
+- Actualizat pentru versiunea actuală a jocului (versiunea modDesc 116).]]></ro>
+        <tr><![CDATA[Açıklama: Mağazaya, inşaat menüsüne, haritaya ve Ayarlar > Kontroller'e arama kutuları ekler. Kutuya tıklayın ve yazın: liste siz yazdıkça güncellenir. Mağazayı isme ve teknik özelliklere göre filtreleyin, binaları ürüne göre bulun, haritada araçlarınızı, tarlalarınızı, satış noktalarını ve arazileri bulun.
+Kısayol tuşları: Klavyede Ctrl+F, kontrolcüde sağ çubuğa basma. Mağaza, inşaat ve harita ekranlarında arama kutusuna atlar; yürürken veya sürerken harita aramasını açar. Ayarlar > Kontroller'de ("Ara") değiştirilebilir. Enter aramayı tutar, Esc veya kutunun sağındaki X aramayı temizler.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Mağaza:
+- Bir kategori veya markanın içinde yazmak o listeyi filtreler.
+- Kategori, marka, paket ve DLC sayfalarında yazmak tüm mağazada arar.
+- Ad, marka, kategori, DLC, mod adı ve mod yazarında arar. Her kelime eşleşmelidir, örn. "fendt 700".
+- Filtreler: fiyat ($<50k, $100k-200k), beygir gücü (hp>200), çalışma genişliği (width>9, 6-9m), kapasite (l>30000), ağırlık (t<10), hız (kph>50, mph>30), gereken güç (needhp<150) ve "uygun". Kelimelerle birleştirin: "fendt hp>300 $<400k".
+
+İnşaat:
+- Yazmak, tüm kategori ve sekmelerdeki binaları ad, açıklama veya ürüne göre filtreler: "bezelye" bezelye kullanan veya üreten her fabrikayı bulur. Fiyat filtreleri ve "uygun" burada da çalışır.
+
+Harita:
+- Araçlarınızı, balyaları, paletleri, big bag'leri, binaları, tarlaları ve arazileri bulmak için haritanın üstündeki kutuya yazın. 178 gibi bir sayı 178 numaralı tarlayı veya araziyi, bir NPC çiftçinin adı onun arazisini bulur. Araçlar plakadan da bulunabilir.
+- Tarlalar ekinlerini ve neye ihtiyaç duyduklarını gösterir: "buğday hazır", "kireç" veya "gübre" arayın.
+- "sat buğday" buğday alan her satış noktasını fiyatıyla işaretler; en iyi fiyat vurgulanır.
+- "satılık $<100k ha>5" satın alınacak arazi bulur; "sözleşme" sözleşmeli tarlaları bulur; "yün l>1000" büyük paletleri bulur.
+- Her sonuç üzerine doğru küçülen bir ok alır ve en yakınlar kutunun altında listelenir: oraya gitmek için birine tıklayın.
+
+- Araçlarınız (fuel<20, hasar, yardımcı, kiralık), eksiği olan hayvan ağılları, üretim noktaları (eksik, dolu) ve "depolanmış buğday".
+
+Son aramalar boş kutunun altında listelenir. Sonuçları dışlamak için kelimeye - ile başlayın (-mod).
+
+Kontroller: Ayarlar > Kontroller'de de bir arama kutusu var: "hız sabitleyici", "ışıklar", "ctrl".
+Her şey oyunun Yardım menüsünde Searchables altında açıklanır.
+
+Changelog 1.8.2.6:
+- Oyunun güncel sürümü için güncellendi (modDesc sürümü 116).]]></tr>
+        <ru><![CDATA[Описание: Добавляет поля поиска в магазин, меню строительства, на карту и в Настройки > Управление. Нажмите на поле и печатайте: список обновляется по мере ввода. Фильтруйте магазин по названию и характеристикам, находите здания по продукции, а на карте — свою технику, поля, точки продажи и землю.
+Горячие клавиши: Ctrl+F на клавиатуре, нажатие правого стика на геймпаде. Переводит в поле поиска в магазине, меню строительства и на карте; пешком или за рулём открывает поиск по карте. Меняется в Настройки > Управление ("Поиск"). Enter сохраняет поиск, Esc или X справа в поле очищает его.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Магазин:
+- В категории или марке ввод фильтрует этот список.
+- На страницах категорий, марок, наборов и DLC ввод ищет по всему магазину.
+- Ищет по названию, марке, категории, DLC, имени мода и автору мода. Каждое слово должно совпасть, например "fendt 700".
+- Фильтры: цена ($<50k, $100k-200k), мощность (hp>200), рабочая ширина (width>9, 6-9m), объём (l>30000), вес (t<10), скорость (kph>50, mph>30), требуемая мощность (needhp<150) и "доступно". Сочетайте их со словами: "fendt hp>300 $<400k".
+
+Строительство:
+- Ввод фильтрует здания во всех категориях и вкладках по названию, описанию или продукции: "горох" находит каждую фабрику, которая использует или производит горох. Фильтры цены и "доступно" работают и здесь.
+
+Карта:
+- Печатайте в поле вверху карты, чтобы найти свою технику, тюки, поддоны, биг-бэги, здания, поля и участки. Число, например 178, находит поле или участок 178, имя фермера-NPC — его землю. Технику можно найти и по номерному знаку.
+- Поля показывают свою культуру и что им нужно: ищите "пшеница готово", "известь" или "удобрение".
+- "продать пшеница" отмечает каждую точку продажи, которая покупает пшеницу, с ценой; лучшая цена выделена.
+- "продаётся $<100k ha>5" находит землю для покупки; "контракт" — поля с контрактами; "шерсть l>1000" — большие поддоны.
+- Каждый результат получает стрелку, которая сужается к нему, а ближайшие перечислены под полем: нажмите на один, чтобы перейти к нему.
+
+- Ваша техника (fuel<20, повреждения, помощник, в лизинге), загоны, где чего-то мало, производства (не хватает, полно) и "хранится пшеница".
+
+Недавние запросы показаны под пустым полем. Слово, начинающееся с -, исключает результаты (-mod).
+
+Управление: в Настройки > Управление тоже есть поле поиска: "круиз", "свет", "ctrl".
+Всё объяснено в меню Помощь игры, в разделе Searchables.
+
+Changelog 1.8.2.6:
+- Обновлено для текущей версии игры (версия modDesc 116).]]></ru>
+        <uk><![CDATA[Опис: Додає поля пошуку до магазину, меню будівництва, на мапу та до Налаштування > Керування. Натисніть на поле й друкуйте: список оновлюється під час введення. Фільтруйте магазин за назвою та характеристиками, знаходьте будівлі за продукцією, а на мапі — свою техніку, поля, пункти продажу та землю.
+Гарячі клавіші: Ctrl+F на клавіатурі, натискання правого стіка на геймпаді. Переводить у поле пошуку в магазині, меню будівництва та на мапі; пішки або за кермом відкриває пошук на мапі. Змінюється в Налаштування > Керування ("Пошук"). Enter зберігає пошук, Esc або X праворуч у полі очищає його.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Магазин:
+- У категорії або марці введення фільтрує цей список.
+- На сторінках категорій, марок, наборів і DLC введення шукає по всьому магазину.
+- Шукає за назвою, маркою, категорією, DLC, назвою мода та автором мода. Кожне слово має збігатися, наприклад "fendt 700".
+- Фільтри: ціна ($<50k, $100k-200k), потужність (hp>200), робоча ширина (width>9, 6-9m), місткість (l>30000), вага (t<10), швидкість (kph>50, mph>30), потрібна потужність (needhp<150) і "доступно". Поєднуйте їх зі словами: "fendt hp>300 $<400k".
+
+Будівництво:
+- Введення фільтрує будівлі в усіх категоріях і вкладках за назвою, описом або продукцією: "горох" знаходить кожну фабрику, яка використовує або виробляє горох. Фільтри ціни та "доступно" працюють і тут.
+
+Мапа:
+- Друкуйте в полі вгорі мапи, щоб знайти свою техніку, тюки, піддони, біг-бегі, будівлі, поля та ділянки. Число, наприклад 178, знаходить поле або ділянку 178, ім'я фермера-NPC — його землю. Техніку можна знайти й за номерним знаком.
+- Поля показують свою культуру та що їм потрібно: шукайте "пшениця готово", "вапно" або "добриво".
+- "продати пшениця" позначає кожен пункт продажу, що купує пшеницю, з ціною; найкраща ціна виділена.
+- "продається $<100k ha>5" знаходить землю для купівлі; "контракт" — поля з контрактами; "вовна l>1000" — великі піддони.
+- Кожен результат отримує стрілку, що звужується до нього, а найближчі перелічені під полем: натисніть на один, щоб перейти туди.
+
+- Ваша техніка (fuel<20, пошкодження, помічник, у лізингу), загони, де чогось бракує, виробництва (бракує, повно) і "зберігається пшениця".
+
+Нещодавні запити показано під порожнім полем. Слово, що починається з -, виключає результати (-mod).
+
+Керування: у Налаштування > Керування теж є поле пошуку: "круїз", "світло", "ctrl".
+Усе пояснено в меню Довідка гри, у розділі Searchables.
+
+Changelog 1.8.2.6:
+- Оновлено для поточної версії гри (версія modDesc 116).]]></uk>
+        <da><![CDATA[Beskrivelse: Tilføjer søgefelter i butikken, byggemenuen, på kortet og i Indstillinger > Styring. Klik i feltet og skriv: listen opdateres, mens du skriver. Filtrer butikken efter navn og specifikationer, find bygninger efter produkt, og find dine køretøjer, marker, salgssteder og jord på kortet.
+Genvejstaster: Ctrl+F på tastaturet, et tryk på højre pind på en controller. Springer ind i søgefeltet i butikken, byggemenuen og på kortet; når du går eller kører, åbner den søgningen på kortet. Kan ændres under Indstillinger > Styring ("Søg"). Enter beholder søgningen, Esc eller X'et til højre i feltet rydder den.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Butik:
+- I en kategori eller et mærke filtrerer det, du skriver, listen.
+- På siderne med kategorier, mærker, pakker og DLC søger det, du skriver, i hele butikken.
+- Søger i navn, mærke, kategori, DLC, modnavn og modforfatter. Hvert ord skal passe, f.eks. "fendt 700".
+- Filtre: pris ($<50k, $100k-200k), hestekræfter (hp>200), arbejdsbredde (width>9, 6-9m), kapacitet (l>30000), vægt (t<10), hastighed (kph>50, mph>30), krævet effekt (needhp<150) og "overkommelig". Kombiner dem med ord: "fendt hp>300 $<400k".
+
+Byggeri:
+- Det, du skriver, filtrerer bygningerne i alle kategorier og faner efter navn, beskrivelse eller produkt: "ærter" finder hver fabrik, der bruger eller laver ærter. Prisfiltre og "overkommelig" virker også her.
+
+Kort:
+- Skriv i feltet øverst på kortet for at finde dine køretøjer, baller, paller, big bags, bygninger, marker og grunde. Et tal som 178 finder mark eller grund 178, navnet på en NPC-landmand finder hans jord. Køretøjer kan også findes på nummerpladen.
+- Markerne viser deres afgrøde og hvad de mangler: søg "hvede klar", "kalk" eller "gødning".
+- "sælg hvede" markerer hvert salgssted, der køber hvede, med pris; den bedste pris er markeret.
+- "til salg $<100k ha>5" finder jord at købe; "kontrakt" finder marker med kontrakter; "uld l>1000" finder store paller.
+- Hvert resultat får en pil, der snævrer sig ind på det, og de nærmeste står under feltet: klik på et for at gå dertil.
+
+- Dine køretøjer (fuel<20, skade, medhjælper, leaset), stalde, der mangler noget, produktioner (mangler, fuld) og "opbevaret hvede".
+
+Seneste søgninger står under det tomme felt. Start et ord med - for at udelukke resultater (-mod).
+
+Styring: Indstillinger > Styring har også et søgefelt: "fartpilot", "lys", "ctrl".
+Alt er forklaret i spillets Hjælp-menu under Searchables.
+
+Changelog 1.8.2.6:
+- Opdateret til den aktuelle spilversion (modDesc-version 116).]]></da>
+        <fi><![CDATA[Kuvaus: Lisää hakukentät kauppaan, rakennusvalikkoon, karttaan ja kohtaan Asetukset > Ohjaimet. Napsauta kenttää ja kirjoita: lista päivittyy kirjoittaessasi. Suodata kauppaa nimen ja teknisten tietojen mukaan, löydä rakennukset tuotteen mukaan ja löydä kartalta ajoneuvosi, peltosi, myyntipisteet ja maat.
+Pikanäppäimet: Ctrl+F näppäimistöllä, oikean tikun painallus ohjaimella. Siirtyy hakukenttään kaupassa, rakennusvalikossa ja kartalla; kävellessä tai ajaessa avaa karttahaun. Vaihdettavissa kohdassa Asetukset > Ohjaimet ("Hae"). Enter säilyttää haun, Esc tai kentän oikean reunan X tyhjentää sen.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Kauppa:
+- Kategoriassa tai merkissä kirjoittaminen suodattaa listaa.
+- Kategorioiden, merkkien, pakettien ja DLC:iden sivuilla kirjoittaminen hakee koko kaupasta.
+- Hakee nimestä, merkistä, kategoriasta, DLC:stä, modin nimestä ja modin tekijästä. Jokaisen sanan täytyy täsmätä, esim. "fendt 700".
+- Suodattimet: hinta ($<50k, $100k-200k), hevosvoimat (hp>200), työleveys (width>9, 6-9m), tilavuus (l>30000), paino (t<10), nopeus (kph>50, mph>30), tehontarve (needhp<150) ja "edullinen". Yhdistä niitä sanoihin: "fendt hp>300 $<400k".
+
+Rakentaminen:
+- Kirjoittaminen suodattaa rakennukset kaikista kategorioista ja välilehdistä nimen, kuvauksen tai tuotteen mukaan: "herneet" löytää jokaisen tehtaan, joka käyttää tai valmistaa herneitä. Hintasuodattimet ja "edullinen" toimivat täälläkin.
+
+Kartta:
+- Kirjoita kartan yläreunan kenttään löytääksesi ajoneuvosi, paalit, lavat, suursäkit, rakennukset, pellot ja tilat. Numero kuten 178 löytää pellon tai tilan 178, NPC-viljelijän nimi löytää hänen maansa. Ajoneuvot löytyvät myös rekisterikilvestä.
+- Pellot näyttävät kasvinsa ja mitä ne tarvitsevat: hae "vehnä valmis", "kalkkia" tai "lannoitetta".
+- "myy vehnä" merkitsee jokaisen vehnää ostavan myyntipisteen hintoineen; paras hinta on merkitty.
+- "myynnissä $<100k ha>5" löytää ostettavaa maata; "sopimus" löytää pellot, joilla on sopimus; "villa l>1000" löytää suuret lavat.
+- Jokainen osuma saa nuolen, joka kutistuu sen päälle, ja lähimmät listataan kentän alle: napsauta yhtä mennäksesi sinne.
+
+- Ajoneuvosi (fuel<20, vauriot, apulainen, liisattu), eläinaitaukset, joilta jokin on vähissä, tuotantolaitokset (puuttuu, täynnä) ja "varastoitu vehnä".
+
+Viimeisimmät haut näkyvät tyhjän kentän alla. Aloita sana merkillä - jättääksesi osumia pois (-mod).
+
+Ohjaimet: Asetukset > Ohjaimet saa myös hakukentän: "vakionopeus", "valot", "ctrl".
+Kaikki selitetään pelin Ohje-valikossa kohdassa Searchables.
+
+Changelog 1.8.2.6:
+- Päivitetty pelin nykyiseen versioon (modDesc-versio 116).]]></fi>
+        <no><![CDATA[Beskrivelse: Legger til søkefelt i butikken, byggemenyen, på kartet og i Innstillinger > Kontroller. Klikk i feltet og skriv: listen oppdateres mens du skriver. Filtrer butikken etter navn og spesifikasjoner, finn bygninger etter produkt, og finn kjøretøyene dine, jorder, salgssteder og land på kartet.
+Hurtigtaster: Ctrl+F på tastaturet, et trykk på høyre spak på en kontroller. Hopper inn i søkefeltet i butikken, byggemenyen og på kartet; når du går eller kjører, åpner den søket på kartet. Kan endres under Innstillinger > Kontroller ("Søk"). Enter beholder søket, Esc eller X-en til høyre i feltet tømmer det.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Butikk:
+- I en kategori eller et merke filtrerer det du skriver den listen.
+- På sidene med kategorier, merker, pakker og DLC søker det du skriver i hele butikken.
+- Søker i navn, merke, kategori, DLC, modnavn og modforfatter. Hvert ord må passe, f.eks. "fendt 700".
+- Filtre: pris ($<50k, $100k-200k), hestekrefter (hp>200), arbeidsbredde (width>9, 6-9m), kapasitet (l>30000), vekt (t<10), hastighet (kph>50, mph>30), nødvendig effekt (needhp<150) og "rimelig". Kombiner dem med ord: "fendt hp>300 $<400k".
+
+Bygging:
+- Det du skriver filtrerer bygningene i alle kategorier og faner etter navn, beskrivelse eller produkt: "erter" finner hver fabrikk som bruker eller lager erter. Prisfiltre og "rimelig" virker også her.
+
+Kart:
+- Skriv i feltet øverst på kartet for å finne kjøretøyene dine, baller, paller, storsekker, bygninger, jorder og eiendommer. Et tall som 178 finner jorde eller eiendom 178, navnet på en NPC-bonde finner landet hans. Kjøretøy kan også finnes på skiltnummeret.
+- Jordene viser avlingen sin og hva de trenger: søk "hvete klar", "kalk" eller "gjødsel".
+- "selg hvete" markerer hvert salgssted som kjøper hvete, med pris; den beste prisen er markert.
+- "til salgs $<100k ha>5" finner land å kjøpe; "kontrakt" finner jorder med kontrakter; "ull l>1000" finner store paller.
+- Hvert treff får en pil som snevrer seg inn på det, og de nærmeste står under feltet: klikk på ett for å dra dit.
+
+- Kjøretøyene dine (fuel<20, skade, medhjelper, leaset), dyrebinger som mangler noe, produksjoner (mangler, full) og "lagret hvete".
+
+Nylige søk står under det tomme feltet. Start et ord med - for å utelate treff (-mod).
+
+Kontroller: Innstillinger > Kontroller har også et søkefelt: "cruise", "lys", "ctrl".
+Alt er forklart i spillets Hjelp-meny under Searchables.
+
+Changelog 1.8.2.6:
+- Oppdatert for gjeldende spillversjon (modDesc-versjon 116).]]></no>
+        <sv><![CDATA[Beskrivning: Lägger till sökfält i butiken, byggmenyn, på kartan och i Inställningar > Kontroller. Klicka i fältet och skriv: listan uppdateras medan du skriver. Filtrera butiken efter namn och specifikationer, hitta byggnader efter produkt och hitta dina fordon, fält, försäljningsställen och mark på kartan.
+Snabbtangenter: Ctrl+F på tangentbordet, ett tryck på höger spak på en handkontroll. Hoppar in i sökfältet i butiken, byggmenyn och på kartan; när du går eller kör öppnar den sökningen på kartan. Ändras under Inställningar > Kontroller ("Sök"). Enter behåller sökningen, Esc eller X:et till höger i fältet rensar den.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Butik:
+- I en kategori eller ett märke filtrerar det du skriver listan.
+- På sidorna med kategorier, märken, paket och DLC söker det du skriver i hela butiken.
+- Söker i namn, märke, kategori, DLC, modnamn och modförfattare. Varje ord måste matcha, t.ex. "fendt 700".
+- Filter: pris ($<50k, $100k-200k), hästkrafter (hp>200), arbetsbredd (width>9, 6-9m), kapacitet (l>30000), vikt (t<10), hastighet (kph>50, mph>30), effektbehov (needhp<150) och "överkomligt". Kombinera dem med ord: "fendt hp>300 $<400k".
+
+Bygga:
+- Det du skriver filtrerar byggnaderna i alla kategorier och flikar efter namn, beskrivning eller produkt: "ärtor" hittar varje fabrik som använder eller tillverkar ärtor. Prisfilter och "överkomligt" fungerar här också.
+
+Karta:
+- Skriv i fältet högst upp på kartan för att hitta dina fordon, balar, pallar, storsäckar, byggnader, fält och tomter. Ett tal som 178 hittar fält eller tomt 178, namnet på en NPC-bonde hittar hans mark. Fordon kan också hittas på registreringsskylten.
+- Fälten visar sin gröda och vad de behöver: sök "vete redo", "kalk" eller "gödsel".
+- "sälj vete" markerar varje försäljningsställe som köper vete, med pris; det bästa priset är markerat.
+- "till salu $<100k ha>5" hittar mark att köpa; "kontrakt" hittar fält med kontrakt; "ull l>1000" hittar stora pallar.
+- Varje träff får en pil som krymper ner mot den, och de närmaste listas under fältet: klicka på en för att åka dit.
+
+- Dina fordon (fuel<20, skada, medhjälpare, leasad), djurhägn med brist, produktioner (saknas, full) och "lagrat vete".
+
+Senaste sökningar listas under det tomma fältet. Börja ett ord med - för att utesluta träffar (-mod).
+
+Kontroller: Inställningar > Kontroller har också ett sökfält: "farthållare", "ljus", "ctrl".
+Allt förklaras i spelets Hjälp-meny under Searchables.
+
+Changelog 1.8.2.6:
+- Uppdaterad för den aktuella spelversionen (modDesc-version 116).]]></sv>
+        <jp><![CDATA[説明: ショップ、建設メニュー、マップ、設定 > 操作に検索ボックスを追加します。ボックスをクリックして入力すると、入力に合わせてリストが更新されます。ショップを名前や性能で絞り込み、建物を生産物で探し、マップ上で自分の車両、畑、売却所、土地を見つけられます。
+ホットキー: キーボードは Ctrl+F、コントローラーは右スティック押し込み。ショップ、建設、マップの画面で検索ボックスに移動します。徒歩中や運転中はマップ検索を開きます。設定 > 操作の「検索」で変更できます。Enter で検索を保持、Esc またはボックス右端の X で消去します。
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+ショップ:
+- カテゴリーやブランドの中では、入力するとそのリストが絞り込まれます。
+- カテゴリー、ブランド、パック、DLC のページでは、入力するとショップ全体を検索します。
+- 名前、ブランド、カテゴリー、DLC、MOD 名、MOD 作者を検索します。すべての単語が一致する必要があります。例: "fendt 700"。
+- フィルター: 価格 ($<50k, $100k-200k)、馬力 (hp>200)、作業幅 (width>9, 6-9m)、容量 (l>30000)、重量 (t<10)、速度 (kph>50, mph>30)、必要馬力 (needhp<150)、"購入可能"。単語と組み合わせられます: "fendt hp>300 $<400k"。
+
+建設:
+- 入力すると、すべてのカテゴリーとタブの建物を名前、説明、生産物で絞り込みます: "エンドウ豆" でエンドウ豆を使う、または作るすべての工場が見つかります。価格フィルターと "購入可能" もここで使えます。
+
+マップ:
+- マップ上部のボックスに入力すると、自分の車両、ベール、パレット、ビッグバッグ、建物、畑、土地が見つかります。178 のような数字で畑または土地 178 が、NPC 農家の名前でその人の土地が見つかります。車両はナンバープレートでも探せます。
+- 畑には作物と必要な作業が表示されます: "小麦 収穫可能"、"石灰"、"肥料" を検索してください。
+- "売る 小麦" で小麦を買い取るすべての売却所に価格付きで印が付き、最高価格が強調されます。
+- "販売中 $<100k ha>5" で購入できる土地が、"契約" で契約のある畑が、"羊毛 l>1000" で大きなパレットが見つかります。
+- 一致した場所にはそれぞれ矢印が付いて縮みながら指し示し、近いものはボックスの下に一覧表示されます。クリックするとそこへ移動します。
+
+- 自分の車両 (fuel<20、損傷、作業員、リース)、不足している動物の囲い、生産拠点 (不足材料、満杯)、"保管 小麦"。
+
+最近の検索は空のボックスの下に表示されます。単語の先頭に - を付けると一致を除外します (-mod)。
+
+操作: 設定 > 操作にも検索ボックスがあります: "クルーズ"、"ライト"、"ctrl"。
+すべてはゲームのヘルプメニューの Searchables で説明されています。
+
+Changelog 1.8.2.6:
+- 現在のゲームバージョンに対応 (modDesc バージョン 116)。]]></jp>
+        <kr><![CDATA[설명: 상점, 건설 메뉴, 지도, 설정 > 조작에 검색창을 추가합니다. 검색창을 클릭하고 입력하면 입력하는 대로 목록이 갱신됩니다. 상점을 이름과 사양으로 필터링하고, 건물을 생산품으로 찾고, 지도에서 내 차량, 밭, 판매처, 토지를 찾을 수 있습니다.
+단축키: 키보드는 Ctrl+F, 컨트롤러는 오른쪽 스틱 누르기. 상점, 건설, 지도 화면에서 검색창으로 이동하며, 걷거나 운전 중에는 지도 검색을 엽니다. 설정 > 조작의 "검색"에서 바꿀 수 있습니다. Enter는 검색을 유지하고, Esc 또는 검색창 오른쪽의 X는 검색을 지웁니다.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+상점:
+- 카테고리나 브랜드 안에서는 입력하면 그 목록이 필터링됩니다.
+- 카테고리, 브랜드, 팩, DLC 페이지에서는 입력하면 상점 전체를 검색합니다.
+- 이름, 브랜드, 카테고리, DLC, 모드 이름, 모드 제작자를 검색합니다. 모든 단어가 일치해야 합니다. 예: "fendt 700".
+- 필터: 가격 ($<50k, $100k-200k), 마력 (hp>200), 작업 폭 (width>9, 6-9m), 용량 (l>30000), 무게 (t<10), 속도 (kph>50, mph>30), 필요 마력 (needhp<150), "구매가능". 단어와 함께 쓸 수 있습니다: "fendt hp>300 $<400k".
+
+건설:
+- 입력하면 모든 카테고리와 탭의 건물을 이름, 설명, 생산품으로 필터링합니다: "완두콩"은 완두콩을 쓰거나 만드는 모든 공장을 찾습니다. 가격 필터와 "구매가능"도 여기서 작동합니다.
+
+지도:
+- 지도 위쪽 검색창에 입력하면 내 차량, 곤포, 팔레트, 빅백, 건물, 밭, 토지를 찾을 수 있습니다. 178 같은 숫자는 밭 또는 토지 178을, NPC 농부의 이름은 그 농부의 땅을 찾습니다. 차량은 번호판으로도 찾을 수 있습니다.
+- 밭에는 작물과 필요한 작업이 표시됩니다: "밀 수확", "석회", "비료"를 검색하세요.
+- "판매 밀"은 밀을 사는 모든 판매처에 가격과 함께 표시하며, 최고가는 따로 표시됩니다.
+- "판매 중 $<100k ha>5"는 살 수 있는 땅을, "계약"은 계약이 있는 밭을, "양모 l>1000"은 큰 팔레트를 찾습니다.
+- 찾은 항목마다 그 위로 좁혀 드는 화살표가 붙고, 가장 가까운 항목은 검색창 아래에 나열됩니다. 하나를 클릭하면 그곳으로 이동합니다.
+
+- 내 차량 (fuel<20, 손상, 일꾼, 임대), 부족한 것이 있는 동물 우리, 생산 시설 (부족함, 가득), "보관 밀".
+
+최근 검색은 빈 검색창 아래에 나열됩니다. 단어 앞에 -를 붙이면 결과에서 제외합니다 (-mod).
+
+조작: 설정 > 조작에도 검색창이 있습니다: "크루즈", "조명", "ctrl".
+모든 내용은 게임의 도움말 메뉴 Searchables 항목에서 설명합니다.
+
+Changelog 1.8.2.6:
+- 현재 게임 버전에 맞게 업데이트 (modDesc 버전 116).]]></kr>
+        <cs><![CDATA[描述：在商店、建造菜单、地图以及 设置 > 控制 中添加搜索框。点击搜索框并输入：列表会随输入实时更新。按名称和参数筛选商店，按产品查找建筑，并在地图上找到你的车辆、田地、出售点和土地。
+快捷键：键盘 Ctrl+F，手柄按下右摇杆。在商店、建造和地图界面跳到搜索框；步行或驾驶时打开地图搜索。可在 设置 > 控制 的"搜索"中更改。Enter 保留搜索，Esc 或搜索框右侧的 X 清除搜索。
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+商店：
+- 在某个类别或品牌中，输入会筛选该列表。
+- 在类别、品牌、组合包和 DLC 页面，输入会搜索整个商店。
+- 搜索名称、品牌、类别、DLC、模组名称和模组作者。每个词都必须匹配，例如 "fendt 700"。
+- 筛选：价格 ($<50k, $100k-200k)、马力 (hp>200)、作业宽度 (width>9, 6-9m)、容量 (l>30000)、重量 (t<10)、速度 (kph>50, mph>30)、所需马力 (needhp<150) 以及 "买得起"。可与词语组合："fendt hp>300 $<400k"。
+
+建造：
+- 输入会按名称、描述或产品筛选所有类别和标签页中的建筑："豌豆" 会找到每个使用或生产豌豆的工厂。价格筛选和 "买得起" 在这里同样有效。
+
+地图：
+- 在地图顶部的搜索框中输入，即可找到你的车辆、草捆、托盘、吨袋、建筑、田地和地块。输入 178 这样的数字可找到田地或地块 178，输入 NPC 农民的名字可找到他的土地。车辆也可以按车牌查找。
+- 田地会显示作物和所需作业：搜索 "小麦 可收获"、"石灰" 或 "施肥"。
+- "出售 小麦" 会标出每个收购小麦的出售点及其价格；最高价会被标出。
+- "出售中 $<100k ha>5" 查找可购买的土地；"合同" 查找有合同的田地；"羊毛 l>1000" 查找大托盘。
+- 每个结果都会有一个逐渐收拢指向它的箭头，最近的结果列在搜索框下方：点击即可前往。
+
+- 你的车辆 (fuel<20、损坏、帮手、租赁)、短缺的动物圈舍、生产点 (缺少、已满) 以及 "存储 小麦"。
+
+搜索框为空时，下方会列出最近的搜索。在词前加 - 可排除结果 (-mod)。
+
+控制：设置 > 控制 中也有搜索框："巡航"、"灯光"、"ctrl"。
+所有内容都在游戏的帮助菜单 Searchables 中有说明。
+
+Changelog 1.8.2.6:
+- 已更新以适配当前游戏版本 (modDesc 版本 116)。]]></cs>
+        <ct><![CDATA[描述：在商店、建造選單、地圖以及 設定 > 控制 中加入搜尋框。點擊搜尋框並輸入：清單會隨輸入即時更新。依名稱和規格篩選商店，依產品尋找建築，並在地圖上找到你的車輛、田地、販售點和土地。
+快速鍵：鍵盤 Ctrl+F，手把按下右搖桿。在商店、建造和地圖畫面跳到搜尋框；步行或駕駛時開啟地圖搜尋。可在 設定 > 控制 的「搜尋」中變更。Enter 保留搜尋，Esc 或搜尋框右側的 X 清除搜尋。
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+商店：
+- 在某個類別或品牌中，輸入會篩選該清單。
+- 在類別、品牌、組合包和 DLC 頁面，輸入會搜尋整個商店。
+- 搜尋名稱、品牌、類別、DLC、模組名稱和模組作者。每個詞都必須相符，例如 "fendt 700"。
+- 篩選：價格 ($<50k, $100k-200k)、馬力 (hp>200)、作業寬度 (width>9, 6-9m)、容量 (l>30000)、重量 (t<10)、速度 (kph>50, mph>30)、所需馬力 (needhp<150) 以及 "買得起"。可與詞語組合："fendt hp>300 $<400k"。
+
+建造：
+- 輸入會依名稱、描述或產品篩選所有類別和分頁中的建築："豌豆" 會找到每個使用或生產豌豆的工廠。價格篩選和 "買得起" 在這裡同樣有效。
+
+地圖：
+- 在地圖頂部的搜尋框中輸入，即可找到你的車輛、草捆、棧板、太空袋、建築、田地和地塊。輸入 178 這樣的數字可找到田地或地塊 178，輸入 NPC 農夫的名字可找到他的土地。車輛也可以依車牌尋找。
+- 田地會顯示作物和所需作業：搜尋 "小麥 可收穫"、"石灰" 或 "施肥"。
+- "出售 小麥" 會標出每個收購小麥的販售點及其價格；最高價會被標出。
+- "出售中 $<100k ha>5" 尋找可購買的土地；"合約" 尋找有合約的田地；"羊毛 l>1000" 尋找大棧板。
+- 每個結果都會有一個逐漸收攏指向它的箭頭，最近的結果列在搜尋框下方：點擊即可前往。
+
+- 你的車輛 (fuel<20、損壞、幫手、租賃)、短缺的動物圈舍、生產點 (缺少、已滿) 以及 "存放 小麥"。
+
+搜尋框為空時，下方會列出最近的搜尋。在詞前加 - 可排除結果 (-mod)。
+
+控制：設定 > 控制 中也有搜尋框："巡航"、"燈光"、"ctrl"。
+所有內容都在遊戲的說明選單 Searchables 中有說明。
+
+Changelog 1.8.2.6:
+- 已更新以支援目前的遊戲版本 (modDesc 版本 116)。]]></ct>
+        <id><![CDATA[Deskripsi: Menambahkan kotak pencarian ke toko, menu konstruksi, peta, dan Pengaturan > Kontrol. Klik kotaknya dan ketik: daftar diperbarui saat kamu mengetik. Saring toko berdasarkan nama dan spesifikasi, temukan bangunan berdasarkan produk, dan temukan kendaraan, ladang, titik penjualan, dan lahanmu di peta.
+Tombol pintas: Ctrl+F di keyboard, tekan stik kanan di controller. Langsung masuk ke kotak pencarian di toko, konstruksi, dan peta; saat berjalan atau mengemudi, membuka pencarian peta. Ubah di Pengaturan > Kontrol ("Cari"). Enter menyimpan pencarian, Esc atau X di kanan kotak menghapusnya.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Toko:
+- Di dalam kategori atau merek, mengetik menyaring daftar itu.
+- Di halaman kategori, merek, paket, dan DLC, mengetik mencari di seluruh toko.
+- Mencari nama, merek, kategori, DLC, nama mod, dan pembuat mod. Setiap kata harus cocok, mis. "fendt 700".
+- Filter: harga ($<50k, $100k-200k), tenaga kuda (hp>200), lebar kerja (width>9, 6-9m), kapasitas (l>30000), berat (t<10), kecepatan (kph>50, mph>30), tenaga yang dibutuhkan (needhp<150), dan "terjangkau". Gabungkan dengan kata: "fendt hp>300 $<400k".
+
+Konstruksi:
+- Mengetik menyaring bangunan di semua kategori dan tab, berdasarkan nama, deskripsi, atau produk: "kacang polong" menemukan setiap pabrik yang memakai atau membuat kacang polong. Filter harga dan "terjangkau" juga berfungsi di sini.
+
+Peta:
+- Ketik di kotak di bagian atas peta untuk menemukan kendaraan, bal, palet, big bag, bangunan, ladang, dan properti milikmu. Angka seperti 178 menemukan ladang atau properti 178, nama petani NPC menemukan lahannya. Kendaraan juga bisa ditemukan lewat pelat nomor.
+- Ladang menampilkan tanamannya dan apa yang dibutuhkan: cari "gandum siap", "kapur", atau "pupuk".
+- "jual gandum" menandai setiap titik penjualan yang membeli gandum, beserta harganya; harga terbaik ditandai.
+- "dijual $<100k ha>5" menemukan lahan untuk dibeli; "kontrak" menemukan ladang dengan kontrak; "wol l>1000" menemukan palet besar.
+- Setiap hasil mendapat panah yang mengecil ke arahnya, dan yang terdekat tercantum di bawah kotak: klik salah satunya untuk ke sana.
+
+- Kendaraanmu (fuel<20, kerusakan, pembantu, disewa), kandang hewan yang kekurangan, titik produksi (kurang, penuh), dan "disimpan gandum".
+
+Pencarian terakhir tercantum di bawah kotak yang kosong. Awali kata dengan - untuk mengecualikan hasil (-mod).
+
+Kontrol: Pengaturan > Kontrol juga punya kotak pencarian: "cruise", "lampu", "ctrl".
+Semuanya dijelaskan di menu Bantuan game, di bawah Searchables.
+
+Changelog 1.8.2.6:
+- Diperbarui untuk versi game saat ini (modDesc versi 116).]]></id>
+        <vi><![CDATA[Mô tả: Thêm ô tìm kiếm vào cửa hàng, menu xây dựng, bản đồ và Cài đặt > Điều khiển. Nhấp vào ô và gõ: danh sách cập nhật ngay khi bạn gõ. Lọc cửa hàng theo tên và thông số, tìm công trình theo sản phẩm, và tìm xe, ruộng, điểm bán và đất của bạn trên bản đồ.
+Phím tắt: Ctrl+F trên bàn phím, nhấn cần analog phải trên tay cầm. Nhảy vào ô tìm kiếm ở cửa hàng, xây dựng và bản đồ; khi đi bộ hoặc lái xe, mở tìm kiếm trên bản đồ. Đổi trong Cài đặt > Điều khiển ("Tìm kiếm"). Enter giữ lại tìm kiếm, Esc hoặc dấu X bên phải ô sẽ xóa nó.
+GitHub: https://github.com/DTM-Mods/FS25_Searchables
+
+Cửa hàng:
+- Trong một danh mục hoặc thương hiệu, gõ sẽ lọc danh sách đó.
+- Ở các trang danh mục, thương hiệu, gói và DLC, gõ sẽ tìm trong toàn bộ cửa hàng.
+- Tìm theo tên, thương hiệu, danh mục, DLC, tên mod và tác giả mod. Mỗi từ đều phải khớp, ví dụ "fendt 700".
+- Bộ lọc: giá ($<50k, $100k-200k), mã lực (hp>200), bề rộng làm việc (width>9, 6-9m), sức chứa (l>30000), trọng lượng (t<10), tốc độ (kph>50, mph>30), công suất cần (needhp<150) và "affordable". Kết hợp với từ khóa: "fendt hp>300 $<400k".
+
+Xây dựng:
+- Gõ sẽ lọc công trình trong mọi danh mục và tab, theo tên, mô tả hoặc sản phẩm: "đậu Hà Lan" tìm mọi nhà máy dùng hoặc làm ra đậu Hà Lan. Bộ lọc giá và "affordable" cũng dùng được ở đây.
+
+Bản đồ:
+- Gõ vào ô ở đầu bản đồ để tìm xe, kiện, pallet, bao lớn, công trình, ruộng và lô đất của bạn. Một số như 178 tìm ruộng hoặc lô đất 178, tên một nông dân NPC tìm đất của họ. Xe cũng có thể tìm theo biển số.
+- Ruộng hiển thị cây trồng và những gì cần làm: tìm "lúa mì sẵn sàng", "vôi" hoặc "phân".
+- "bán lúa mì" đánh dấu mọi điểm bán mua lúa mì, kèm giá; giá tốt nhất được đánh dấu.
+- "đang bán $<100k ha>5" tìm đất để mua; "hợpđồng" tìm ruộng có hợp đồng; "len l>1000" tìm pallet lớn.
+- Mỗi kết quả có một mũi tên thu nhỏ dần về phía nó, và những kết quả gần nhất được liệt kê dưới ô: nhấp vào một kết quả để đến đó.
+
+- Xe của bạn (fuel<20, hư hỏng, người giúp, thuê), chuồng trại đang thiếu, điểm sản xuất (thiếu, đầy) và "lưutrữ lúa mì".
+
+Các tìm kiếm gần đây được liệt kê dưới ô trống. Bắt đầu một từ bằng - để loại bỏ kết quả (-mod).
+
+Điều khiển: Cài đặt > Điều khiển cũng có ô tìm kiếm: "cruise", "đèn", "ctrl".
+Mọi thứ được giải thích trong menu Trợ giúp của game, mục Searchables.
+
+Changelog 1.8.2.6:
+- Cập nhật cho phiên bản game hiện tại (modDesc phiên bản 116).]]></vi>
     </description>
 
     <iconFilename>icon_searchables.dds</iconFilename>
