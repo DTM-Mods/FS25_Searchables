@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="115" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+<modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>DTM Mods, Fennell</author>
-    <version>1.8.2.5</version>
+    <version>1.8.2.6</version>
     <title>
         <en>DTM Searchables</en>
     </title>
@@ -31,9 +31,8 @@ Ctrl+F (or the right stick on a controller) jumps into the search box; while wal
 Controls: Settings > Controls has a search box too: "cruise", "lights", "ctrl".
 Everything is explained in the game's Help menu under Searchables.
 
-Changelog 1.8.2.5:
-- New name: DTM Searchables (FS25_DTMSearchables.zip).
-- Errors are no longer hidden, so they show in the log.]]></en>
+Changelog 1.8.2.6:
+- Updated for the current game version (modDesc version 116).]]></en>
         <de><![CDATA[Suchfelder direkt im Shop, im Baumenü und auf der Karte. Feld anklicken und tippen: Die Liste aktualisiert sich beim Tippen.
 
 Shop:
@@ -59,9 +58,8 @@ Strg+F (oder der rechte Stick am Controller) springt ins Suchfeld; beim Gehen od
 Steuerung: Einstellungen > Steuerung hat ebenfalls ein Suchfeld: "tempomat", "licht", "strg".
 Alles wird im Hilfe-Menü des Spiels unter Searchables erklärt.
 
-Changelog 1.8.2.5:
-- Neuer Name: DTM Searchables (FS25_DTMSearchables.zip).
-- Fehler werden nicht mehr versteckt und erscheinen im Log.]]></de>
+Changelog 1.8.2.6:
+- An die aktuelle Spielversion angepasst (modDesc-Version 116).]]></de>
         <fr><![CDATA[Des champs de recherche directement dans le magasin, le menu de construction et sur la carte. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure.
 
 Magasin :
@@ -87,9 +85,8 @@ Ctrl+F (ou le stick droit à la manette) place le curseur dans le champ de reche
 Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulateur », « phares », « ctrl ».
 Tout est expliqué dans le menu Aide du jeu, sous Searchables.
 
-Changelog 1.8.2.5 :
-- Nouveau nom : DTM Searchables (FS25_DTMSearchables.zip).
-- Les erreurs ne sont plus masquées et apparaissent dans le log.]]></fr>
+Changelog 1.8.2.6:
+- Mis à jour pour la version actuelle du jeu (modDesc version 116).]]></fr>
     </description>
 
     <iconFilename>icon_searchables.dds</iconFilename>
