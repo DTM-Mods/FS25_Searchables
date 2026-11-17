@@ -152,7 +152,7 @@ They were taken in a save with other mods: 4-6 and 8 show other mods' map marker
 
 ## Mod icon
 
-ModHub wants the mod icon on GIANTS' **mod icon template background** (from gdn.giants-software.com, the FS25 ModHub/modding templates). The current icon (`icon_512.png`, the magnifier on our own green tile) doesn't use it. Put the template in `modhub/` and the icon is rebuilt on it (512x512, BC1/DXT1 without mipmaps, as `icon_searchables.dds` in the zip and `icon_512.png` here for the form). No logos, text or version numbers on it.
+ModHub wants the mod icon on GIANTS' **mod icon template background** (from gdn.giants-software.com, the FS25 ModHub/modding templates). The current icon (`icon_512.png`, the magnifier on our own green tile) doesn't use it. Put the template in `modhub/` and the icon is rebuilt on it (512x512, BC1/DXT1 without mipmaps, as `icon_searchables.dds` in the zip and `icon_512.png` here for the form). No logos or version numbers; text only in English (the title is fine, as on GIANTS' own examples).
 
 <img src="icon_512.png" alt="Current mod icon (to be redone on the template)" width="160">
 
