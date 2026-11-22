@@ -725,6 +725,11 @@ def test_query_words_and_filters():
         ("price>100000", "w[] f[price>100000] x[]"),
         ("width>9", "w[] f[width>9] x[]"),
         ("6-9m", "w[] f[width>=6<=9] x[]"),
+        # the README examples for an exact number and for spaces
+        ("width=12", "w[] f[width>=12<=12] x[]"),
+        ("l=30000", "w[] f[capacity>=30000<=30000] x[]"),
+        ("t=10", "w[] f[weight>=10<=10] x[]"),
+        ("6 - 9 m", "w[] f[width>=6<=9] x[]"),
         ("l>30000", "w[] f[capacity>30000] x[]"),
         ("cap>=30000", "w[] f[capacity>=30000] x[]"),
         ("30000liters", "w[] f[capacity>=30000<=30000] x[]"),
@@ -755,6 +760,45 @@ def test_query_words_and_filters():
         ("fendt width>", "w[fendt] f[] x[]"),
         # fuel, damage and dirt are also plain search words
         ("fuel damage dirt", "w[fuel,damage,dirt] f[] x[]"),
+        # one-letter units (t, l, m) are in model names too: a filter only with a comparison or a range
+        ("t7", "w[t7] f[] x[]"),
+        ("New Holland T7", "w[new,holland,t7] f[] x[]"),
+        ("john deere 6m", "w[john,deere,6m] f[] x[]"),
+        ("12m", "w[12m] f[] x[]"),
+        ("30000l", "w[30000l] f[] x[]"),
+        ("10t", "w[10t] f[] x[]"),
+        ("t:7", "w[t:7] f[] x[]"),
+        ("fendt 700 l", "w[fendt,700] f[] x[]"),                 # not glued to "700l"; a lone unit word is ignored as before
+        ("claas t 560", "w[claas,560] f[] x[]"),
+        ("l 538", "w[538] f[] x[]"),
+        ("12 m", "w[12,m] f[] x[]"),
+        ("t>7", "w[] f[weight>7] x[]"),
+        (">7t", "w[] f[weight>7] x[]"),
+        ("> 7 t", "w[] f[weight>7] x[]"),
+        ("t=7", "w[] f[weight>=7<=7] x[]"),
+        ("7-9t", "w[] f[weight>=7<=9] x[]"),
+        ("t7-9", "w[] f[weight>=7<=9] x[]"),
+        ("5-10 t", "w[] f[weight>=5<=10] x[]"),
+        ("t 5-10", "w[] f[weight>=5<=10] x[]"),
+        ("6-9 m", "w[] f[width>=6<=9] x[]"),
+        ("l <= 700", "w[] f[capacity<=700] x[]"),
+        ("fendt t>", "w[fendt] f[] x[]"),                        # half-typed, still ignored
+        ("fendt t7-", "w[fendt] f[] x[]"),
+        ("fendt t", "w[fendt] f[] x[]"),
+        # "$" is no letter and multi-letter units keep working without a comparison
+        ("$250k", "w[] f[price>=250000<=250000] x[]"),
+        ("$ 250k", "w[] f[price>=250000<=250000] x[]"),
+        ("$<1.5 m", "w[] f[price<1500000] x[]"),
+        ("250hp", "w[] f[power>=250<=250] x[]"),
+        ("300ps", "w[] f[power>=300<=300] x[]"),
+        ("hp 200", "w[] f[power>=200<=200] x[]"),
+        ("cap 20000-40000", "w[] f[capacity>=20000<=40000] x[]"),
+        ("weight 5-8", "w[] f[weight>=5<=8] x[]"),
+        ("50 km/h", "w[] f[speed>=50<=50] x[]"),
+        ("trailer l>30000 affordable", "w[trailer] f[capacity>30000,price<=75000] x[]"),
+        # decimal comma
+        ("width>4,5", "w[] f[width>4.5] x[]"),
+        ("$<1,5k", "w[] f[price<1500] x[]"),
         # what the farm can pay (g_currentMission:getMoney() is 75000 in the stubs)
         ("affordable", "w[] f[price<=75000] x[]"),
     ]
@@ -774,11 +818,13 @@ def test_query_words_and_filters():
 
 @test
 def test_parse_amount():
-    """Typed amounts: thousands separators, k and m."""
+    """Typed amounts: thousands separators, decimal comma, k and m."""
     env = Env()
     env.run('''
         local cases = {{"144,500", 144500}, {"50k", 50000}, {"1.5m", 1500000}, {"144.500", 144500}, {"1.234.567", 1234567},
-            {"1.5", 1.5}, {"0", 0}, {"250", 250}, {"1,5k", 15000}}
+            {"1.5", 1.5}, {"0", 0}, {"250", 250},
+            -- a comma before exactly three digits is a thousands separator, any other a decimal comma
+            {"1,500", 1500}, {"4,5", 4.5}, {"1,5k", 1500}, {"1,50", 1.5}, {"1,2345", 1.2345}, {"1,500.5", 1500.5}, {"12,5m", 12500000}}
         for _, case in ipairs(cases) do eq(Searchables.parseAmount(case[1]), case[2], "parseAmount " .. case[1]) end
         for _, text in ipairs({"", "abc", "12x", "k", "-5", "1..2"}) do
             eq(Searchables.parseAmount(text), nil, "parseAmount '" .. text .. "'")
@@ -917,6 +963,28 @@ def test_spec_filters():
         eq(has("broken", "hp>50"), false, "unreadable specs again")
         eq(calls("loadSpecs"), 2, "not read again on every search")
         eq(Searchables.getStoreItemValueRange(nil, "power"), nil, "no store item")
+    ''')
+
+
+@test
+def test_model_names_are_not_filters():
+    """Model names with a one-letter unit in them (T7, 6M, L 538) are found by name; comparisons still filter."""
+    env = Env(STORE)
+    env.run('''
+        local t7 = {name = "T7.300", species = StoreSpecies.VEHICLE, xmlFilename = "t7.xml", price = 200000, specs = {weight = 9, power = 300}}
+        local m6 = {name = "6M 150", species = StoreSpecies.VEHICLE, xmlFilename = "6m.xml", price = 150000, specs = {weight = 7, power = 150}}
+        local l538 = {name = "L 538", species = StoreSpecies.VEHICLE, xmlFilename = "l538.xml", price = 180000, specs = {weight = 13}}
+        local function has(storeItem, search) return Searchables.matchesStoreItem(storeItem, Searchables.parseQuery(search)) end
+        eq(has(t7, "t7"), true, "t7 finds the T7"); eq(has(m6, "t7"), false, "and not the tractor that weighs 7 t")
+        eq(has(m6, "6m"), true, "6m finds the 6M"); eq(has(t7, "6m"), false, "and only that")
+        eq(has(l538, "l 538"), true, "l 538 finds the L 538"); eq(has(t7, "l 538"), false, "and only that")
+        eq(has(t7, "t7 hp>250"), true, "a model name with a filter")
+        -- weight still filters with a comparison or a range
+        eq(has(t7, "t>8"), true, "t>8"); eq(has(m6, "t>8"), false, "t>8 lighter tractor")
+        eq(has(m6, "6-8t"), true, "6-8t"); eq(has(t7, "6-8t"), false, "6-8t heavier tractor")
+        eq(has(m6, "t=7"), true, "t=7 is the exact weight"); eq(has(t7, "t=7"), false, "t=7 other weight")
+        -- decimal comma in a filter: the Fendt Former works 10 to 12.5 m wide
+        eq(has(ITEM.former, "width>12,4"), true, "width>12,4"); eq(has(ITEM.former, "width>12,5"), false, "width>12,5")
     ''')
 
 
@@ -1136,6 +1204,31 @@ def test_map_search_fields_and_land():
 
 
 @test
+def test_map_number_search_uses_own_names():
+    """A typed number matches a thing's own number or name, not the numbers the mod adds to its label."""
+    env = Env(STORE, WORLD)
+    env.run('''
+        -- the thing's own numbers
+        eq(found("12"), "Field 12 (Wheat, growing, needs fertilizer)", "field 12, not the barn with 12 animals")
+        eq(found("5"), "Field 5 (Wheat, ready to harvest, needs lime)", "field 5")
+        eq(found("724"), "Fendt 724 Vario (fuel 10%, damage 50%)", "a model number in the name")
+        eq(found("123"), "Fendt 724 Vario (fuel 10%, damage 50%)", "the number of a license plate")
+        eq(found("contract 12"), "Harvesting: Field 12 ($5000, available)", "the contract on field 12")
+        -- numbers of the label: fuel and damage percent, liters, animals, price, hectares, reward
+        eq(found("10"), "", "10% fuel is not field 10"); eq(found("50"), "", "50% damage")
+        eq(found("500"), "", "a 500 l pallet"); eq(found("1"), "", "the 1 of 1,500 l and 1,000 l")
+        eq(found("80000"), "", "a price"); eq(found("4"), "", "the 4 of 6.4 ha"); eq(found("6"), "", "the 6 of 6.4 ha")
+        eq(found("contract 5000"), "", "a reward")
+        -- the label itself is still shown and still searchable by words and filters
+        eq(found("wool l>1000"), "Wool (Pallet) - 1,500 L", "liters are a filter")
+        eq(found("for sale $<100k"), "Property 12 (for sale, $80000, 6.4 ha)", "price is a filter")
+        -- a result made without an own name is matched by its name
+        local result = WheresMyStuff.newResult("field", "Field 9", "Field", nil, 0, 0, "")
+        eq(WheresMyStuff.matchesSearch(result, {"9"}), true, "no own name: the name counts")
+    ''')
+
+
+@test
 def test_map_hotspots():
     """Markers: one per result, nearest first, capped; they follow their object and hide when it is gone."""
     env = Env(STORE, WORLD)
@@ -1294,6 +1387,13 @@ def test_search_box_element():
         box:setCount(4); eq(box.countText:getText(), "4 found", "no total")
         box:setCount(0, 10); eq(box.countText:getText(), "nothing found", "nothing")
         box:setCount(nil); eq(box.countText:getText(), "", "cleared")
+
+        -- a box that already has text on its first update (the map box showing the last search): only the X, not the pen too
+        local restored = SearchablesSearchBox.new(screen, nil, nil)
+        restored.input:setText("wool"); restored.lastText = "wool"
+        restored:update()
+        eq(restored.clearIcon.visible, true, "X shown with text on the first update"); eq(restored.penIcon.visible, false, "and no pen under it")
+        restored:delete()
 
         -- typed or pasted text is noticed on update, once
         box:update()
@@ -1789,6 +1889,8 @@ def test_map_search_box():
         IngameMapElement.update(map, 16)
         eq(WheresMyStuffMapSearch.boxes[frame]:getText(), "wool", "the last search is shown again")
         eq(WheresMyStuffMapSearch.boxes[frame].countText:getText(), "2 found", "with its count")
+        eq(WheresMyStuffMapSearch.boxes[frame].clearIcon.visible, true, "with the X to clear it")
+        eq(WheresMyStuffMapSearch.boxes[frame].penIcon.visible, false, "and without the pen")
     ''')
 
 

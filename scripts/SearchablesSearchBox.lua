@@ -279,7 +279,8 @@ function SearchablesSearchBox:update()
     local isCapturing = self:getIsCapturing()
     local hasText = self.input:getText() ~= ""
     self.placeholder:setVisible(not isCapturing and not hasText)
-    if self.clearIcon ~= nil and self.penIcon ~= nil and self.clearIcon.visible ~= hasText then
+    -- also when only the pen is wrong: both icons start visible, and a box can have text on its first update
+    if self.clearIcon ~= nil and self.penIcon ~= nil and (self.clearIcon.visible ~= hasText or self.penIcon.visible == hasText) then
         self.clearIcon:setVisible(hasText)
         self.penIcon:setVisible(not hasText)
     end

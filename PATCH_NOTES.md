@@ -2,6 +2,14 @@
   <img src="https://raw.githubusercontent.com/DTM-Mods/.github/main/assets/patch-notes.jpg" alt="Patch notes" width="100%">
 </p>
 
+## 1.8.2.8
+
+- Fix: model names such as T7, 6M or L 538 are found by name. The short units t, l and m only act as weight, capacity and width filters with a comparison or a range (`t>7`, `l<700`, `6-9m`); `12m`, `10t` and `30000l` on their own are now search words (use `width=12`, `t=10`, `l=30000`).
+- Fix: typing a number on the map finds the field, property, model or license plate with that number, and no longer things that merely show it in their label (fuel %, litres, price, hectares, animal count, contract reward).
+- Numbers can be typed with a decimal comma: `width>4,5` means 4.5 and `$<1,5k` means 1,500. A comma before exactly three digits is still a thousands separator (`$144,500`).
+- Fix: a search box that opens with a search already in it (the map box showing your last search) shows only the X, not the pen underneath it.
+- Offline tests (`tests/test_offline.py`, 33 tests), run by every build.
+
 ## 1.8.2.7
 
 - New title: Searchables. The description is now in all 27 game languages.

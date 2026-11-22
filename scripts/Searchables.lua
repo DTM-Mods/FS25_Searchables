@@ -257,6 +257,12 @@ table.sort(Searchables.FILTER_KEYWORDS, function(a, b)
     return #a.word > #b.word
 end)
 
+-- One-letter unit words (t, l, m) are in model names too ("T7", "6M", "L 538"): they only make a filter with a
+-- comparison or a range (t>7, 6-9m), otherwise what was typed stays a search word. "$" is no letter: $250k is a price.
+function Searchables.isUnitLetter(keyword)
+    return #keyword.word == 1 and keyword.word:match("%a") ~= nil
+end
+
 -- Spec values per store item and kind: {min, max}, or false when the item does not have it. Most come from the item's
 -- XML, which is slow to read, so the XML is read in the background after loading (see Searchables.preloadSpecs).
 Searchables.specRanges = setmetatable({}, {__mode = "k"})
@@ -268,7 +274,8 @@ function Searchables.parseAmount(text)
     if number == nil then
         return nil
     end
-    number = number:gsub(",", "")
+    -- a comma followed by exactly three digits is a thousands separator ("1,500"), any other is a decimal comma ("4,5")
+    number = number:gsub(",(%d%d%d)%f[%D]", "%1"):gsub(",", ".")
     -- dots followed by groups of exactly three digits are thousands separators
     if number:match("^%d+%.%d%d%d$") or number:match("^%d+%.%d%d%d%.") then
         number = number:gsub("%.", "")
@@ -296,11 +303,21 @@ function Searchables.normalizeQueryText(text)
     text = text:gsub("(%d[km]?)%s*%-%s*(%d)", "%1-%2")
     for _, keyword in ipairs(Searchables.FILTER_KEYWORDS) do
         local word = keyword.word:gsub("%p", "%%%0")
-        if keyword.suffix then
-            text = text:gsub("(%d[km]?)%s+" .. word .. "(%f[%s%z])", "%1" .. keyword.word .. "%2")
-        end
-        if keyword.prefix then
-            text = text:gsub("(%f[%w$]" .. word .. ")%s+([%d<>=])", "%1%2")
+        if Searchables.isUnitLetter(keyword) then
+            -- only next to a comparison or a range ("> 7 t", "6-9 m", "t 5-10"), so "700 l" and "t 560" stay words
+            if keyword.suffix then
+                text = text:gsub("([<>=%-][%d%.,]*%d[km]?)%s+" .. word .. "(%f[%s%z])", "%1" .. keyword.word .. "%2")
+            end
+            if keyword.prefix then
+                text = text:gsub("(%f[%w$]" .. word .. ")%s+(%d[%d%.,]*[km]?%-%d)", "%1%2")
+            end
+        else
+            if keyword.suffix then
+                text = text:gsub("(%d[km]?)%s+" .. word .. "(%f[%s%z])", "%1" .. keyword.word .. "%2")
+            end
+            if keyword.prefix then
+                text = text:gsub("(%f[%w$]" .. word .. ")%s+([%d<>=])", "%1%2")
+            end
         end
     end
     return text
@@ -380,6 +397,10 @@ function Searchables.parseFilterAmount(keyword, rest)
         return {kind = keyword.kind, min = math.min(from, to), max = math.max(from, to)}
     end
 
+    -- a bare number with a one-letter unit ("t7", "6m") is a model name, not a filter
+    if Searchables.isUnitLetter(keyword) then
+        return nil
+    end
     local value = amount(rest)
     if value == nil then
         return nil
@@ -394,7 +415,9 @@ function Searchables.isUnfinishedFilter(word)
         return text:match("^[<>=:]*[%d%.,]*[km]?%-?[%d%.,]*[km]?$") ~= nil
     end
     for _, split in ipairs(Searchables.getKeywordSplits(word)) do
-        if isNumberish(split.rest) and not (split.rest == "" and split.keyword.isWordToo) then
+        -- "t7" and "6m" are words; a one-letter unit is only half a filter alone ("t") or with a comparison or range ("t>")
+        local isWord = Searchables.isUnitLetter(split.keyword) and not split.rest:match("^:?$") and not split.rest:find("[<>=%-]")
+        if isNumberish(split.rest) and not isWord and not (split.rest == "" and split.keyword.isWordToo) then
             return true
         end
     end

@@ -44,14 +44,17 @@ Type these in the shop search box, alone or together with words. Every filter wo
 | Price | `$<50k`, `price>100000`, `$100k-200k`, `$144,500` | Shop price |
 | Affordable | `affordable` | Everything your farm can pay for right now |
 | Horsepower | `hp>200`, `200-300hp`, `250hp`, `300ps` | Engine power |
-| Working width | `width>9`, `6-9m`, `12m` | Headers, cultivators, sprayers, mowers... |
-| Capacity | `l>30000`, `30000l`, `cap 20000-40000` | Trailers, tanks, seeders, sprayers |
-| Weight | `t<10`, `10t`, `weight 5-8` | Weight in tons |
+| Working width | `width>9`, `6-9m`, `width=12` | Headers, cultivators, sprayers, mowers... |
+| Capacity | `l>30000`, `l=30000`, `cap 20000-40000` | Trailers, tanks, seeders, sprayers |
+| Weight | `t<10`, `t=10`, `weight 5-8` | Weight in tons |
 | Speed | `kph>50`, `mph>30`, `50 km/h` | Top speed (working speed for tools) |
 | Power needed | `needhp<150` | Tools your tractor can pull (PTO power) |
 | Mixed | `fendt hp>300 $<400k`, `trailer l>30000 affordable` | All of them at once |
 
-- Spaces are fine: `hp > 200`, `200 hp`, `$ 100k - 200k`, `12 m`.
+- Spaces are fine: `hp > 200`, `200 hp`, `$ 100k - 200k`, `6 - 9 m`.
+- The short units `t`, `l` and `m` only filter with a comparison or a range (`t<10`, `l>30000`, `6-9m`). On their own they are part of a
+  name, so `t7`, `6m` and `l 538` find the T7, the 6M and the L 538.
+- Decimals work with a point or a comma: `width>4.5` or `width>4,5`.
 - `k` means thousand and `m` after a price means million (`$1.5m`). `€` and `£` work the same as `$`.
 - An item with several options (engines, tanks, widths) matches if **any** of them fits, so a 200–300 hp tractor shows up for `hp>280`.
 - The price is the shop's base price, before options.

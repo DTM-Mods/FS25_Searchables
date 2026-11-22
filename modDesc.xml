@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>DTM Mods, Fennell</author>
-    <version>1.8.2.7</version>
+    <version>1.8.2.8</version>
     <title>
         <en>Searchables</en>
     </title>
@@ -33,10 +33,11 @@ Recent searches are listed under an empty box. Start a word with - to leave matc
 Controls: Settings > Controls has a search box too: "cruise", "lights", "ctrl".
 Everything is explained in the game's Help menu under Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></en>
+Changelog 1.8.2.8:
+- Fixed: model names such as T7, 6M or L 538 are found by name; t, l and m only filter with a comparison or a range (t>7, 6-9m).
+- Fixed: a number typed on the map no longer matches numbers in result labels (fuel, litres, price).
+- Numbers can be typed with a decimal comma (width>4,5).
+- Fixed: the search box showed the pen and the X at the same time.]]></en>
         <de><![CDATA[Beschreibung: Fügt Suchfelder im Shop, im Baumenü, auf der Karte und unter Einstellungen > Steuerung hinzu. Feld anklicken und tippen: Die Liste aktualisiert sich beim Tippen. Den Shop nach Name und technischen Daten filtern, Gebäude nach Produkt finden und auf der Karte eigene Fahrzeuge, Felder, Verkaufsstellen und Land finden.
 Tastenkombinationen: Strg+F auf der Tastatur, ein Klick auf den rechten Stick am Controller. Springt im Shop, im Baumenü und auf der Karte ins Suchfeld; beim Gehen oder Fahren öffnet es die Kartensuche. Änderbar unter Einstellungen > Steuerung ("Suchen"). Enter behält die Suche, Esc oder das X rechts im Feld löscht sie.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -64,10 +65,11 @@ Letzte Suchen stehen unter dem leeren Feld. Ein Wort mit - davor schließt Treff
 Steuerung: Einstellungen > Steuerung hat ebenfalls ein Suchfeld: "tempomat", "licht", "strg".
 Alles wird im Hilfe-Menü des Spiels unter Searchables erklärt.
 
-Changelog 1.8.2.7:
-- Neuer Titel: Searchables. Die Beschreibung gibt es jetzt in allen 27 Sprachen des Spiels.
-- Beschreibung im ModHub-Aufbau von GIANTS (Kategorie, Preis, Unterhalt bzw. Tasten oben).
-- Neues Mod-Icon im ModHub-Standard.]]></de>
+Changelog 1.8.2.8:
+- Behoben: Modellnamen wie T7, 6M oder L 538 werden über den Namen gefunden; t, l und m filtern nur mit Vergleich oder Bereich (t>7, 6-9m).
+- Behoben: Eine auf der Karte eingegebene Zahl trifft keine Zahlen mehr in den Ergebnistexten (Kraftstoff, Liter, Preis).
+- Zahlen können mit Dezimalkomma eingegeben werden (width>4,5).
+- Behoben: Das Suchfeld zeigte Stift und X gleichzeitig.]]></de>
         <fr><![CDATA[Description : ajoute des champs de recherche au magasin, au menu de construction, à la carte et à Paramètres > Commandes. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure. Filtrez le magasin par nom et caractéristiques, trouvez les bâtiments par produit, et trouvez sur la carte vos véhicules, champs, points de vente et terres.
 Raccourcis : Ctrl+F au clavier, un clic sur le stick droit à la manette. Place le curseur dans le champ de recherche du magasin, de la construction et de la carte ; à pied ou en conduisant, ouvre la recherche sur la carte. Modifiable dans Paramètres > Commandes (« Rechercher »). Entrée conserve la recherche, Échap ou le X à droite du champ l'efface.
 GitHub : https://github.com/DTM-Mods/FS25_Searchables
@@ -95,10 +97,8 @@ Les recherches récentes sont listées sous le champ vide. Un mot précédé de 
 Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulateur », « phares », « ctrl ».
 Tout est expliqué dans le menu Aide du jeu, sous Searchables.
 
-Changelog 1.8.2.7:
-- Nouveau titre : Searchables. La description existe maintenant dans les 27 langues du jeu.
-- Description au format ModHub de GIANTS (catégorie, prix, entretien ou touches en haut).
-- Nouvelle icône du mod au standard ModHub.]]></fr>
+Changelog 1.8.2.8:
+- Corrections de bugs.]]></fr>
         <fc><![CDATA[Description : ajoute des champs de recherche au magasin, au menu de construction, à la carte et à Paramètres > Commandes. Cliquez dans le champ et tapez : la liste se met à jour au fur et à mesure. Filtrez le magasin par nom et caractéristiques, trouvez les bâtiments par produit, et trouvez sur la carte vos véhicules, champs, points de vente et terres.
 Raccourcis : Ctrl+F au clavier, un clic sur le bâton droit à la manette. Place le curseur dans le champ de recherche du magasin, de la construction et de la carte; à pied ou en conduisant, ouvre la recherche sur la carte. Modifiable dans Paramètres > Commandes (« Rechercher »). Entrée conserve la recherche, Échap ou le X à droite du champ l'efface.
 GitHub : https://github.com/DTM-Mods/FS25_Searchables
@@ -126,10 +126,8 @@ Les recherches récentes sont listées sous le champ vide. Un mot précédé de 
 Commandes : Paramètres > Commandes a aussi un champ de recherche : « régulateur », « phares », « ctrl ».
 Tout est expliqué dans le menu Aide du jeu, sous Searchables.
 
-Changelog 1.8.2.7:
-- Nouveau titre : Searchables. La description existe maintenant dans les 27 langues du jeu.
-- Description au format ModHub de GIANTS (catégorie, prix, entretien ou touches en haut).
-- Nouvelle icône du mod au standard ModHub.]]></fc>
+Changelog 1.8.2.8:
+- Corrections de bugs.]]></fc>
         <es><![CDATA[Descripción: Añade campos de búsqueda a la tienda, al menú de construcción, al mapa y a Configuración > Controles. Haz clic en el campo y escribe: la lista se actualiza mientras escribes. Filtra la tienda por nombre y especificaciones, encuentra edificios por producto y encuentra en el mapa tus vehículos, campos, puntos de venta y terrenos.
 Teclas: Ctrl+F en el teclado, pulsar el joystick derecho en el mando. Salta al campo de búsqueda en la tienda, la construcción y el mapa; a pie o conduciendo abre la búsqueda del mapa. Se cambia en Configuración > Controles ("Buscar"). Intro mantiene la búsqueda, Esc o la X a la derecha del campo la borra.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -157,10 +155,8 @@ Las búsquedas recientes aparecen bajo el campo vacío. Empieza una palabra con 
 Controles: Configuración > Controles también tiene un campo de búsqueda: "crucero", "luces", "ctrl".
 Todo se explica en el menú Ayuda del juego, en Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></es>
+Changelog 1.8.2.8:
+- Corrección de errores.]]></es>
         <ea><![CDATA[Descripción: Agrega campos de búsqueda a la tienda, al menú de construcción, al mapa y a Configuración > Controles. Haz clic en el campo y escribe: la lista se actualiza mientras escribes. Filtra la tienda por nombre y especificaciones, encuentra edificios por producto y encuentra en el mapa tus vehículos, campos, puntos de venta y terrenos.
 Teclas: Ctrl+F en el teclado, presionar el joystick derecho en el control. Salta al campo de búsqueda en la tienda, la construcción y el mapa; a pie o manejando abre la búsqueda del mapa. Se cambia en Configuración > Controles ("Buscar"). Enter mantiene la búsqueda, Esc o la X a la derecha del campo la borra.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -188,10 +184,8 @@ Las búsquedas recientes aparecen bajo el campo vacío. Empieza una palabra con 
 Controles: Configuración > Controles también tiene un campo de búsqueda: "crucero", "luces", "ctrl".
 Todo se explica en el menú Ayuda del juego, en Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></ea>
+Changelog 1.8.2.8:
+- Corrección de errores.]]></ea>
         <it><![CDATA[Descrizione: Aggiunge campi di ricerca al negozio, al menu costruzione, alla mappa e a Impostazioni > Comandi. Clicca sul campo e scrivi: l'elenco si aggiorna mentre scrivi. Filtra il negozio per nome e caratteristiche, trova gli edifici per prodotto e trova sulla mappa i tuoi veicoli, campi, punti vendita e terreni.
 Tasti: Ctrl+F sulla tastiera, pressione della levetta destra sul controller. Porta nel campo di ricerca del negozio, del menu costruzione e della mappa; a piedi o alla guida apre la ricerca sulla mappa. Si cambia in Impostazioni > Comandi ("Cerca"). Invio mantiene la ricerca, Esc o la X a destra del campo la cancella.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -219,10 +213,8 @@ Le ricerche recenti sono elencate sotto il campo vuoto. Una parola che inizia co
 Comandi: anche Impostazioni > Comandi ha un campo di ricerca: "crociera", "luci", "ctrl".
 Tutto è spiegato nel menu Aiuto del gioco, sotto Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></it>
+Changelog 1.8.2.8:
+- Correzioni di bug.]]></it>
         <pt><![CDATA[Descrição: Adiciona caixas de pesquisa à loja, ao menu de construção, ao mapa e a Definições > Controlos. Clica na caixa e escreve: a lista atualiza-se enquanto escreves. Filtra a loja por nome e características, encontra edifícios por produto e encontra no mapa os teus veículos, campos, pontos de venda e terrenos.
 Teclas: Ctrl+F no teclado, um clique no manípulo direito no comando. Salta para a caixa de pesquisa na loja, na construção e no mapa; a pé ou a conduzir abre a pesquisa no mapa. Altera-se em Definições > Controlos ("Pesquisar"). Enter mantém a pesquisa, Esc ou o X à direita da caixa apaga-a.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -250,10 +242,8 @@ As pesquisas recentes aparecem sob a caixa vazia. Começa uma palavra com - para
 Controlos: Definições > Controlos também tem uma caixa de pesquisa: "cruzeiro", "luzes", "ctrl".
 Tudo é explicado no menu Ajuda do jogo, em Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></pt>
+Changelog 1.8.2.8:
+- Correções de erros.]]></pt>
         <br><![CDATA[Descrição: Adiciona caixas de pesquisa à loja, ao menu de construção, ao mapa e a Configurações > Controles. Clique na caixa e digite: a lista é atualizada enquanto você digita. Filtre a loja por nome e especificações, encontre construções por produto e encontre no mapa seus veículos, campos, pontos de venda e terrenos.
 Teclas: Ctrl+F no teclado, um clique no analógico direito no controle. Pula para a caixa de pesquisa na loja, na construção e no mapa; a pé ou dirigindo abre a pesquisa no mapa. Altere em Configurações > Controles ("Pesquisar"). Enter mantém a pesquisa, Esc ou o X à direita da caixa a apaga.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -281,10 +271,8 @@ As pesquisas recentes aparecem sob a caixa vazia. Comece uma palavra com - para 
 Controles: Configurações > Controles também tem uma caixa de pesquisa: "cruzeiro", "faróis", "ctrl".
 Tudo é explicado no menu Ajuda do jogo, em Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></br>
+Changelog 1.8.2.8:
+- Correções de erros.]]></br>
         <nl><![CDATA[Beschrijving: Voegt zoekvelden toe aan de winkel, het bouwmenu, de kaart en Instellingen > Besturing. Klik op het veld en typ: de lijst wordt bijgewerkt terwijl je typt. Filter de winkel op naam en specificaties, vind gebouwen op product en vind op de kaart je voertuigen, velden, verkooppunten en grond.
 Sneltoetsen: Ctrl+F op het toetsenbord, indrukken van de rechter stick op een controller. Springt naar het zoekveld in de winkel, het bouwmenu en op de kaart; lopend of rijdend opent het de zoekfunctie op de kaart. Te wijzigen onder Instellingen > Besturing ("Zoeken"). Enter houdt de zoekopdracht vast, Esc of de X rechts in het veld wist hem.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -312,10 +300,8 @@ Recente zoekopdrachten staan onder het lege veld. Begin een woord met - om treff
 Besturing: Instellingen > Besturing heeft ook een zoekveld: "cruise", "verlichting", "ctrl".
 Alles wordt uitgelegd in het Help-menu van het spel onder Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></nl>
+Changelog 1.8.2.8:
+- Bugfixes.]]></nl>
         <pl><![CDATA[Opis: Dodaje pola wyszukiwania do sklepu, menu budowy, mapy oraz Ustawienia > Sterowanie. Kliknij pole i pisz: lista aktualizuje się w trakcie pisania. Filtruj sklep po nazwie i parametrach, znajduj budynki po produkcie, a na mapie swoje pojazdy, pola, punkty sprzedaży i ziemię.
 Skróty klawiszowe: Ctrl+F na klawiaturze, wciśnięcie prawej gałki na kontrolerze. Przenosi do pola wyszukiwania w sklepie, menu budowy i na mapie; podczas chodzenia lub jazdy otwiera wyszukiwanie na mapie. Można to zmienić w Ustawienia > Sterowanie ("Szukaj"). Enter zachowuje wyszukiwanie, Esc lub X po prawej stronie pola je czyści.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -343,10 +329,8 @@ Ostatnie wyszukiwania są wymienione pod pustym polem. Zacznij słowo od -, aby 
 Sterowanie: Ustawienia > Sterowanie też ma pole wyszukiwania: "tempomat", "światła", "ctrl".
 Wszystko jest wyjaśnione w menu Pomoc w grze, w sekcji Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></pl>
+Changelog 1.8.2.8:
+- Poprawki błędów.]]></pl>
         <cz><![CDATA[Popis: Přidává vyhledávací pole do obchodu, menu stavby, na mapu a do Nastavení > Ovládání. Klikněte do pole a pište: seznam se aktualizuje během psaní. Filtrujte obchod podle názvu a parametrů, hledejte budovy podle produktu a na mapě najděte svá vozidla, pole, prodejní místa a pozemky.
 Klávesové zkratky: Ctrl+F na klávesnici, stisk pravé páčky na ovladači. Skočí do vyhledávacího pole v obchodě, menu stavby a na mapě; při chůzi nebo jízdě otevře hledání na mapě. Změníte v Nastavení > Ovládání ("Hledat"). Enter hledání ponechá, Esc nebo X vpravo v poli ho vymaže.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -374,10 +358,8 @@ Poslední hledání jsou vypsána pod prázdným polem. Slovo začínající zna
 Ovládání: Nastavení > Ovládání má také vyhledávací pole: "tempomat", "světla", "ctrl".
 Vše je vysvětleno v menu Nápověda ve hře, v části Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></cz>
+Changelog 1.8.2.8:
+- Opravy chyb.]]></cz>
         <hu><![CDATA[Leírás: Keresőmezőket ad a bolthoz, az építés menühöz, a térképhez és a Beállítások > Irányítás menühöz. Kattints a mezőbe és gépelj: a lista gépelés közben frissül. Szűrd a boltot név és műszaki adatok szerint, keresd meg az épületeket termék szerint, és találd meg a térképen a járműveidet, földjeidet, értékesítési pontokat és telkeket.
 Gyorsbillentyűk: Ctrl+F a billentyűzeten, a jobb kar lenyomása a kontrolleren. A bolt, az építés és a térkép keresőmezőjébe ugrik; gyalog vagy vezetés közben megnyitja a térképes keresést. Módosítható: Beállítások > Irányítás ("Keresés"). Az Enter megtartja a keresést, az Esc vagy a mező jobb oldalán lévő X törli.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -405,10 +387,8 @@ A legutóbbi keresések az üres mező alatt láthatók. A - jellel kezdődő sz
 Irányítás: a Beállítások > Irányítás menüben is van keresőmező: "tempomat", "lámpák", "ctrl".
 Minden el van magyarázva a játék Súgó menüjében, a Searchables alatt.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></hu>
+Changelog 1.8.2.8:
+- Hibajavítások.]]></hu>
         <ro><![CDATA[Descriere: Adaugă câmpuri de căutare în magazin, în meniul de construcție, pe hartă și în Setări > Comenzi. Dă clic pe câmp și scrie: lista se actualizează pe măsură ce scrii. Filtrează magazinul după nume și specificații, găsește clădiri după produs și găsește pe hartă vehiculele, câmpurile, punctele de vânzare și terenurile tale.
 Taste rapide: Ctrl+F pe tastatură, apăsarea stick-ului drept pe controller. Sare în câmpul de căutare din magazin, construcție și hartă; când mergi pe jos sau conduci, deschide căutarea pe hartă. Se schimbă în Setări > Comenzi ("Caută"). Enter păstrează căutarea, Esc sau X-ul din dreapta câmpului o șterge.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -436,10 +416,8 @@ Căutările recente sunt listate sub câmpul gol. Începe un cuvânt cu - ca să
 Comenzi: Setări > Comenzi are și el un câmp de căutare: "croazieră", "lumini", "ctrl".
 Totul este explicat în meniul Ajutor al jocului, la Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></ro>
+Changelog 1.8.2.8:
+- Remedieri de erori.]]></ro>
         <tr><![CDATA[Açıklama: Mağazaya, inşaat menüsüne, haritaya ve Ayarlar > Kontroller'e arama kutuları ekler. Kutuya tıklayın ve yazın: liste siz yazdıkça güncellenir. Mağazayı isme ve teknik özelliklere göre filtreleyin, binaları ürüne göre bulun, haritada araçlarınızı, tarlalarınızı, satış noktalarını ve arazileri bulun.
 Kısayol tuşları: Klavyede Ctrl+F, kontrolcüde sağ çubuğa basma. Mağaza, inşaat ve harita ekranlarında arama kutusuna atlar; yürürken veya sürerken harita aramasını açar. Ayarlar > Kontroller'de ("Ara") değiştirilebilir. Enter aramayı tutar, Esc veya kutunun sağındaki X aramayı temizler.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -467,10 +445,8 @@ Son aramalar boş kutunun altında listelenir. Sonuçları dışlamak için keli
 Kontroller: Ayarlar > Kontroller'de de bir arama kutusu var: "hız sabitleyici", "ışıklar", "ctrl".
 Her şey oyunun Yardım menüsünde Searchables altında açıklanır.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></tr>
+Changelog 1.8.2.8:
+- Hata düzeltmeleri.]]></tr>
         <ru><![CDATA[Описание: Добавляет поля поиска в магазин, меню строительства, на карту и в Настройки > Управление. Нажмите на поле и печатайте: список обновляется по мере ввода. Фильтруйте магазин по названию и характеристикам, находите здания по продукции, а на карте — свою технику, поля, точки продажи и землю.
 Горячие клавиши: Ctrl+F на клавиатуре, нажатие правого стика на геймпаде. Переводит в поле поиска в магазине, меню строительства и на карте; пешком или за рулём открывает поиск по карте. Меняется в Настройки > Управление ("Поиск"). Enter сохраняет поиск, Esc или X справа в поле очищает его.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -498,10 +474,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 Управление: в Настройки > Управление тоже есть поле поиска: "круиз", "свет", "ctrl".
 Всё объяснено в меню Помощь игры, в разделе Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></ru>
+Changelog 1.8.2.8:
+- Исправления ошибок.]]></ru>
         <uk><![CDATA[Опис: Додає поля пошуку до магазину, меню будівництва, на мапу та до Налаштування > Керування. Натисніть на поле й друкуйте: список оновлюється під час введення. Фільтруйте магазин за назвою та характеристиками, знаходьте будівлі за продукцією, а на мапі — свою техніку, поля, пункти продажу та землю.
 Гарячі клавіші: Ctrl+F на клавіатурі, натискання правого стіка на геймпаді. Переводить у поле пошуку в магазині, меню будівництва та на мапі; пішки або за кермом відкриває пошук на мапі. Змінюється в Налаштування > Керування ("Пошук"). Enter зберігає пошук, Esc або X праворуч у полі очищає його.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -529,10 +503,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 Керування: у Налаштування > Керування теж є поле пошуку: "круїз", "світло", "ctrl".
 Усе пояснено в меню Довідка гри, у розділі Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></uk>
+Changelog 1.8.2.8:
+- Виправлення помилок.]]></uk>
         <da><![CDATA[Beskrivelse: Tilføjer søgefelter i butikken, byggemenuen, på kortet og i Indstillinger > Styring. Klik i feltet og skriv: listen opdateres, mens du skriver. Filtrer butikken efter navn og specifikationer, find bygninger efter produkt, og find dine køretøjer, marker, salgssteder og jord på kortet.
 Genvejstaster: Ctrl+F på tastaturet, et tryk på højre pind på en controller. Springer ind i søgefeltet i butikken, byggemenuen og på kortet; når du går eller kører, åbner den søgningen på kortet. Kan ændres under Indstillinger > Styring ("Søg"). Enter beholder søgningen, Esc eller X'et til højre i feltet rydder den.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -560,10 +532,8 @@ Seneste søgninger står under det tomme felt. Start et ord med - for at udelukk
 Styring: Indstillinger > Styring har også et søgefelt: "fartpilot", "lys", "ctrl".
 Alt er forklaret i spillets Hjælp-menu under Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></da>
+Changelog 1.8.2.8:
+- Fejlrettelser.]]></da>
         <fi><![CDATA[Kuvaus: Lisää hakukentät kauppaan, rakennusvalikkoon, karttaan ja kohtaan Asetukset > Ohjaimet. Napsauta kenttää ja kirjoita: lista päivittyy kirjoittaessasi. Suodata kauppaa nimen ja teknisten tietojen mukaan, löydä rakennukset tuotteen mukaan ja löydä kartalta ajoneuvosi, peltosi, myyntipisteet ja maat.
 Pikanäppäimet: Ctrl+F näppäimistöllä, oikean tikun painallus ohjaimella. Siirtyy hakukenttään kaupassa, rakennusvalikossa ja kartalla; kävellessä tai ajaessa avaa karttahaun. Vaihdettavissa kohdassa Asetukset > Ohjaimet ("Hae"). Enter säilyttää haun, Esc tai kentän oikean reunan X tyhjentää sen.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -591,10 +561,8 @@ Viimeisimmät haut näkyvät tyhjän kentän alla. Aloita sana merkillä - jätt
 Ohjaimet: Asetukset > Ohjaimet saa myös hakukentän: "vakionopeus", "valot", "ctrl".
 Kaikki selitetään pelin Ohje-valikossa kohdassa Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></fi>
+Changelog 1.8.2.8:
+- Virhekorjauksia.]]></fi>
         <no><![CDATA[Beskrivelse: Legger til søkefelt i butikken, byggemenyen, på kartet og i Innstillinger > Kontroller. Klikk i feltet og skriv: listen oppdateres mens du skriver. Filtrer butikken etter navn og spesifikasjoner, finn bygninger etter produkt, og finn kjøretøyene dine, jorder, salgssteder og land på kartet.
 Hurtigtaster: Ctrl+F på tastaturet, et trykk på høyre spak på en kontroller. Hopper inn i søkefeltet i butikken, byggemenyen og på kartet; når du går eller kjører, åpner den søket på kartet. Kan endres under Innstillinger > Kontroller ("Søk"). Enter beholder søket, Esc eller X-en til høyre i feltet tømmer det.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -622,10 +590,8 @@ Nylige søk står under det tomme feltet. Start et ord med - for å utelate tref
 Kontroller: Innstillinger > Kontroller har også et søkefelt: "cruise", "lys", "ctrl".
 Alt er forklart i spillets Hjelp-meny under Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></no>
+Changelog 1.8.2.8:
+- Feilrettinger.]]></no>
         <sv><![CDATA[Beskrivning: Lägger till sökfält i butiken, byggmenyn, på kartan och i Inställningar > Kontroller. Klicka i fältet och skriv: listan uppdateras medan du skriver. Filtrera butiken efter namn och specifikationer, hitta byggnader efter produkt och hitta dina fordon, fält, försäljningsställen och mark på kartan.
 Snabbtangenter: Ctrl+F på tangentbordet, ett tryck på höger spak på en handkontroll. Hoppar in i sökfältet i butiken, byggmenyn och på kartan; när du går eller kör öppnar den sökningen på kartan. Ändras under Inställningar > Kontroller ("Sök"). Enter behåller sökningen, Esc eller X:et till höger i fältet rensar den.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -653,10 +619,8 @@ Senaste sökningar listas under det tomma fältet. Börja ett ord med - för att
 Kontroller: Inställningar > Kontroller har också ett sökfält: "farthållare", "ljus", "ctrl".
 Allt förklaras i spelets Hjälp-meny under Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></sv>
+Changelog 1.8.2.8:
+- Buggfixar.]]></sv>
         <jp><![CDATA[説明: ショップ、建設メニュー、マップ、設定 > 操作に検索ボックスを追加します。ボックスをクリックして入力すると、入力に合わせてリストが更新されます。ショップを名前や性能で絞り込み、建物を生産物で探し、マップ上で自分の車両、畑、売却所、土地を見つけられます。
 ホットキー: キーボードは Ctrl+F、コントローラーは右スティック押し込み。ショップ、建設、マップの画面で検索ボックスに移動します。徒歩中や運転中はマップ検索を開きます。設定 > 操作の「検索」で変更できます。Enter で検索を保持、Esc またはボックス右端の X で消去します。
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -684,10 +648,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 操作: 設定 > 操作にも検索ボックスがあります: "クルーズ"、"ライト"、"ctrl"。
 すべてはゲームのヘルプメニューの Searchables で説明されています。
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></jp>
+Changelog 1.8.2.8:
+- 不具合の修正。]]></jp>
         <kr><![CDATA[설명: 상점, 건설 메뉴, 지도, 설정 > 조작에 검색창을 추가합니다. 검색창을 클릭하고 입력하면 입력하는 대로 목록이 갱신됩니다. 상점을 이름과 사양으로 필터링하고, 건물을 생산품으로 찾고, 지도에서 내 차량, 밭, 판매처, 토지를 찾을 수 있습니다.
 단축키: 키보드는 Ctrl+F, 컨트롤러는 오른쪽 스틱 누르기. 상점, 건설, 지도 화면에서 검색창으로 이동하며, 걷거나 운전 중에는 지도 검색을 엽니다. 설정 > 조작의 "검색"에서 바꿀 수 있습니다. Enter는 검색을 유지하고, Esc 또는 검색창 오른쪽의 X는 검색을 지웁니다.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -715,10 +677,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 조작: 설정 > 조작에도 검색창이 있습니다: "크루즈", "조명", "ctrl".
 모든 내용은 게임의 도움말 메뉴 Searchables 항목에서 설명합니다.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></kr>
+Changelog 1.8.2.8:
+- 버그 수정.]]></kr>
         <cs><![CDATA[描述：在商店、建造菜单、地图以及 设置 > 控制 中添加搜索框。点击搜索框并输入：列表会随输入实时更新。按名称和参数筛选商店，按产品查找建筑，并在地图上找到你的车辆、田地、出售点和土地。
 快捷键：键盘 Ctrl+F，手柄按下右摇杆。在商店、建造和地图界面跳到搜索框；步行或驾驶时打开地图搜索。可在 设置 > 控制 的"搜索"中更改。Enter 保留搜索，Esc 或搜索框右侧的 X 清除搜索。
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -746,10 +706,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 控制：设置 > 控制 中也有搜索框："巡航"、"灯光"、"ctrl"。
 所有内容都在游戏的帮助菜单 Searchables 中有说明。
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></cs>
+Changelog 1.8.2.8:
+- 错误修复。]]></cs>
         <ct><![CDATA[描述：在商店、建造選單、地圖以及 設定 > 控制 中加入搜尋框。點擊搜尋框並輸入：清單會隨輸入即時更新。依名稱和規格篩選商店，依產品尋找建築，並在地圖上找到你的車輛、田地、販售點和土地。
 快速鍵：鍵盤 Ctrl+F，手把按下右搖桿。在商店、建造和地圖畫面跳到搜尋框；步行或駕駛時開啟地圖搜尋。可在 設定 > 控制 的「搜尋」中變更。Enter 保留搜尋，Esc 或搜尋框右側的 X 清除搜尋。
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -777,10 +735,8 @@ GitHub: https://github.com/DTM-Mods/FS25_Searchables
 控制：設定 > 控制 中也有搜尋框："巡航"、"燈光"、"ctrl"。
 所有內容都在遊戲的說明選單 Searchables 中有說明。
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></ct>
+Changelog 1.8.2.8:
+- 錯誤修正。]]></ct>
         <id><![CDATA[Deskripsi: Menambahkan kotak pencarian ke toko, menu konstruksi, peta, dan Pengaturan > Kontrol. Klik kotaknya dan ketik: daftar diperbarui saat kamu mengetik. Saring toko berdasarkan nama dan spesifikasi, temukan bangunan berdasarkan produk, dan temukan kendaraan, ladang, titik penjualan, dan lahanmu di peta.
 Tombol pintas: Ctrl+F di keyboard, tekan stik kanan di controller. Langsung masuk ke kotak pencarian di toko, konstruksi, dan peta; saat berjalan atau mengemudi, membuka pencarian peta. Ubah di Pengaturan > Kontrol ("Cari"). Enter menyimpan pencarian, Esc atau X di kanan kotak menghapusnya.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -808,10 +764,8 @@ Pencarian terakhir tercantum di bawah kotak yang kosong. Awali kata dengan - unt
 Kontrol: Pengaturan > Kontrol juga punya kotak pencarian: "cruise", "lampu", "ctrl".
 Semuanya dijelaskan di menu Bantuan game, di bawah Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></id>
+Changelog 1.8.2.8:
+- Perbaikan bug.]]></id>
         <vi><![CDATA[Mô tả: Thêm ô tìm kiếm vào cửa hàng, menu xây dựng, bản đồ và Cài đặt > Điều khiển. Nhấp vào ô và gõ: danh sách cập nhật ngay khi bạn gõ. Lọc cửa hàng theo tên và thông số, tìm công trình theo sản phẩm, và tìm xe, ruộng, điểm bán và đất của bạn trên bản đồ.
 Phím tắt: Ctrl+F trên bàn phím, nhấn cần analog phải trên tay cầm. Nhảy vào ô tìm kiếm ở cửa hàng, xây dựng và bản đồ; khi đi bộ hoặc lái xe, mở tìm kiếm trên bản đồ. Đổi trong Cài đặt > Điều khiển ("Tìm kiếm"). Enter giữ lại tìm kiếm, Esc hoặc dấu X bên phải ô sẽ xóa nó.
 GitHub: https://github.com/DTM-Mods/FS25_Searchables
@@ -839,10 +793,8 @@ Các tìm kiếm gần đây được liệt kê dưới ô trống. Bắt đầ
 Điều khiển: Cài đặt > Điều khiển cũng có ô tìm kiếm: "cruise", "đèn", "ctrl".
 Mọi thứ được giải thích trong menu Trợ giúp của game, mục Searchables.
 
-Changelog 1.8.2.7:
-- New title: Searchables. The description is now in all 27 game languages.
-- Description in GIANTS' ModHub layout (category, price, upkeep or hotkeys at the top).
-- New mod icon in the ModHub standard.]]></vi>
+Changelog 1.8.2.8:
+- Sửa lỗi.]]></vi>
     </description>
 
     <iconFilename>icon_searchables.dds</iconFilename>

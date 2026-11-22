@@ -531,11 +531,14 @@ function WheresMyStuff.getStoreCategoryTitle(storeItem)
     return Searchables.getStoreCategoryTitle(storeItem.categoryName)
 end
 
-function WheresMyStuff.newResult(kind, name, category, node, x, z, extraWords)
+-- ownName: the name without what the mod adds to it for the marker (fuel %, liters, price, hectares). Typed numbers are
+-- matched against it, so 10 finds field 10 but not a tractor with 10% fuel. Leave it out when the name has no additions.
+function WheresMyStuff.newResult(kind, name, category, node, x, z, extraWords, ownName)
     return {
         kind = kind, name = name, category = category or "", node = node, x = x, z = z,
         searchText = Searchables.toLower(string.format("%s %s %s %s %s", name, category or "", WheresMyStuff.KIND_SEARCH_WORDS[kind] or "",
             WheresMyStuff.getKindTitle(kind), extraWords or "")),
+        numberText = Searchables.toLower(string.format("%s %s %s", ownName or name, category or "", extraWords or "")),
     }
 end
 
@@ -645,11 +648,13 @@ function WheresMyStuff.scanVehicles(farmId)
             local storeItem = vehicle.configFileName ~= nil and g_storeManager:getItemByXMLFilename(vehicle.configFileName) or nil
             local x, _, z = getWorldTranslation(vehicle.rootNode)
             local condition = WheresMyStuff.getVehicleCondition(vehicle)
+            local ownName = name
             if condition.label ~= "" then
                 name = string.format("%s (%s)", name, condition.label)
             end
             local result = WheresMyStuff.newResult(WheresMyStuff.KIND_VEHICLE, name, WheresMyStuff.getStoreCategoryTitle(storeItem),
-                vehicle.rootNode, x, z, string.format("%s %s %s", tostring(vehicle.typeName), WheresMyStuff.getLicensePlateWords(vehicle), condition.words))
+                vehicle.rootNode, x, z, string.format("%s %s %s", tostring(vehicle.typeName), WheresMyStuff.getLicensePlateWords(vehicle), condition.words),
+                ownName)
             result.storeItem = storeItem
             result.fuel, result.damage, result.dirt = condition.fuel, condition.damage, condition.dirt
             table.insert(results, result)
@@ -671,7 +676,7 @@ function WheresMyStuff.scanStock(farmId)
             extraWords = extraWords .. (item.object.isRoundbale and " round" or " square")
         end
         local result = WheresMyStuff.newResult(item.kind, WheresMyStuff.getHotspotName(item), WheresMyStuff.getItemTitle(item),
-            item.node, item.x, item.z, extraWords)
+            item.node, item.x, item.z, extraWords, WheresMyStuff.getItemTitle(item))
         -- for fill level filters: wool l>1000
         result.fillLevel = item.fillLevel
         table.insert(results, result)
@@ -823,7 +828,7 @@ function WheresMyStuff.searchStorages(words, farmId)
                         local x, _, z = getWorldTranslation(node)
                         local name = string.format("%s: %s %s l", storageName, tostring(fillType.title), WheresMyStuff.formatNumber(fillLevel))
                         local result = WheresMyStuff.newResult(WheresMyStuff.KIND_STORAGE, name, Searchables.getText("searchables_kind_storage"),
-                            node, x, z, tostring(fillType.name))
+                            node, x, z, tostring(fillType.name), storageName)
                         result.fillLevel = fillLevel
                         table.insert(results, result)
                     end
@@ -850,11 +855,12 @@ function WheresMyStuff.scanBuildings(farmId)
             local x, _, z = getWorldTranslation(placeable.rootNode)
             -- animal pens and production points tell what they need
             local status = WheresMyStuff.getBuildingStatus(placeable)
+            local ownName = name
             if status.label ~= "" then
                 name = string.format("%s (%s)", name, status.label)
             end
             local result = WheresMyStuff.newResult(WheresMyStuff.KIND_BUILDING, name, WheresMyStuff.getStoreCategoryTitle(placeable.storeItem),
-                placeable.rootNode, x, z, tostring(placeable.typeName) .. " " .. status.words)
+                placeable.rootNode, x, z, tostring(placeable.typeName) .. " " .. status.words, ownName)
             result.storeItem = placeable.storeItem
             table.insert(results, result)
         end
@@ -1069,7 +1075,7 @@ function WheresMyStuff.searchSellPoints(words)
             end
             local x, _, z = getWorldTranslation(node)
             table.insert(results, WheresMyStuff.newResult(WheresMyStuff.KIND_SELL_POINT, name,
-                Searchables.getText("searchables_kind_sellPoint"), node, x, z, tostring(offer.fillType.name)))
+                Searchables.getText("searchables_kind_sellPoint"), node, x, z, tostring(offer.fillType.name), stationName))
         end
     end
     return results
@@ -1101,11 +1107,12 @@ function WheresMyStuff.scanFields(farmId)
             -- crop and work to do: searchable ("wheat harvest", "lime") and shown on the marker
             local status = WheresMyStuff.getFieldStatus(field)
             local name = WheresMyStuff.getFieldName(field, i)
+            local ownName = name
             if status.label ~= "" then
                 name = string.format("%s (%s)", name, status.label)
             end
             local result = WheresMyStuff.newResult(WheresMyStuff.KIND_FIELD, name, category,
-                nil, field.posX, field.posZ, extraWords .. " " .. status.words)
+                nil, field.posX, field.posZ, extraWords .. " " .. status.words, ownName)
             result.areaHa = field.areaHa
             result.farmlandId = field.farmland ~= nil and field.farmland.id or nil
             table.insert(results, result)
@@ -1124,6 +1131,7 @@ function WheresMyStuff.scanFarmlands(farmId)
             if name == nil or name == "" or tonumber(name) ~= nil then
                 name = string.format(Searchables.getText("searchables_farmlandName"), tostring(farmland.id or id))
             end
+            local ownName = name
             local owner = g_farmlandManager:getFarmlandOwner(farmland.id or id)
             local isOwned = owner == farmId
             local extraWords = isOwned and ("owned mine " .. Searchables.getText("searchables_owned")) or WheresMyStuff.getFarmlandNpcName(farmland)
@@ -1135,7 +1143,7 @@ function WheresMyStuff.scanFarmlands(farmId)
                     string.format("%.1f", farmland.areaInHa or 0))
             end
             local result = WheresMyStuff.newResult(WheresMyStuff.KIND_FARMLAND, name, Searchables.getText("searchables_kind_farmland"),
-                nil, farmland.xWorldPos, farmland.zWorldPos, extraWords)
+                nil, farmland.xWorldPos, farmland.zWorldPos, extraWords, ownName)
             result.farmlandId = farmland.id or id
             result.price = farmland.price
             result.areaHa = farmland.areaInHa
@@ -1188,7 +1196,7 @@ function WheresMyStuff.matchesSearch(result, words, filters, excludes)
     end
     for _, word in ipairs(words) do
         if word:match("^%d+$") then
-            if not result.searchText:find("%f[%d]" .. word .. "%f[%D]") then
+            if not (result.numberText or result.searchText):find("%f[%d]" .. word .. "%f[%D]") then
                 return false
             end
         elseif not result.searchText:find(word, 1, true) then
@@ -1228,7 +1236,7 @@ function WheresMyStuff.scanContracts(farmId)
             local extraWords = string.format("%s %s %s %s", isAvailable and "available" or "active", state,
                 npc ~= nil and npc.title or "", mission.type ~= nil and tostring(mission.type.name) or "")
             local result = WheresMyStuff.newResult(WheresMyStuff.KIND_CONTRACT, name, Searchables.getText("searchables_kind_contract"),
-                nil, x, z, extraWords)
+                nil, x, z, extraWords, string.format("%s %s", tostring(mission.title or "?"), fieldName))
             result.price = reward
             result.areaHa = field.areaHa
             table.insert(results, result)
